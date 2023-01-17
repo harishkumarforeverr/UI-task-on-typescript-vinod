@@ -6,6 +6,7 @@ import Nav from "../Nav/Nav";
 import Sidebar from "../Sidebar/Sidebar";
 import Dashboard from "../Dashboard/Dashboard";
 import OptimizationWidget from "../OptimizationWidget/OptimizationWidget";
+import QuickOptimizationWidget from "../QuickOptimizationWidget/QuickOptimizationWidget";
 // import Sidebar from "./Components/Sidebar";
 // import Header from "./Components/Header";
 // import HomePage from "./Components/HomePage";
@@ -37,6 +38,7 @@ function App() {
           <div className="body">
             {view == 1 && <Dashboard setView={setView} />}
             {view == 2 && <OptimizationWidget />}
+            {view == 3 && <QuickOptimizationWidget />}
           </div>
         </div>
       </div>

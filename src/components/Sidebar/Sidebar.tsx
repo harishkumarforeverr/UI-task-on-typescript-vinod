@@ -29,7 +29,9 @@ function Sidebar({ setView }: any) {
       title: "Setting",
     },
     {
-      icon: <ProjectOutlined />,
+      icon: <ProjectOutlined    onClick={() => {
+        setView(3);
+      }}/>,
       title: "Quick tuning",
     }, 
     {
