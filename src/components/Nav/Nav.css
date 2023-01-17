@@ -1,0 +1,11 @@
+.HeadersIconsTitle {
+  display: flex;
+  margin-left: 10.5rem;
+  width: 100%;
+  gap: 6%;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  height: 4rem;
+  align-items: center;
+}

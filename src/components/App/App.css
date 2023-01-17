@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+.head {
+  background-color: #951b30;
+}
+.lightRed {
+  background-color: #951b30;
+}
+.sidebar {
+  box-shadow: 0 6px 16px -8px #00000014, 0 9px 28px #0000000d,
+    0 12px 48px 16px #00000008;
+}
+.boxshadow {
+  box-shadow: 0 6px 16px -8px #00000014, 0 9px 28px #0000000d,
+    0 12px 48px 16px #00000008;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f2f5;
+  overflow-y: scroll;
+}
