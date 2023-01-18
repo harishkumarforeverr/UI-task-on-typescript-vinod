@@ -7,7 +7,7 @@ import {
   ExperimentOutlined,
   TransactionOutlined,
 } from "@ant-design/icons";
-import "./Dashboard.css";
+import "./Dashboard.scss";
 import { Button, Card, Select } from "antd";
 import videoIcons from "../Assests/videoIcons.jpeg";
 function Dashboard({ setView }: { setView: any }) {
@@ -44,7 +44,8 @@ function Dashboard({ setView }: { setView: any }) {
     },
   ];
   return (
-    <div className="ConatinersIconsTitle">
+    <div className="dashboard">
+<div className="ConatinersIconsTitle">
       <div>
         <Card
           className="boxshadow conatinerCard"
@@ -52,11 +53,7 @@ function Dashboard({ setView }: { setView: any }) {
           style={{ width: 300 }}
         >
           <div>
-            <h1
-              style={{
-                fontSize: "1.4rem",
-              }}
-            >
+            <h1 className="selectedDevicesTitle">
               select devices{" "}
               <span
                 style={{
@@ -84,38 +81,38 @@ function Dashboard({ setView }: { setView: any }) {
                   label: "l22eucy",
                 },
                 {
-                  value: "ICMF3RTUSJSKKS",
-                  label: "ICMF3RTUSJSKKS",
+                  value: "MCF8316EVM",
+                  label: "MCF8316EVM",
                 },
               ]}
             />
           </div>
           <div>
             <div className="deatiles">
-              <span className="redColor"></span>
-              <span className="numberText">ICMF3RTUSJSKKS</span>
+              <span className="redColorContainer"></span>
+              <span className="numberText">MCF8316EVM</span>
             </div>
             <p
               style={{
-                fontSize: "1.1rem",
+                fontSize: "12px",
               }}
             >
-              The support of ICMF3RTUSJSKKS{" "}
+              This GUI supports MCF8316EVM
             </p>
           </div>
           <Button onClick={handleTheMotor} className="lightRed btn">
-            Select Motor
+            Select Device
           </Button>
         </Card>
-        <div style={{}} className="videoIcon_container">
+        {/* <div style={{}} className="videoIcon_container">
           <img className="videoIcon" src={videoIcons} />
-        </div>
+        </div> */}
       </div>
       <div className="cardsRigghtContainer">
         {userInfoObj.map((obj) => {
           return (
             <Card
-              className="boxshadow conatinerCardImage"
+              className="  conatinerCardImage"
               bordered={false}
               style={{ width: 300 }}
             >
@@ -125,6 +122,7 @@ function Dashboard({ setView }: { setView: any }) {
           );
         })}
       </div>
+    </div>
     </div>
   );
 }

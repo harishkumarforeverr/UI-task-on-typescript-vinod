@@ -5,7 +5,7 @@ import {
   ProjectOutlined,
   PullRequestOutlined,
 } from "@ant-design/icons";
-import "./SIdebar.css";
+import "./SIdebar.scss";
 function Sidebar({ setView }: any) {
   const SidebarData = [
     {

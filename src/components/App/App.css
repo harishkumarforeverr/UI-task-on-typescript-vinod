@@ -3,7 +3,10 @@
   grid-template-columns: 10rem 1fr;
 }
 .head {
-  background-color: #951b30;
+  width: 100%;
+  height: 60px;
+
+  background: #cc0000;
 }
 .lightRed {
   background-color: #951b30;
@@ -21,4 +24,8 @@ body {
   overflow: hidden;
   background-color: #f0f2f5;
   overflow-y: scroll;
+}
+
+* {
+  font-family: Helvetica;
 }

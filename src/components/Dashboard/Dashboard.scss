@@ -1,0 +1,184 @@
+.dashboard {
+  .ant-select-selector {
+    width: 100% !important;
+    height: 47px !important;
+    padding: 7px 11px !important;
+    font-size: 1.3rem !important;
+  }
+
+  .greenColor {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  // .numberText {
+  //   margin-left: 10px;
+  //   font-size: 1.3rem;
+  //   font-weight: 600;
+  // }
+  .deatiles {
+    margin-top: 1rem;
+  }
+  .lightRed {
+    color: white;
+  }
+  .ConatinersIconsTitle {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    height: 100%;
+  }
+  .cardsRigghtContainer {
+    display: grid;
+    grid-template-columns: 207px 1fr !important;
+    /* gap: 1rem; */
+    /* height: 70%; */
+    margin-top: 4rem !important;
+    height: 100%;
+    gap: 0;
+  }
+  .btn {
+    /* Primary Color */
+
+    background: #cc0000;
+    border-radius: 2px;
+    padding: 8px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 8px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .conatinerCard {
+    margin: 1%;
+    width: 286px !important;
+    height: 252px !important;
+    .selectedDevicesTitle {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      color: #231f20;
+    }
+    .redColorContainer {
+      width: 18px;
+      height: 18px;
+      left: 151px;
+      top: 197px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #cc0000;
+    }
+    .numberText {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      /* identical to box height, or 133% */
+
+      /* Text color */
+
+      margin-left: 10px;
+      color: #231f20;
+    }
+  }
+  .conatinerCardImage {
+    margin: 1%;
+    // /* width: 16rem !important;
+    // height: 12rem !important; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    box-sizing: border-box;
+    width: 200px !important;
+    height: 128px !important;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+  }
+  .rightConatinesIcons {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightConatinesIcons .anticon {
+    background: #c19f9d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .titleRightConatiner {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    /* identical to box height */
+
+    color: #1c99c4;
+  }
+  .videoIcon {
+    /* width: 85%; */
+    width: 625px;
+    height: 373px;
+  }
+
+  @media screen and (max-width: 1350px) {
+    .ConatinersIconsTitle {
+      display: flex;
+      gap: 3rem;
+      flex-direction: column;
+    }
+    .videoIcon_container {
+      /* margin: 0 auto; */
+      width: 26rem;
+    }
+    .videoIcon {
+      width: 100% !important;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .cardsRigghtContainer {
+      display: flex !important;
+      flex-direction: column;
+    }
+    .conatinerCardImage {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 70% !important;
+      margin: 0 auto;
+    }
+    .conatinerCard {
+      margin: 0 auto;
+    }
+    .videoIcon_container {
+      margin: 0 auto;
+      width: 26rem;
+    }
+    /* .videoIcon_container img {
+    width: 60% !important;
+  } */
+  }
+}
