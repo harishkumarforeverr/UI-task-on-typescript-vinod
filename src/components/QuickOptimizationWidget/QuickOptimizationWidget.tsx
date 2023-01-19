@@ -75,21 +75,22 @@ function QuickOptimizationWidget() {
     },
   ];
   const [showCards, setShowCards] = useState(false);
-  const [radioValue, setradioValue] = useState(false);
-  useEffect(() => {
-    if (!radioValue) {
-      setShowCards(false);
-    }
-  }, [radioValue]);
-  const handleSetup = () => {
-    if (radioValue) {
-      setShowCards(true);
-    }
-  };
+  // const [radioValue, setradioValue] = useState(false);
+  // useEffect(() => {
+  //   if (!radioValue) {
+  //     setShowCards(false);
+  //   }
+  // }, [radioValue]);
+  // const handleSetup = () => {
+  //   if (radioValue) {
+  //     setShowCards(true);
+  //   } else {
+  //     setShowCards(true);
+  //   }
+  // };
   const onChange = (e: CheckboxChangeEvent) => {
     const value = e.target.checked;
-    setradioValue(value);
-    console.log(`checked = ${e.target.checked}`);
+    setShowCards(value);
   };
   return (
     <div className="QuickOptimizationWidget">
@@ -142,7 +143,7 @@ function QuickOptimizationWidget() {
                   <div className="actionBtn">
                     <Checkbox onChange={onChange} />
                     <p>Hardware setup has been done manually</p>
-                    <Button onClick={handleSetup}>Setup Now</Button>
+                    <Button>Setup Now</Button>
                   </div>
                 </div>
               </div>
