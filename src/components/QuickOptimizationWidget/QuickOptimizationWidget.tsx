@@ -10,6 +10,7 @@ import {
 import nextIcon from "../Assests/nextIcon.png";
 import "./QuickOptimizationWidget.scss";
 import { Button, Card, Select } from "antd";
+import SelectWrapper from "../common/SelectWrapper";
 function QuickOptimizationWidget() {
   const userInfoObj = [
     {
@@ -76,7 +77,14 @@ function QuickOptimizationWidget() {
       <div className="Conatiner2sIconsTitle">
         <div>
           <div>
-            <Card
+            <SelectWrapper
+              BtnSelectDeviceOpacity="0.5"
+              dotColor="#40C36C"
+              deviceTitle="MCF8316EVM"
+              devDesc="This GUI supports MCF8316EVM"
+              devSubDesc="Correct device detected : MCF8316A"
+            />
+            {/* <Card
               className="boxshadow conatinerCard"
               bordered={false}
               style={{ width: 300 }}
@@ -148,7 +156,7 @@ function QuickOptimizationWidget() {
               >
                 Select Device
               </Button>
-            </Card>
+            </Card> */}
             {/* <div style={{}} className="videoIcon_container">
           <img className="videoIcon" src={videoIcons} />
         </div> */}

@@ -8,22 +8,18 @@ import {
   TransactionOutlined,
 } from "@ant-design/icons";
 import "./Dashboard.scss";
-import { Button, Card } from "antd";
-import videoIcons from "../Assests/videoIcons.jpeg";
-import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { paths } from "../../utils/constant";
 import { useNavigate } from "react-router-dom";
 import { Assests } from "../Assests";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
+import { Card } from "antd";
+import SelectWrapper from "../common/SelectWrapper";
 function Dashboard({ setView }: { setView: any }) {
-  const [age, setAge] = React.useState<string>("");
+  // const [age, setAge] = React.useState<string>("");
 
-  const handleChange = (event: SelectChangeEvent) => {
-    // setAge(event.target.value);
-  };
+  // const handleChange = (event: SelectChangeEvent) => {
+  //   // setAge(event.target.value);
+  // };
   const [motor, setMotor] = useState("");
   const navigate = useNavigate();
   const handleTheMotor = () => {
@@ -68,47 +64,13 @@ function Dashboard({ setView }: { setView: any }) {
     <div className="dashboard">
       <div className="ConatinersIconsTitle">
         <div>
-          <Card
-            className="  conatinerCard"
-            bordered={false}
-            style={{ width: 300 }}
-          >
-            <div>
-              <>
-                <FormControl fullWidth>
-                  <InputLabel shrink={true} id="demo-simple-select-label">
-                    Select Device*
-                  </InputLabel>
-                  <Select
-                    notched={true}
-                    placeholder="Select Your Device"
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    // value={age}
-                    label="Select Device*"
-                    onChange={handleChange}
-                  >
-                    <MenuItem value={10}>Ten</MenuItem>
-                    <MenuItem value={20}>Twenty</MenuItem>
-                    <MenuItem value={30}>Thirty</MenuItem>
-                  </Select>
-                </FormControl>
-              </>
-            </div>
-            <div>
-              <div className="deatiles">
-                <span className="redColorContainer"></span>
-                <span className="numberText">MCF8316EVM</span>
-              </div>
-              <p className="GuiSupport">This GUI supports MCF8316EVM</p>
-            </div>
-            <Button onClick={handleTheMotor} className="lightRed btn">
-              Select Device
-            </Button>
-          </Card>
-          {/* <div style={{}} className="videoIcon_container">
-          <img className="videoIcon" src={videoIcons} />
-        </div> */}
+          <SelectWrapper
+            BtnSelectDeviceOpacity="1"
+            dotColor="#cc0000"
+            deviceTitle="MCF8316EVM"
+            devDesc="This GUI supports MCF8316EVM"
+            // devSubDesc="Correct device detected : MCF8316A"
+          />
         </div>
         <div className="cardsRigghtContainer">
           {userInfoObj.map((obj) => {

@@ -9,6 +9,7 @@ import {
 } from "@ant-design/icons";
 import "./OptimizationWidget.scss";
 import { Button, Card, Select } from "antd";
+import SelectWrapper from "../common/SelectWrapper";
 function OptimizationWidget() {
   const userInfoObj = [
     {
@@ -49,7 +50,14 @@ function OptimizationWidget() {
       <div className="Conatiner2sIconsTitle">
         <div>
           <div>
-            <Card
+            <SelectWrapper
+              BtnSelectDeviceOpacity="0.5"
+              dotColor="#cc0000"
+              deviceTitle="MCF8316EVM"
+              devDesc="This GUI supports MCF8316EVM"
+              devSubDesc="Correct device detected : MCF8316A"
+            />
+            {/* <Card
               className="boxshadow conatinerCard"
               bordered={false}
               style={{ width: 300 }}
@@ -118,7 +126,7 @@ function OptimizationWidget() {
               >
                 Select Device
               </Button>
-            </Card>
+            </Card> */}
             {/* <div style={{}} className="videoIcon_container">
           <img className="videoIcon" src={videoIcons} />
         </div> */}

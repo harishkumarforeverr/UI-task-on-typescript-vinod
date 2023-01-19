@@ -1,62 +1,62 @@
 .OptimizationWidget {
-  .conatinerCard {
-    margin: 1%;
-    width: 286px !important;
-    height: 260px !important;
-    .deatiles {
-      margin-top: 1rem;
-    }
-    .selectedDevicesTitle {
-      font-family: "Helvetica";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 18px;
-      letter-spacing: -0.02em;
-      color: #231f20;
-    }
-    .btn {
-      /* Primary Color */
+  // .conatinerCard {
+  //   margin: 1%;
+  //   width: 286px !important;
+  //   height: 260px !important;
+  //   .deatiles {
+  //     margin-top: 1rem;
+  //   }
+  //   .selectedDevicesTitle {
+  //     font-family: "Helvetica";
+  //     font-style: normal;
+  //     font-weight: 500;
+  //     font-size: 12px;
+  //     line-height: 18px;
+  //     letter-spacing: -0.02em;
+  //     color: #231f20;
+  //   }
+  //   .btn {
+  //     /* Primary Color */
 
-      background: #cc0000;
-      border-radius: 2px;
-      padding: 8px 20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 8px 20px;
-      gap: 8px;
-      font-family: "Helvetica";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 24px;
-      color: #ffffff;
-    }
-    .redColorContainer {
-      width: 18px;
-      height: 18px;
-      left: 151px;
-      top: 197px;
-      border-radius: 50%;
-      display: inline-block;
-      background: #cc0000;
-    }
-    .numberText {
-      font-family: "Helvetica";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
-      /* identical to box height, or 133% */
+  //     background: #cc0000;
+  //     border-radius: 2px;
+  //     padding: 8px 20px;
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: center;
+  //     align-items: center;
+  //     padding: 8px 20px;
+  //     gap: 8px;
+  //     font-family: "Helvetica";
+  //     font-style: normal;
+  //     font-weight: 400;
+  //     font-size: 12px;
+  //     line-height: 24px;
+  //     color: #ffffff;
+  //   }
+  //   .redColorContainer {
+  //     width: 18px;
+  //     height: 18px;
+  //     left: 151px;
+  //     top: 197px;
+  //     border-radius: 50%;
+  //     display: inline-block;
+  //     background: #cc0000;
+  //   }
+  //   .numberText {
+  //     font-family: "Helvetica";
+  //     font-style: normal;
+  //     font-weight: 400;
+  //     font-size: 18px;
+  //     line-height: 24px;
+  //     /* identical to box height, or 133% */
 
-      /* Text color */
+  //     /* Text color */
 
-      margin-left: 10px;
-      color: #231f20;
-    }
-  }
+  //     margin-left: 10px;
+  //     color: #231f20;
+  //   }
+  // }
   .gettingStartTitle {
     font-family: "Helvetica";
     font-style: normal;
@@ -72,7 +72,8 @@
     width: 100% !important;
     height: 47px !important;
     padding: 7px 11px !important;
-    font-size: 1.3rem !important;  .ant-select-selection-item {
+    font-size: 1.3rem !important;
+    .ant-select-selection-item {
       font-size: 12px;
     }
   }
