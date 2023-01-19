@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   UserOutlined,
   SettingOutlined,
@@ -12,6 +12,7 @@ import "./QuickOptimizationWidget.scss";
 import { Button, Card, Checkbox, Select } from "antd";
 import SelectWrapper from "../common/SelectWrapper";
 import { Assests } from "../Assests";
+import { CheckboxChangeEvent } from "antd/es/checkbox";
 function QuickOptimizationWidget() {
   const userInfoObj = [
     {
@@ -73,6 +74,23 @@ function QuickOptimizationWidget() {
       subDesc: "register map",
     },
   ];
+  const [showCards, setShowCards] = useState(false);
+  const [radioValue, setradioValue] = useState(false);
+  useEffect(() => {
+    if (!radioValue) {
+      setShowCards(false);
+    }
+  }, [radioValue]);
+  const handleSetup = () => {
+    if (radioValue) {
+      setShowCards(true);
+    }
+  };
+  const onChange = (e: CheckboxChangeEvent) => {
+    const value = e.target.checked;
+    setradioValue(value);
+    console.log(`checked = ${e.target.checked}`);
+  };
   return (
     <div className="QuickOptimizationWidget">
       <div className="Conatiner2sIconsTitle">
@@ -122,9 +140,9 @@ function QuickOptimizationWidget() {
                     </p>
                   </div>
                   <div className="actionBtn">
-                    <Checkbox />
+                    <Checkbox onChange={onChange} />
                     <p>Hardware setup has been done manually</p>
-                    <Button>Setup Now</Button>
+                    <Button onClick={handleSetup}>Setup Now</Button>
                   </div>
                 </div>
               </div>
@@ -206,29 +224,32 @@ function QuickOptimizationWidget() {
           <img className="videoIcon" src={videoIcons} />
         </div> */}
           </div>
-          <div className="cardsConatiner">
-            {cardsObj.map((obj) => {
-              return (
-                <div className="cards">
-                  <div className="card_title">
-                    <h1>
-                      {obj.title}
 
-                      {obj.subTitle}
-                    </h1>
-                  </div>
-                  <div className="cardContainer">
-                    {" "}
-                    <div>
-                      <p> {obj.desc} </p>
-                      <p>{obj.subDesc}</p>
+          {showCards && (
+            <div className="cardsConatiner">
+              {cardsObj.map((obj) => {
+                return (
+                  <div className="cards">
+                    <div className="card_title">
+                      <h1>
+                        {obj.title}
+
+                        {obj.subTitle}
+                      </h1>
                     </div>
+                    <div className="cardContainer">
+                      {" "}
+                      <div>
+                        <p> {obj.desc} </p>
+                        <p>{obj.subDesc}</p>
+                      </div>
+                    </div>
+                    <img className="nextIcons" src={nextIcon} alt="ok" />
                   </div>
-                  <img className="nextIcons" src={nextIcon} alt="ok" />
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>

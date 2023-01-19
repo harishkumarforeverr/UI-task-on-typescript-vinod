@@ -5,7 +5,7 @@ import {
   ProjectOutlined,
   PullRequestOutlined,
 } from "@ant-design/icons";
-import "./Nav.css";
+import "./Nav.scss";
 function Nav() {
   const HeaderData = [
     {
@@ -26,7 +26,7 @@ function Nav() {
       {HeaderData.map((obj) => {
         return (
           <div>
-            <div className="Header_title"> {obj.title}</div>
+            <div className="Header_title"> <span>{obj.title}</span></div>
           </div>
         );
       })}
