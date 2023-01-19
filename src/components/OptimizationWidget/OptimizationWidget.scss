@@ -72,7 +72,9 @@
     width: 100% !important;
     height: 47px !important;
     padding: 7px 11px !important;
-    font-size: 1.3rem !important;
+    font-size: 1.3rem !important;  .ant-select-selection-item {
+      font-size: 12px;
+    }
   }
 
   .redColor {
