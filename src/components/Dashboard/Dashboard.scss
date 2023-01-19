@@ -3,34 +3,6 @@
   justify-content: space-between;
   margin-right: 20px;
   margin-top: 20px;
-  // .ant-select-selector {
-  //   width: 100% !important;
-  //   height: 47px !important;
-  //   padding: 7px 11px !important;
-  //   font-size: 1.3rem !important;
-  //   &::placeholder {
-  //     font-size: 12px;
-  //   }
-  //   .ant-select-selection-item {
-  //     &::placeholder {
-  //       font-size: 12px;
-  //     }
-  //     font-size: 12px;
-  //   }
-  // }
-
-  // .greenColor {
-  //   height: 25px;
-  //   width: 25px;
-  //   background-color: green;
-  //   border-radius: 50%;
-  //   display: inline-block;
-  // }
-  // .numberText {
-  //   margin-left: 10px;
-  //   font-size: 1.3rem;
-  //   font-weight: 600;
-  // }
 
   .lightRed {
     color: white;
@@ -38,7 +10,6 @@
   .ConatinersIconsTitle {
     padding: 1%;
     display: grid;
-    // grid-template-columns: 1fr 1fr;
     gap: 3rem;
     height: 100%;
   }
@@ -46,26 +17,13 @@
     display: grid;
     margin-left: 10px;
     grid-template-columns: 207px 207px 1fr !important;
-    /* gap: 1rem; */
-    /* height: 70%; */
-    // margin-top: 4rem !important;
     height: 100%;
     gap: 1.5rem;
     .conatinerCardImage {
-      // margin: 1%;
-      // /* width: 16rem !important;
-      // height: 12rem !important; */
       cursor: pointer;
       display: grid;
       justify-content: center;
       align-items: center;
-      // height: 170px;
-      // box-sizing: border-box;
-      // width: 200px !important;
-      // height: 128px !important;
-      // border: 1px solid #d2d2d2;
-      // box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
-      // border-radius: 6px;
       box-sizing: border-box;
 
       width: 200px !important;
@@ -100,77 +58,22 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 21px;
-      /* identical to box height */
-
       color: #1c99c4;
     }
   }
 
-  // .videoIcon {
-  //   /* width: 85%; */
-  //   width: 625px;
-  //   height: 373px;
-  // }
-
-  // @media screen and (max-width: 1350px) {
-  //   .ConatinersIconsTitle {
-  //     display: flex;
-  //     gap: 3rem;
-  //     flex-direction: column;
-  //   }
-  //   .videoIcon_container {
-  //     /* margin: 0 auto; */
-  //     width: 26rem;
-  //   }
-  //   .videoIcon {
-  //     width: 100% !important;
-  //   }
-  // }
-  // @media screen and (max-width: 950px) {
-  //   .cardsRigghtContainer {
-  //     display: flex !important;
-  //     flex-direction: column;
-  //   }
-  //   .conatinerCardImage {
-  //     display: grid;
-  //     justify-content: center;
-  //     align-items: center;
-  //     width: 70% !important;
-  //     margin: 0 auto;
-  //   }
-  //   .conatinerCard {
-  //     margin: 0 auto;
-  //   }
-  //   .videoIcon_container {
-  //     margin: 0 auto;
-  //     width: 26rem;
-  //   }
-  //   /* .videoIcon_container img {
-  //   width: 60% !important;
-  // } */
-  // }
-
   .knowYourDevice {
     box-sizing: border-box;
-
-    // position: absolute;
     width: 529px;
     height: 662px;
-    // left: 817px;
-    // top: 80px;
 
     background: #f2f8fb;
     box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     .knowYourDevice_head {
       box-sizing: border-box;
-
-      // position: absolute;
       width: 529px;
       height: 48px;
-      // left: 817px;
-      // top: 80px;
-
       background: #d4e5ee;
       border-bottom: 1px solid #1c99c4;
       border-radius: 6px 6px 0px 0px;
@@ -178,20 +81,13 @@
       align-items: center;
       padding-left: 20px;
       h1 {
-        // position: absolute;
         width: 121px;
         height: 18px;
         white-space: nowrap;
-        // left: 837px;
-        // top: 95px;
-
         font-family: Helvetica;
         font-style: normal;
         font-weight: 700;
         font-size: 13px;
-        // line-height: 18px;
-        /* identical to box height, or 138% */
-
         letter-spacing: 0.04em;
 
         color: #1c99c4;
@@ -206,19 +102,14 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        // position: absolute;
         width: 469px;
         height: 301px;
-        // left: 847px;
-        // top: 148px;
       }
       p {
         margin-top: 20px;
         // position: absolute;
         width: 469px;
         height: 167px;
-        // left: 847px;
-        // top: 469px;
 
         font-family: Helvetica;
         font-style: normal;
@@ -229,9 +120,6 @@
 
         text-align: justify;
         letter-spacing: 0.04em;
-
-        /* Text color */
-
         font-family: Roboto;
 
         color: #231f20;

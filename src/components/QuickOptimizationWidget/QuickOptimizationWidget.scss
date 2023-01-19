@@ -3,70 +3,6 @@
   margin-left: 20px;
   margin-bottom: 20px;
   .Conatiner2sIconsTitle {
-    // .ant-select-selector {
-    //   width: 100% !important;
-    //   height: 47px !important;
-    //   padding: 7px 11px !important;
-    //   font-size: 1.3rem !important;
-    // }
-    // .conatinerCard {
-    //   margin: 1%;
-    //   width: 286px !important;
-    //   height: 252px !important;
-    //   .deatiles {
-    //     margin-top: 1rem;
-    //   }
-    //   .selectedDevicesTitle {
-    //     font-family: "Helvetica";
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     font-size: 12px;
-    //     line-height: 18px;
-    //     letter-spacing: -0.02em;
-    //     color: #231f20;
-    //   }
-    //   .btn {
-    //     /* Primary Color */
-
-    //     background: #cc0000;
-    //     border-radius: 2px;
-    //     padding: 8px 20px;
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     align-items: center;
-    //     padding: 8px 20px;
-    //     gap: 8px;
-    //     font-family: "Helvetica";
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     font-size: 12px;
-    //     line-height: 24px;
-    //     color: #ffffff;
-    //   }
-    //   .redColorContainer {
-    //     width: 18px;
-    //     height: 18px;
-    //     left: 151px;
-    //     top: 197px;
-    //     border-radius: 50%;
-    //     display: inline-block;
-    //     background: #cc0000;
-    //   }
-    //   .numberText {
-    //     font-family: "Helvetica";
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     font-size: 18px;
-    //     line-height: 24px;
-    //     /* identical to box height, or 133% */
-
-    //     /* Text color */
-
-    //     margin-left: 10px;
-    //     color: #231f20;
-    //   }
-    // }
     .QuickOptimizationWidget_hardwareSetup {
       display: flex;
       gap: 2rem;
@@ -104,10 +40,6 @@
             font-weight: 700;
             font-size: 12px;
             line-height: 18px;
-            /* or 150% */
-
-            /* Secondary Color */
-
             color: #118899;
           }
           ol {
@@ -117,10 +49,6 @@
               font-weight: 400;
               font-size: 12px;
               line-height: 18px;
-              /* or 150% */
-
-              /* Text color */
-
               color: #231f20;
             }
           }
@@ -240,99 +168,5 @@
         }
       }
     }
-
-    // .cardsRigghtContainer {
-    //   display: grid;
-    //   grid-template-columns: 1fr 1fr;
-    //   gap: 1rem;
-    //   height: 70%;
-    //   margin-top: 1rem;
-    // }
-    // .btn {
-    //   width: 7rem;
-    //   height: 2.8rem;
-    // }
-
-    // .rightConatinesIcons {
-    //   display: grid;
-    //   justify-content: center;
-    //   align-items: center;
-    // }
-    // .rightConatinesIcons .anticon {
-    //   background: #c19f9d;
-    //   width: 4rem;
-    //   height: 4rem;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   border-radius: 50%;
-    //   color: white;
-    //   font-size: 1.3rem;
-    // }
-    // .titleRightConatiner2 {
-    //   font-size: 1.3rem;
-    //   color: #438488;
-    // }
-    /* .videoIcon {
-  width: 85%;
-} */
-
-    // /
-    // .redColor {
-    //   height: 25px;
-    //   width: 25px;
-    //   background-color: red;
-    //   border-radius: 50%;
-    //   display: inline-block;
-    // }
-    //   .numberText {
-    //     margin-left: 10px;
-    //     font-size: 1.3rem;
-    //     font-weight: 600;
-    //   }
-    //   .deatiles {
-    //     margin-top: 1rem;
-    //   }
-    //   .lightRed {
-    //     color: white;
-    //   }
-    //   .conatiner2Card {
-    //     margin: 1%;
-    //     width: 26rem !important;
-    //     height: 21.5rem !important;
-    //   }
-    //   .hardware {
-    //     margin: 1%;
-    //     width: 26rem !important;
-    //     /* height: 19.5rem !important */
-    //   }
-    //   .conatiner2CardImage {
-    //     margin: 1%;
-    //     /* width: 16rem !important;
-    // height: 12rem !important; */
-    //     display: grid;
-    //     justify-content: center;
-    //     align-items: center;
-    //   }
-    //   .hardware {
-    //     display: flex;
-    //   }
-    //   .Conatiner2sIconsTitle {
-    //     padding: 1%;
-    //     display: grid;
-    //     /* grid-template-columns: 2fr 1fr; */
-    //   }
-    //   @media screen and (max-width: 1050px) {
-    //     .Conatiner2sIconsTitle {
-    //       width: 50%;
-    //       margin: 0 auto;
-    //     }
-    //   }
-    //   @media screen and (max-width: 750px) {
-    //     .Conatiner2sIconsTitle {
-    //       width: 100%;
-    //       margin: 0 auto;
-    //     }
-    //   }
   }
 }

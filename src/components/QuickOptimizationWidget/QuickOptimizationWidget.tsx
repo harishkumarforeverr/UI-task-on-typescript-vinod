@@ -1,12 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  UserOutlined,
-  SettingOutlined,
-  ProjectOutlined,
-  PullRequestOutlined,
-  ExperimentOutlined,
-  TransactionOutlined,
-} from "@ant-design/icons";
+
 import nextIcon from "../Assests/nextIcon.png";
 import "./QuickOptimizationWidget.scss";
 import { Button, Card, Checkbox, Select } from "antd";
@@ -75,19 +68,7 @@ function QuickOptimizationWidget() {
     },
   ];
   const [showCards, setShowCards] = useState(false);
-  // const [radioValue, setradioValue] = useState(false);
-  // useEffect(() => {
-  //   if (!radioValue) {
-  //     setShowCards(false);
-  //   }
-  // }, [radioValue]);
-  // const handleSetup = () => {
-  //   if (radioValue) {
-  //     setShowCards(true);
-  //   } else {
-  //     setShowCards(true);
-  //   }
-  // };
+
   const onChange = (e: CheckboxChangeEvent) => {
     const value = e.target.checked;
     setShowCards(value);
@@ -148,82 +129,6 @@ function QuickOptimizationWidget() {
                 </div>
               </div>
             </div>
-            {/* <Card
-              className="boxshadow conatinerCard"
-              bordered={false}
-              style={{ width: 300 }}
-            >
-              <div>
-                <h1 className="selectedDevicesTitle">
-                  select devices{" "}
-                  <span
-                    style={{
-                      color: "red",
-                    }}
-                  >
-                    *
-                  </span>
-                </h1>
-                <Select
-                  onChange={(e) => {
-                    // setMotor(e);
-                  }}
-                  style={{
-                    width: "100%",
-                  }}
-                  placeholder="select"
-                  options={[
-                    {
-                      value: "LOU8316E",
-                      label: "LOU8316",
-                    },
-                    {
-                      value: "IUT8316EVM",
-                      label: "IUT8316EVM",
-                    },
-                    {
-                      value: "MCF8316EVM",
-                      label: "MCF8316EVM",
-                    },
-                  ]}
-                />
-              </div>
-              <div>
-                <div className="deatiles">
-                  <span
-                    style={{ background: "#40C36C" }}
-                    className="redColorContainer"
-                  ></span>
-                  <span className="numberText">MCF8316EVM</span>
-                </div>
-                <p
-                  style={{
-                    fontSize: "12px",
-                  }}
-                >
-                  EVM Connected
-                </p>
-                <p
-                  style={{
-                    fontSize: "12px",
-                    opacity: "0.5",
-                  }}
-                >
-                  Correct device detected : MCF8316A
-                </p>
-              </div>
-              <Button
-                style={{
-                  opacity: "0.5",
-                }}
-                className="lightRed btn"
-              >
-                Select Device
-              </Button>
-            </Card> */}
-            {/* <div style={{}} className="videoIcon_container">
-          <img className="videoIcon" src={videoIcons} />
-        </div> */}
           </div>
 
           {showCards && (

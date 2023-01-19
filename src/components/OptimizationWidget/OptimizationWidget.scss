@@ -1,62 +1,4 @@
 .OptimizationWidget {
-  // .conatinerCard {
-  //   margin: 1%;
-  //   width: 286px !important;
-  //   height: 260px !important;
-  //   .deatiles {
-  //     margin-top: 1rem;
-  //   }
-  //   .selectedDevicesTitle {
-  //     font-family: "Helvetica";
-  //     font-style: normal;
-  //     font-weight: 500;
-  //     font-size: 12px;
-  //     line-height: 18px;
-  //     letter-spacing: -0.02em;
-  //     color: #231f20;
-  //   }
-  //   .btn {
-  //     /* Primary Color */
-
-  //     background: #cc0000;
-  //     border-radius: 2px;
-  //     padding: 8px 20px;
-  //     display: flex;
-  //     flex-direction: row;
-  //     justify-content: center;
-  //     align-items: center;
-  //     padding: 8px 20px;
-  //     gap: 8px;
-  //     font-family: "Helvetica";
-  //     font-style: normal;
-  //     font-weight: 400;
-  //     font-size: 12px;
-  //     line-height: 24px;
-  //     color: #ffffff;
-  //   }
-  //   .redColorContainer {
-  //     width: 18px;
-  //     height: 18px;
-  //     left: 151px;
-  //     top: 197px;
-  //     border-radius: 50%;
-  //     display: inline-block;
-  //     background: #cc0000;
-  //   }
-  //   .numberText {
-  //     font-family: "Helvetica";
-  //     font-style: normal;
-  //     font-weight: 400;
-  //     font-size: 18px;
-  //     line-height: 24px;
-  //     /* identical to box height, or 133% */
-
-  //     /* Text color */
-
-  //     margin-left: 10px;
-  //     color: #231f20;
-  //   }
-  // }
   .gettingStartTitle {
     font-family: "Helvetica";
     font-style: normal;
@@ -108,10 +50,7 @@
     height: 70%;
     margin-top: 1rem;
   }
-  // .btn {
-  //   width: 7rem;
-  //   height: 2.8rem;
-  // }
+
   .conatiner2Card {
     margin: 1%;
     width: 26rem !important;
@@ -159,8 +98,6 @@
   }
   .conatiner2CardImage {
     margin: 1%;
-    /* width: 16rem !important;
-  height: 12rem !important; */
     display: grid;
     justify-content: center;
     align-items: center;
@@ -181,13 +118,6 @@
     color: white;
     font-size: 1.3rem;
   }
-  // .titleRightConatiner2 {
-  //   font-size: 1.3rem;
-  //   color: #438488;
-  // }
-  /* .videoIcon {
-  width: 85%;
-} */
 
   .hardware {
     display: flex;
@@ -202,27 +132,5 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @media screen and (max-width: 1450px) {
-    .optizmationWidget,
-    .Gettingstarted {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: 1fr !important;
-    }
-  }
-
-  @media screen and (max-width: 1050px) {
-    .Conatiner2sIconsTitle {
-      width: 50%;
-      margin: 0 auto;
-    }
-  }
-  @media screen and (max-width: 750px) {
-    .Conatiner2sIconsTitle {
-      width: 100%;
-      margin: 0 auto;
-    }
   }
 }
