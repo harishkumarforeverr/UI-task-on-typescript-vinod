@@ -9,8 +9,9 @@ import {
 } from "@ant-design/icons";
 import nextIcon from "../Assests/nextIcon.png";
 import "./QuickOptimizationWidget.scss";
-import { Button, Card, Select } from "antd";
+import { Button, Card, Checkbox, Select } from "antd";
 import SelectWrapper from "../common/SelectWrapper";
+import { Assests } from "../Assests";
 function QuickOptimizationWidget() {
   const userInfoObj = [
     {
@@ -76,14 +77,58 @@ function QuickOptimizationWidget() {
     <div className="QuickOptimizationWidget">
       <div className="Conatiner2sIconsTitle">
         <div>
-          <div>
-            <SelectWrapper
-              BtnSelectDeviceOpacity="0.5"
-              dotColor="#40C36C"
-              deviceTitle="MCF8316EVM"
-              devDesc="This GUI supports MCF8316EVM"
-              devSubDesc="Correct device detected : MCF8316A"
-            />
+          <div className="QuickOptimizationWidget_hardwareSetup">
+            <div>
+              <SelectWrapper
+                BtnSelectDeviceOpacity="0.5"
+                dotColor="#40C36C"
+                deviceTitle="MCF8316EVM"
+                devDesc="This GUI supports MCF8316EVM"
+                devSubDesc="Correct device detected : MCF8316A"
+              />
+            </div>
+            <div className="hardwareSetup">
+              <div className="hardWareTitleAndImage">
+                <h1>Hardware Setup</h1>
+
+                <img src={Assests.DashboardImageCircut} alt="Assests" />
+              </div>
+              <div className="hardWareDescription">
+                <h1>
+                  Ensure the hardware is configured according to the below steps
+                  :
+                </h1>
+                <div>
+                  <ol>
+                    <li>
+                      J1 selected to POT, J3 selected to 5V_USB, and J5 selected
+                      to 3V3COM
+                    </li>
+                    <li>Potentiometer R4 is rotated clockwise fully</li>
+                    <li>
+                      S1 pushed right to select BRAKE=RUN, S2 pushed left to
+                      select DIR=ABC, and
+                    </li>
+                    <li> S3 pushed right to select DRVOFF=ON</li>
+                  </ol>
+                  <div>
+                    <p>
+                      Connect the motor to J8. Supply a voltage compliant with
+                      the Power Supply Voltage (VM). Recommended voltage range
+                      is 4.5V – 35V. Connect the positive terminal to VBAT (PIN3
+                      of J7) and negative terminal to PGND (PIN2 of J7).Plug in
+                      the micro-USB, from the computer that holds the GUI, to
+                      the USB Connector J2.
+                    </p>
+                  </div>
+                  <div className="actionBtn">
+                    <Checkbox />
+                    <p>Hardware setup has been done manually</p>
+                    <Button>Setup Now</Button>
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* <Card
               className="boxshadow conatinerCard"
               bordered={false}
@@ -165,21 +210,19 @@ function QuickOptimizationWidget() {
             {cardsObj.map((obj) => {
               return (
                 <div className="cards">
-                  <div>
-                    <h1
-                      style={{
-                        color: "#1c99c4",
-                      }}
-                    >
+                  <div className="card_title">
+                    <h1>
                       {obj.title}
-                      <br />
+
                       {obj.subTitle}
                     </h1>
                   </div>
-                  <div>
+                  <div className="cardContainer">
                     {" "}
-                    <p> {obj.desc} </p>
-                    <p>{obj.subDesc}</p>
+                    <div>
+                      <p> {obj.desc} </p>
+                      <p>{obj.subDesc}</p>
+                    </div>
                   </div>
                   <img className="nextIcons" src={nextIcon} alt="ok" />
                 </div>
