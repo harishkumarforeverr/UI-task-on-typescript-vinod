@@ -29,13 +29,23 @@ function Sidebar({ setView }: any) {
       title: "Setting",
     },
     {
-      icon: <ProjectOutlined    onClick={() => {
-        setView(3);
-      }}/>,
+      icon: (
+        <ProjectOutlined
+          onClick={() => {
+            setView(3);
+          }}
+        />
+      ),
       title: "Quick tuning",
-    }, 
+    },
     {
-      icon: <PullRequestOutlined />,
+      icon: (
+        <PullRequestOutlined
+          onClick={() => {
+            setView(4);
+          }}
+        />
+      ),
       title: "MPET",
     },
   ];

@@ -75,77 +75,84 @@ function QuickOptimizationWidget() {
     <div className="QuickOptimizationWidget">
       <div className="Conatiner2sIconsTitle">
         <div>
-          <Card
-            className="boxshadow conatiner2Card"
-            bordered={false}
-            style={{ width: 300 }}
-          >
-            <div>
-              <h1
-                style={{
-                  fontSize: "1.4rem",
-                }}
-              >
-                select devices{" "}
-                <span
-                  style={{
-                    color: "red",
-                  }}
-                >
-                  *
-                </span>
-              </h1>
-              <Select
-                style={{
-                  width: "100%",
-                }}
-                defaultValue="MCF8316EVM"
-                placeholder="select"
-                options={[
-                  {
-                    value: "MCF8316EVM",
-                    label: "MCF8316EVM",
-                  },
-                  {
-                    value: "l22eucy",
-                    label: "l22eucy",
-                  },
-                  {
-                    value: "ICMF3RTUSJSKKS",
-                    label: "ICMF3RTUSJSKKS",
-                  },
-                ]}
-              />
-            </div>
-            <div>
-              <div className="deatiles">
-                <span className="greenColor"></span>
-                <span className="numberText">MCF8316EVM</span>
-              </div>
-              <p
-                style={{
-                  fontSize: "1.1rem",
-                }}
-              >
-                The support of ICMF3RTUSJSKKS <br />
-                <span
-                  style={{
-                    opacity: "0.7",
-                  }}
-                >
-                  Correct device detected :ICMF3RTUSJSKKS{" "}
-                </span>
-              </p>
-            </div>
-            <Button
-              style={{
-                opacity: "0.8",
-              }}
-              className="lightRed btn"
+          <div>
+            <Card
+              className="boxshadow conatinerCard"
+              bordered={false}
+              style={{ width: 300 }}
             >
-              Select Device
-            </Button>
-          </Card>
+              <div>
+                <h1 className="selectedDevicesTitle">
+                  select devices{" "}
+                  <span
+                    style={{
+                      color: "red",
+                    }}
+                  >
+                    *
+                  </span>
+                </h1>
+                <Select
+                  onChange={(e) => {
+                    // setMotor(e);
+                  }}
+                  style={{
+                    width: "100%",
+                  }}
+                  placeholder="select"
+                  options={[
+                    {
+                      value: "LOU8316E",
+                      label: "LOU8316",
+                    },
+                    {
+                      value: "IUT8316EVM",
+                      label: "IUT8316EVM",
+                    },
+                    {
+                      value: "MCF8316EVM",
+                      label: "MCF8316EVM",
+                    },
+                  ]}
+                />
+              </div>
+              <div>
+                <div className="deatiles">
+                  <span
+                    style={{ background: "#40C36C" }}
+                    className="redColorContainer"
+                  ></span>
+                  <span className="numberText">MCF8316EVM</span>
+                </div>
+                <p
+                  style={{
+                    fontSize: "12px",
+                  }}
+                >
+                  EVM Connected
+                </p>
+                <p
+                  style={{
+                    fontSize: "12px",
+                    opacity: "0.5",
+                  }}
+                >
+                  Correct device detected : MCF8316A
+                </p>
+              </div>
+              <Button
+                style={{
+                  opacity: "0.5",
+                }}
+                className="lightRed btn"
+              >
+                Select Device
+              </Button>
+            </Card>
+            {/* <div style={{}} className="videoIcon_container">
+          <img className="videoIcon" src={videoIcons} />
+        </div> */}
+          </div>
           <div className="cardsConatiner">
             {cardsObj.map((obj) => {
               return (

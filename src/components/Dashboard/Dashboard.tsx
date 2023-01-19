@@ -45,84 +45,84 @@ function Dashboard({ setView }: { setView: any }) {
   ];
   return (
     <div className="dashboard">
-<div className="ConatinersIconsTitle">
-      <div>
-        <Card
-          className="boxshadow conatinerCard"
-          bordered={false}
-          style={{ width: 300 }}
-        >
-          <div>
-            <h1 className="selectedDevicesTitle">
-              select devices{" "}
-              <span
+      <div className="ConatinersIconsTitle">
+        <div>
+          <Card
+            className="boxshadow conatinerCard"
+            bordered={false}
+            style={{ width: 300 }}
+          >
+            <div>
+              <h1 className="selectedDevicesTitle">
+                select devices{" "}
+                <span
+                  style={{
+                    color: "red",
+                  }}
+                >
+                  *
+                </span>
+              </h1>
+              <Select
+                onChange={(e) => {
+                  setMotor(e);
+                }}
                 style={{
-                  color: "red",
+                  width: "100%",
+                }}
+                placeholder="select"
+                options={[
+                  {
+                    value: "LOU8316E",
+                    label: "LOU8316",
+                  },
+                  {
+                    value: "IUT8316EVM",
+                    label: "IUT8316EVM",
+                  },
+                  {
+                    value: "MCF8316EVM",
+                    label: "MCF8316EVM",
+                  },
+                ]}
+              />
+            </div>
+            <div>
+              <div className="deatiles">
+                <span className="redColorContainer"></span>
+                <span className="numberText">MCF8316EVM</span>
+              </div>
+              <p
+                style={{
+                  fontSize: "12px",
                 }}
               >
-                *
-              </span>
-            </h1>
-            <Select
-              onChange={(e) => {
-                setMotor(e);
-              }}
-              style={{
-                width: "100%",
-              }}
-              placeholder="select"
-              options={[
-                {
-                  value: "123",
-                  label: "123",
-                },
-                {
-                  value: "l22eucy",
-                  label: "l22eucy",
-                },
-                {
-                  value: "MCF8316EVM",
-                  label: "MCF8316EVM",
-                },
-              ]}
-            />
-          </div>
-          <div>
-            <div className="deatiles">
-              <span className="redColorContainer"></span>
-              <span className="numberText">MCF8316EVM</span>
+                This GUI supports MCF8316EVM
+              </p>
             </div>
-            <p
-              style={{
-                fontSize: "12px",
-              }}
-            >
-              This GUI supports MCF8316EVM
-            </p>
-          </div>
-          <Button onClick={handleTheMotor} className="lightRed btn">
-            Select Device
-          </Button>
-        </Card>
-        {/* <div style={{}} className="videoIcon_container">
+            <Button onClick={handleTheMotor} className="lightRed btn">
+              Select Device
+            </Button>
+          </Card>
+          {/* <div style={{}} className="videoIcon_container">
           <img className="videoIcon" src={videoIcons} />
         </div> */}
+        </div>
+        <div className="cardsRigghtContainer">
+          {userInfoObj.map((obj) => {
+            return (
+              <Card
+                className="conatinerCardImage"
+                bordered={false}
+                style={{ width: 300 }}
+              >
+                <div className="rightConatinesIcons">{obj.icons}</div>
+                <div className="titleRightConatiner">{obj.title}</div>
+              </Card>
+            );
+          })}
+        </div>
       </div>
-      <div className="cardsRigghtContainer">
-        {userInfoObj.map((obj) => {
-          return (
-            <Card
-              className="  conatinerCardImage"
-              bordered={false}
-              style={{ width: 300 }}
-            >
-              <div className="rightConatinesIcons">{obj.icons}</div>
-              <div className="titleRightConatiner">{obj.title}</div>
-            </Card>
-          );
-        })}
-      </div>
-    </div>
     </div>
   );
 }

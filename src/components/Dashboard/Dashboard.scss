@@ -18,9 +18,7 @@
   //   font-size: 1.3rem;
   //   font-weight: 600;
   // }
-  .deatiles {
-    margin-top: 1rem;
-  }
+
   .lightRed {
     color: white;
   }
@@ -40,29 +38,14 @@
     height: 100%;
     gap: 0;
   }
-  .btn {
-    /* Primary Color */
 
-    background: #cc0000;
-    border-radius: 2px;
-    padding: 8px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
-    gap: 8px;
-    font-family: "Helvetica";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    color: #ffffff;
-  }
   .conatinerCard {
     margin: 1%;
     width: 286px !important;
     height: 252px !important;
+    .deatiles {
+      margin-top: 1rem;
+    }
     .selectedDevicesTitle {
       font-family: "Helvetica";
       font-style: normal;
@@ -71,6 +54,25 @@
       line-height: 18px;
       letter-spacing: -0.02em;
       color: #231f20;
+    }
+    .btn {
+      /* Primary Color */
+
+      background: #cc0000;
+      border-radius: 2px;
+      padding: 8px 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 20px;
+      gap: 8px;
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      color: #ffffff;
     }
     .redColorContainer {
       width: 18px;
@@ -116,13 +118,14 @@
     align-items: center;
   }
   .rightConatinesIcons .anticon {
-    background: #c19f9d;
+    background: #fac7c7;
 
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: white;
+    color: rgba(0, 0, 0, 0.489);
+    
     font-size: 1.3rem;
     margin-bottom: 1rem;
     width: 45px !important;

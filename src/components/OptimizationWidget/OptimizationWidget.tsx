@@ -7,7 +7,7 @@ import {
   ExperimentOutlined,
   TransactionOutlined,
 } from "@ant-design/icons";
-import "./OptimizationWidget.css";
+import "./OptimizationWidget.scss";
 import { Button, Card, Select } from "antd";
 function OptimizationWidget() {
   const userInfoObj = [
@@ -45,154 +45,141 @@ function OptimizationWidget() {
     },
   ];
   return (
-    <div className="Conatiner2sIconsTitle">
-      <div>
-        <Card
-          className="boxshadow conatiner2Card"
-          bordered={false}
-          style={{ width: 300 }}
-        >
-          <div>
-            <h1
-              style={{
-                fontSize: "1.4rem",
-              }}
-            >
-              select devices{" "}
-              <span
-                style={{
-                  color: "red",
-                }}
-              >
-                *
-              </span>
-            </h1>
-            <Select
-              style={{
-                width: "100%",
-              }}
-              placeholder="select"
-              options={[
-                {
-                  value: "123",
-                  label: "123",
-                },
-                {
-                  value: "l22eucy",
-                  label: "l22eucy",
-                },
-                {
-                  value: "ICMF3RTUSJSKKS",
-                  label: "ICMF3RTUSJSKKS",
-                },
-              ]}
-            />
-          </div>
-          <div>
-            <div className="deatiles">
-              <span className="greenColor"></span>
-              <span className="numberText">ICMF3RTUSJSKKS</span>
-            </div>
-            <p
-              style={{
-                fontSize: "1.1rem",
-              }}
-            >
-              The support of ICMF3RTUSJSKKS{" "}
-            </p>
-          </div>
-          <Button className="lightRed btn">Select Motor</Button>
-        </Card>
+    <div className="OptimizationWidget">
+      <div className="Conatiner2sIconsTitle">
         <div>
-          {/* <img className="videoIcon" style={{}} src={videoIcons} /> */}
-        </div>
-      </div>
-      <div>
-        <h2
-          style={{
-            color: "#165c65",
-            marginLeft: "1rem",
-          }}
-        >
-          Getting started
-        </h2>
-        <div className="Gettingstarted">
-          {userInfoObj.map((obj) => {
-            return (
-              <Card
-                className="boxshadow hardware"
-                bordered={false}
-                style={{ width: 300 }}
-              >
-                <div
+          <div>
+            <Card
+              className="boxshadow conatinerCard"
+              bordered={false}
+              style={{ width: 300 }}
+            >
+              <div>
+                <h1 className="selectedDevicesTitle">
+                  select devices{" "}
+                  <span
+                    style={{
+                      color: "red",
+                    }}
+                  >
+                    *
+                  </span>
+                </h1>
+                <Select
+                  onChange={(e) => {
+                    // setMotor(e);
+                  }}
                   style={{
-                    display: "flex",
-                    gap: "1rem",
-                    justifyContent: "center",
-                    alignItems: "center",
+                    width: "100%",
+                  }}
+                  placeholder="select"
+                  options={[
+                    {
+                      value: "LOU8316E",
+                      label: "LOU8316",
+                    },
+                    {
+                      value: "IUT8316EVM",
+                      label: "IUT8316EVM",
+                    },
+                    {
+                      value: "MCF8316EVM",
+                      label: "MCF8316EVM",
+                    },
+                  ]}
+                />
+              </div>
+              <div>
+                <div className="deatiles">
+                  <span className="redColorContainer"></span>
+                  <span className="numberText">MCF8316EVM</span>
+                </div>
+                <p
+                  style={{
+                    fontSize: "12px",
                   }}
                 >
-                  <div>
-                    <img src={obj.image} />
-                  </div>
-                  <div>
-                    <h3
-                      style={{
-                        color: "#165c65",
-                      }}
-                    >
-                      {obj.title}
-                    </h3>
-                    <p>{obj.desc}</p>
-                  </div>
-                </div>
-              </Card>
-            );
-          })}
-        </div>
-      </div>
-      <div>
-        <h2
-          style={{
-            color: "#165c65",
-            marginLeft: "1rem",
-          }}
-        >
-          Optimization Widget
-        </h2>
-        <div className="optizmationWidget">
-          {InfoObj.map((obj) => {
-            return (
-              <Card
-                className="boxshadow hardware"
-                bordered={false}
-                style={{ width: 300 }}
+                  This GUI supports MCF8316EVM
+                </p>
+              </div>
+              <Button
+                style={{
+                  opacity: "0.5",
+                }}
+                className="lightRed btn"
               >
-                <div
-                  style={{
-                    display: "flex",
-                    gap: "1rem",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
+                Select Device
+              </Button>
+            </Card>
+            {/* <div style={{}} className="videoIcon_container">
+          <img className="videoIcon" src={videoIcons} />
+        </div> */}
+          </div>
+          <div>
+            {/* <img className="videoIcon" style={{}} src={videoIcons} /> */}
+          </div>
+        </div>
+        <div>
+          <h2 className="gettingStartTitle">Getting started</h2>
+          <div className="Gettingstarted">
+            {userInfoObj.map((obj) => {
+              return (
+                <Card
+                  className="boxshadow hardware"
+                  bordered={false}
+                  style={{ width: 300 }}
                 >
-                  <div>
-                    <img src={obj.image} />
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "1rem",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div>
+                      <img src={obj.image} />
+                    </div>
+                    <div>
+                      <h3>{obj.title}</h3>
+                      <p>{obj.desc}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3
-                      style={{
-                        color: "#165c65",
-                      }}
-                    >
-                      {obj.title}
-                    </h3>
-                    <p>{obj.desc}</p>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+        <div>
+          <h2 className="gettingStartTitle">Optimization Widget</h2>
+          <div className="optizmationWidget">
+            {InfoObj.map((obj) => {
+              return (
+                <Card
+                  className="boxshadow hardware"
+                  bordered={false}
+                  style={{ width: 300 }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "1rem",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div>
+                      <img src={obj.image} />
+                    </div>
+                    <div>
+                      <h3>{obj.title}</h3>
+                      <p>{obj.desc}</p>
+                    </div>
                   </div>
-                </div>
-              </Card>
-            );
-          })}
+                </Card>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
