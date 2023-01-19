@@ -99,7 +99,15 @@ function OptimizationWidget() {
                     fontSize: "12px",
                   }}
                 >
-                  This GUI supports MCF8316EVM
+                  EVM Connected
+                </p>
+                <p
+                  style={{
+                    fontSize: "12px",
+                    opacity: "0.5",
+                  }}
+                >
+                  Correct device detected : MCF8316A
                 </p>
               </div>
               <Button
