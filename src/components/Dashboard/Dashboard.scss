@@ -19,13 +19,13 @@
   //   }
   // }
 
-  .greenColor {
-    height: 25px;
-    width: 25px;
-    background-color: green;
-    border-radius: 50%;
-    display: inline-block;
-  }
+  // .greenColor {
+  //   height: 25px;
+  //   width: 25px;
+  //   background-color: green;
+  //   border-radius: 50%;
+  //   display: inline-block;
+  // }
   // .numberText {
   //   margin-left: 10px;
   //   font-size: 1.3rem;
@@ -51,6 +51,59 @@
     // margin-top: 4rem !important;
     height: 100%;
     gap: 1.5rem;
+    .conatinerCardImage {
+      // margin: 1%;
+      // /* width: 16rem !important;
+      // height: 12rem !important; */
+      cursor: pointer;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      // height: 170px;
+      // box-sizing: border-box;
+      // width: 200px !important;
+      // height: 128px !important;
+      // border: 1px solid #d2d2d2;
+      // box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
+      // border-radius: 6px;
+      box-sizing: border-box;
+
+      width: 200px !important;
+      height: 128px !important;
+
+      background: #f2f8fb;
+      box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+    }
+    .rightConatinesIcons {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .rightConatinesIcons .anticon {
+      background: #fac7c7;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: rgba(0, 0, 0, 0.489);
+
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      width: 45px !important;
+      height: 45px !important;
+    }
+    .titleRightConatiner {
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 21px;
+      /* identical to box height */
+
+      color: #1c99c4;
+    }
   }
 
   .conatinerCard {
@@ -114,102 +167,50 @@
       color: #231f20;
     }
   }
-  .conatinerCardImage {
-    // margin: 1%;
-    // /* width: 16rem !important;
-    // height: 12rem !important; */
-    cursor: pointer;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    // height: 170px;
-    // box-sizing: border-box;
-    // width: 200px !important;
-    // height: 128px !important;
-    // border: 1px solid #d2d2d2;
-    // box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
-    // border-radius: 6px;
-    box-sizing: border-box;
 
-    width: 200px !important;
-    height: 128px !important;
+  // .videoIcon {
+  //   /* width: 85%; */
+  //   width: 625px;
+  //   height: 373px;
+  // }
 
-    background: #f2f8fb;
-    box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-  }
-  .rightConatinesIcons {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-  .rightConatinesIcons .anticon {
-    background: #fac7c7;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: rgba(0, 0, 0, 0.489);
-
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    width: 45px !important;
-    height: 45px !important;
-  }
-  .titleRightConatiner {
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 21px;
-    /* identical to box height */
-
-    color: #1c99c4;
-  }
-  .videoIcon {
-    /* width: 85%; */
-    width: 625px;
-    height: 373px;
-  }
-
-  @media screen and (max-width: 1350px) {
-    .ConatinersIconsTitle {
-      display: flex;
-      gap: 3rem;
-      flex-direction: column;
-    }
-    .videoIcon_container {
-      /* margin: 0 auto; */
-      width: 26rem;
-    }
-    .videoIcon {
-      width: 100% !important;
-    }
-  }
-  @media screen and (max-width: 950px) {
-    .cardsRigghtContainer {
-      display: flex !important;
-      flex-direction: column;
-    }
-    .conatinerCardImage {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      width: 70% !important;
-      margin: 0 auto;
-    }
-    .conatinerCard {
-      margin: 0 auto;
-    }
-    .videoIcon_container {
-      margin: 0 auto;
-      width: 26rem;
-    }
-    /* .videoIcon_container img {
-    width: 60% !important;
-  } */
-  }
+  // @media screen and (max-width: 1350px) {
+  //   .ConatinersIconsTitle {
+  //     display: flex;
+  //     gap: 3rem;
+  //     flex-direction: column;
+  //   }
+  //   .videoIcon_container {
+  //     /* margin: 0 auto; */
+  //     width: 26rem;
+  //   }
+  //   .videoIcon {
+  //     width: 100% !important;
+  //   }
+  // }
+  // @media screen and (max-width: 950px) {
+  //   .cardsRigghtContainer {
+  //     display: flex !important;
+  //     flex-direction: column;
+  //   }
+  //   .conatinerCardImage {
+  //     display: grid;
+  //     justify-content: center;
+  //     align-items: center;
+  //     width: 70% !important;
+  //     margin: 0 auto;
+  //   }
+  //   .conatinerCard {
+  //     margin: 0 auto;
+  //   }
+  //   .videoIcon_container {
+  //     margin: 0 auto;
+  //     width: 26rem;
+  //   }
+  //   /* .videoIcon_container img {
+  //   width: 60% !important;
+  // } */
+  // }
 
   .knowYourDevice {
     box-sizing: border-box;
