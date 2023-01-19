@@ -7,40 +7,6 @@ import SelectWrapper from "../common/SelectWrapper";
 import { Assests } from "../Assests";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
 function QuickOptimizationWidget() {
-  const userInfoObj = [
-    {
-      image: require("../Assests/capture1.PNG"),
-      title: "Hardware Setup",
-      desc: "configure harware and perform and GUI and comminucation checkup",
-    },
-    {
-      image: require("../Assests/Capture2.PNG"),
-      title: "software Setup",
-      desc: "Samart harware and perform ",
-    },
-  ];
-  const InfoObj = [
-    {
-      image: require("../Assests/Capture3.PNG"),
-      title: "Edge Setup",
-      desc: "configure harware and perform and GUI and comminucation checkup",
-    },
-    {
-      image: require("../Assests/Capture4.PNG"),
-      title: "Popup Setup",
-      desc: "Samart harware and perform ",
-    },
-    {
-      image: require("../Assests/Capture5.PNG"),
-      title: "Iron Setup",
-      desc: "configure harware and perform and GUI and comminucation checkup",
-    },
-    {
-      image: require("../Assests/Capture6.PNG"),
-      title: "Apple Setup",
-      desc: "Samart harware and perform ",
-    },
-  ];
   const cardsObj = [
     {
       title: "Quick Spin",
