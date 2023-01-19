@@ -5,14 +5,17 @@ import {
   ProjectOutlined,
   PullRequestOutlined,
 } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 import "./SIdebar.scss";
-function Sidebar({ setView }: any) {
+import { paths } from "../../utils/constant";
+function Sidebar() {
+  const navigate = useNavigate();
   const SidebarData = [
     {
       icon: (
         <UpCircleOutlined
           onClick={() => {
-            setView(1);
+            navigate(paths.Dashboard);
           }}
         />
       ),
@@ -22,7 +25,7 @@ function Sidebar({ setView }: any) {
       icon: (
         <SettingOutlined
           onClick={() => {
-            setView(2);
+            navigate(paths.OptimizationWidget);
           }}
         />
       ),
@@ -32,7 +35,7 @@ function Sidebar({ setView }: any) {
       icon: (
         <ProjectOutlined
           onClick={() => {
-            setView(3);
+            navigate(paths.QuickOptimizationWidget);
           }}
         />
       ),
@@ -42,7 +45,7 @@ function Sidebar({ setView }: any) {
       icon: (
         <PullRequestOutlined
           onClick={() => {
-            setView(4);
+            navigate(paths.CircutBoard);
           }}
         />
       ),

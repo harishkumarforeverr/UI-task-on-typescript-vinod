@@ -10,8 +10,11 @@ import {
 import "./Dashboard.scss";
 import { Button, Card, Select } from "antd";
 import videoIcons from "../Assests/videoIcons.jpeg";
+import { paths } from "../../utils/constant";
+import { useNavigate } from "react-router-dom";
 function Dashboard({ setView }: { setView: any }) {
   const [motor, setMotor] = useState("");
+  const navigate = useNavigate();
   const handleTheMotor = () => {
     if (motor) {
       setView(2);
@@ -21,26 +24,32 @@ function Dashboard({ setView }: { setView: any }) {
     {
       title: "Users's Guide",
       icons: <UserOutlined />,
+      link: paths.UserGuidesPage,
     },
     {
       title: "Product Page",
       icons: <ExperimentOutlined />,
+      link: "/",
     },
     {
       title: "Data Sheet",
       icons: <ProjectOutlined />,
+      link: "/",
     },
     {
       title: "Tuning Page",
       icons: <SettingOutlined />,
+      link: "/",
     },
     {
       title: "Tools Page",
       icons: <PullRequestOutlined />,
+      link: "/",
     },
     {
       title: "E2E testing",
       icons: <TransactionOutlined />,
+      link: "/",
     },
   ];
   return (
@@ -115,6 +124,9 @@ function Dashboard({ setView }: { setView: any }) {
                 className="conatinerCardImage"
                 bordered={false}
                 style={{ width: 300 }}
+                onClick={() => {
+                  navigate(obj.link);
+                }}
               >
                 <div className="rightConatinesIcons">{obj.icons}</div>
                 <div className="titleRightConatiner">{obj.title}</div>
