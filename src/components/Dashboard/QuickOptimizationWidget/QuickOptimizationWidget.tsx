@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-import nextIcon from "../Assests/nextIcon.png";
+import nextIcon from "../../Assests/nextIcon.png";
 import "./QuickOptimizationWidget.scss";
 import { Button, Card, Checkbox, Select } from "antd";
-import SelectWrapper from "../common/SelectWrapper";
-import { Assests } from "../Assests";
+import SelectWrapper from "../../common/SelectWrapper";
+// import { Assests } from "../../Assests";
+// Assests
 import { CheckboxChangeEvent } from "antd/es/checkbox";
+import { Assests } from "../../Assests";
 function QuickOptimizationWidget({ setView }: { setView: any }) {
   const cardsObj = [
     {

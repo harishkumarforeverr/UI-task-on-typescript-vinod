@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import QuickOptimizationWidget from "../QuickOptimizationWidget/QuickOptimizationWidget";
+// import QuickOptimizationWidget from "../QuickOptimizationWidget/QuickOptimizationWidget";
 import Dashboard from "./Dashboard";
 // import {
 //   UpCircleOutlined,
@@ -8,6 +8,7 @@ import Dashboard from "./Dashboard";
 //   PullRequestOutlined,
 // } from "@ant-design/icons";
 import "./index.scss";
+import QuickOptimizationWidget from "./QuickOptimizationWidget/QuickOptimizationWidget";
 function DashboardConatiner() {
   const [view, setView] = useState("Dashboard");
   return (

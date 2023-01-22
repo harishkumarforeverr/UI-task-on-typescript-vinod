@@ -9,7 +9,7 @@ import {
 } from "@ant-design/icons";
 import "./OptimizationWidget.scss";
 import { Button, Card, Select } from "antd";
-import SelectWrapper from "../common/SelectWrapper";
+import SelectWrapper from "../../common/SelectWrapper";
 function OptimizationWidget() {
   const userInfoObj = [
     {
