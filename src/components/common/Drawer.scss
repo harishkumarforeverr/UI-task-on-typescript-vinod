@@ -1,0 +1,201 @@
+.drawerContainer {
+  // position: relative;
+  .Drawer_appConatiner_DashboardConatiner {
+    .appConatiner_drawer {
+      position: fixed;
+      right: 23.5rem;
+      top: 2rem;
+    }
+    .i2cControl {
+      cursor: pointer;
+      width: 36px;
+      height: 54px;
+
+      background: #ffffff;
+      border-radius: 8px 0px 0px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 0.4rem;
+      .rightIcon {
+        font-size: 0.81rem;
+      }
+      .i2cLabel {
+        width: 19px;
+        height: 12px;
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 12px;
+        color: #1c99c4;
+
+        p {
+          writing-mode: vertical-lr;
+        }
+      }
+    }
+  }
+  .ant-collapse-content-box {
+    background: #f2f8fb;
+  }
+  .ant-collapse-header-text {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #1c99c4;
+  }
+  .ant-switch,
+  .ant-slider-track {
+    background: #118899;
+  }
+  box-sizing: border-box;
+
+  // position: absolute;
+  width: 330px;
+  height: 221px;
+  // left: 1026px;
+  // top: 58px;
+
+  background: #f2f8fb;
+  border: 1px solid #f2f8fb;
+  box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  #components-slider-demo-mark h4 {
+    margin: 0 0 16px;
+  }
+  #components-slider-demo-mark .ant-slider-with-marks {
+    margin-bottom: 44px;
+  }
+  .drawerContainer_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      opacity: 0.9;
+      // position: absolute;
+      width: 138px;
+      height: 18px;
+      // left: 1036px;
+      // top: 98px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      color: #323232;
+    }
+    .Enabled {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      color: #323232;
+    }
+  }
+  .drawerContainer_address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      opacity: 0.9;
+      // position: absolute;
+      width: 135px;
+      height: 18px;
+      // left: 1036px;
+      // top: 132px;
+      margin: 0;
+      margin-bottom: 10px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      color: #323232;
+    }
+
+    .inputTag {
+      box-sizing: border-box;
+      width: 96%;
+      // position: absolute;
+      // width: 206px;
+      height: 36px;
+      // left: 1036px;
+      // top: 154px;
+
+      background: #ffffff;
+      border: 1px solid #9c9c9c;
+      border-radius: 6px;
+    }
+    .btn {
+      box-sizing: border-box;
+
+      // position: absolute;
+      // width: 97px;
+      margin-top: 25px;
+      height: 36px;
+      // left: 1249px;
+      // top: 154px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      color: #118899;
+
+      border: 1px solid #118899;
+      border-radius: 6px;
+    }
+  }
+  .drawerContainer_precentage {
+    // display: flex;
+    margin-top: 1rem;
+    .ant-slider {
+      top: 10px;
+    }
+    .ant-slider-track {
+      height: 9px;
+    }
+    .ant-slider-mark-text {
+      top: 10px;
+    }
+    .ant-slider-handle {
+      top: 3px;
+    }
+    .ant-slider-step {
+      margin-top: 1px;
+    }
+    p {
+      opacity: 0.9;
+      // position: absolute;
+      width: 181px;
+      height: 18px;
+      // left: 1036px;
+      // top: 206px;
+      margin: 0;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      color: #323232;
+    }
+  }
+}

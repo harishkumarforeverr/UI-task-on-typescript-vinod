@@ -13,41 +13,11 @@ import { paths } from "../../utils/constant";
 import PrivateRoute from "../../routes/PrivateRoute";
 import UserGuidesPage from "../Dashboard/UserGuides/UserGuidesPage";
 import DashboardConatiner from "../Dashboard";
+import DrawerSide from "../common/Drawer";
 function App() {
   const [view, setView] = useState(1);
   return (
-    // <div
-    //   style={{
-    //     height: "100vh",
-    //   }}
-    // >
-    //   <div className="head">
-    //     {" "}
-    //     <Nav />
-    //   </div>
-    //   <div
-    //     style={{
-    //       height: "100%",
-    //     }}
-    //     className="container"
-    //   >
-    //     <div className="sidebar">
-    //       {" "}
-    //       <Sidebar setView={setView} />
-    //     </div>
-    //     <div className="body_container">
-    //       <div className="body">
-    //         {view == 1 && <Dashboard setView={setView} />}
-    //         {view == 2 && <OptimizationWidget />}
-    //         {view == 3 && <QuickOptimizationWidget />}
-    //         {view == 4 && <CircutBoard />}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <Routes>
-      {/* /// public and private route setup here and relavant paths has set here */}
-      {/* <Route path={paths.login} element={<PublicRoute component={Dashboard} />} /> */}
       <Route
         path={paths.Dashboard}
         element={<PrivateRoute component={DashboardConatiner} />}

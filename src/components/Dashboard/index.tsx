@@ -1,20 +1,40 @@
 import React, { useState } from "react";
+import DrawerSide from "../common/Drawer";
 // import QuickOptimizationWidget from "../QuickOptimizationWidget/QuickOptimizationWidget";
 import Dashboard from "./Dashboard";
-// import {
-//   UpCircleOutlined,
-//   SettingOutlined,
-//   ProjectOutlined,
-//   PullRequestOutlined,
-// } from "@ant-design/icons";
+import {
+  LeftOutlined,
+  RightOutlined,
+  UpOutlined,
+  DownOutlined,
+} from "@ant-design/icons";
 import "./index.scss";
 import QuickOptimizationWidget from "./QuickOptimizationWidget/QuickOptimizationWidget";
 function DashboardConatiner() {
   const [view, setView] = useState("Dashboard");
+  const [open, setOpen] = useState(false);
   return (
     <div>
+      <div className="appConatiner_DashboardConatiner">
+        <DrawerSide open={open} setOpen={setOpen} />
+        <div className="appConatiner_drawer">
+          <div
+            onClick={() => {
+              setOpen(true);
+            }}
+            className="i2cControl"
+          >
+            <RightOutlined className="rightIcon" />
+            <span className="i2cLabel">
+              <p>C2I</p>
+            </span>
+          </div>
+        </div>
+      </div>
       {view == "Dashboard" && <Dashboard setView={setView} />}
-      {view == "QuickOptimizationWidget" && <QuickOptimizationWidget setView={setView} />}
+      {view == "QuickOptimizationWidget" && (
+        <QuickOptimizationWidget setView={setView} />
+      )}
     </div>
   );
 }
