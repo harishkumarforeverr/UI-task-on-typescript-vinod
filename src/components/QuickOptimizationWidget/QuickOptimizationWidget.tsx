@@ -6,7 +6,7 @@ import { Button, Card, Checkbox, Select } from "antd";
 import SelectWrapper from "../common/SelectWrapper";
 import { Assests } from "../Assests";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
-function QuickOptimizationWidget() {
+function QuickOptimizationWidget({ setView }: { setView: any }) {
   const cardsObj = [
     {
       title: "Quick Spin",
@@ -90,38 +90,46 @@ function QuickOptimizationWidget() {
                   <div className="actionBtn">
                     <Checkbox onChange={onChange} />
                     <p>Hardware setup has been done manually</p>
-                    <Button>Setup Now</Button>
+                    <Button>
+                      {showCards ? "Setup completed" : "Setup Now"}
+                    </Button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {showCards && (
-            <div className="cardsConatiner">
-              {cardsObj.map((obj) => {
-                return (
-                  <div className="cards">
-                    <div className="card_title">
-                      <h1>
-                        {obj.title}
+          {/* {showCards && ( */}
+          <div
+            style={{
+              opacity: showCards ? 1 : 0.4,
+              cursor: !showCards ? "not-allowed" : "pointer",
+            }}
+            className="cardsConatiner"
+          >
+            {cardsObj.map((obj) => {
+              return (
+                <div className="cards">
+                  <div className="card_title">
+                    <h1>
+                      {obj.title}
 
-                        {obj.subTitle}
-                      </h1>
-                    </div>
-                    <div className="cardContainer">
-                      {" "}
-                      <div>
-                        <p> {obj.desc} </p>
-                        <p>{obj.subDesc}</p>
-                      </div>
-                    </div>
-                    <img className="nextIcons" src={nextIcon} alt="ok" />
+                      {obj.subTitle}
+                    </h1>
                   </div>
-                );
-              })}
-            </div>
-          )}
+                  <div className="cardContainer">
+                    {" "}
+                    <div>
+                      <p> {obj.desc} </p>
+                      <p>{obj.subDesc}</p>
+                    </div>
+                  </div>
+                  <img className="nextIcons" src={nextIcon} alt="ok" />
+                </div>
+              );
+            })}
+          </div>
+          {/* )} */}
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, Card } from "antd"; 
+import { Button, Card } from "antd";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -12,6 +12,8 @@ interface propsType {
   devDesc?: string;
   devSubDesc?: string;
   BtnSelectDeviceOpacity: string;
+  handleChange?: (event: SelectChangeEvent) => void;
+  handleTheMotor?: () => void;
 }
 function SelectWrapper({
   dotColor,
@@ -19,10 +21,9 @@ function SelectWrapper({
   devDesc,
   BtnSelectDeviceOpacity,
   devSubDesc,
+  handleChange,
+  handleTheMotor,
 }: propsType) {
-  const handleChange = (event: SelectChangeEvent) => {
-    // setAge(event.target.value);
-  };
   return (
     <Card className="conatinerCard" bordered={false} style={{ width: 300 }}>
       <div>
@@ -40,9 +41,9 @@ function SelectWrapper({
               label="Select Device*"
               onChange={handleChange}
             >
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              <MenuItem value={10}>samsung galary 1</MenuItem>
+              <MenuItem value={20}>iphone 13 pro</MenuItem>
+              <MenuItem value={30}>macbook pro</MenuItem>
             </Select>
           </FormControl>
         </>
@@ -73,6 +74,7 @@ function SelectWrapper({
           opacity: BtnSelectDeviceOpacity,
         }}
         className="lightRed btn"
+        onClick={handleTheMotor}
       >
         Select Device
       </Button>

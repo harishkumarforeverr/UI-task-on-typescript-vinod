@@ -25,7 +25,8 @@ function Sidebar() {
       icon: (
         <SettingOutlined
           onClick={() => {
-            navigate(paths.OptimizationWidget);
+            navigate(paths.QuickOptimizationWidget);
+            // navigate(paths.OptimizationWidget);
           }}
         />
       ),
@@ -35,20 +36,14 @@ function Sidebar() {
       icon: (
         <ProjectOutlined
           onClick={() => {
-            navigate(paths.QuickOptimizationWidget);
+            navigate(paths.CircutBoard);
           }}
         />
       ),
       title: "Quick tuning",
     },
     {
-      icon: (
-        <PullRequestOutlined
-          onClick={() => {
-            navigate(paths.CircutBoard);
-          }}
-        />
-      ),
+      icon: <PullRequestOutlined onClick={() => {}} />,
       title: "MPET",
     },
   ];

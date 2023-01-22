@@ -12,6 +12,7 @@ import { paths } from "../../utils/constant";
 import PublicRoute from "../../routes/PublicRoute";
 import PrivateRoute from "../../routes/PrivateRoute";
 import UserGuidesPage from "../Dashboard/UserGuides/UserGuidesPage";
+import DashboardConatiner from "../Dashboard";
 function App() {
   const [view, setView] = useState(1);
   return (
@@ -49,16 +50,16 @@ function App() {
       {/* <Route path={paths.login} element={<PublicRoute component={Dashboard} />} /> */}
       <Route
         path={paths.Dashboard}
-        element={<PrivateRoute component={Dashboard} />}
+        element={<PrivateRoute component={DashboardConatiner} />}
       />{" "}
-      <Route
+      {/* <Route
         path={paths.OptimizationWidget}
         element={<PrivateRoute component={OptimizationWidget} />}
-      />{" "}
-      <Route
+      />{" "} */}
+      {/* <Route
         path={paths.QuickOptimizationWidget}
         element={<PrivateRoute component={QuickOptimizationWidget} />}
-      />
+      /> */}
       {/* UserGuidesPage */}
       <Route
         path={paths.CircutBoard}

@@ -23,8 +23,9 @@ function Dashboard({ setView }: { setView: any }) {
   const [motor, setMotor] = useState("");
   const navigate = useNavigate();
   const handleTheMotor = () => {
-    if (motor) {
-      setView(2);
+    console.log(motor);
+    if (motor !== "") {
+      setView("QuickOptimizationWidget");
     }
   };
   const userInfoObj = [
@@ -59,12 +60,16 @@ function Dashboard({ setView }: { setView: any }) {
       link: "/",
     },
   ];
-
+  const handleChange = (event: SelectChangeEvent) => {
+    setMotor(event.target.value);
+  };
   return (
     <div className="dashboard">
       <div className="ConatinersIconsTitle">
         <div>
           <SelectWrapper
+            handleChange={handleChange}
+            handleTheMotor={handleTheMotor}
             BtnSelectDeviceOpacity="1"
             dotColor="#cc0000"
             deviceTitle="MCF8316EVM"
