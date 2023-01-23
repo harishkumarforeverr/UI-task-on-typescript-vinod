@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 // import Dashboard from "../Dashboard/Dashboard";
 // import OptimizationWidget from "../Dashboard/OptimizationWidget/OptimizationWidget";
 // import QuickOptimizationWidget from "../QuickOptimizationWidget/QuickOptimizationWidget";
-import CircutBoard from "../CircutBoard/CircutBoard";
+// import CircutBoard from "../CircutBoard/CircutBoard";
 import { paths } from "../../utils/constant";
 // import PublicRoute from "../../routes/PublicRoute";
 import PrivateRoute from "../../routes/PrivateRoute";
@@ -31,10 +31,10 @@ function App() {
         element={<PrivateRoute component={QuickOptimizationWidget} />}
       /> */}
       {/* UserGuidesPage */}
-      <Route
+      {/* <Route
         path={paths.CircutBoard}
         element={<PrivateRoute component={CircutBoard} />}
-      />
+      /> */}
       <Route
         path={paths.UserGuidesPage}
         element={<PrivateRoute component={UserGuidesPage} />}

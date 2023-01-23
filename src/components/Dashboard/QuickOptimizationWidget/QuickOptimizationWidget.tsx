@@ -8,6 +8,7 @@ import SelectWrapper from "../../common/SelectWrapper";
 // Assests
 import { CheckboxChangeEvent } from "antd/es/checkbox";
 import { Assests } from "../../Assests";
+import { CheckCircleOutlined } from "@ant-design/icons";
 function QuickOptimizationWidget({ setView }: { setView: any }) {
   const cardsObj = [
     {
@@ -36,10 +37,14 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
     },
   ];
   const [showCards, setShowCards] = useState(false);
-
+  const [setup, setSetup] = useState(false);
   const onChange = (e: CheckboxChangeEvent) => {
     const value = e.target.checked;
     setShowCards(value);
+  };
+  const handleTheSetup = () => {
+    console.log("sssssssssssss");
+    setSetup(true);
   };
   return (
     <div className="QuickOptimizationWidget">
@@ -89,13 +94,30 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
                       the USB Connector J2.
                     </p>
                   </div>
-                  <div className="actionBtn">
-                    <Checkbox onChange={onChange} />
-                    <p>Hardware setup has been done manually</p>
-                    <Button>
-                      {showCards ? "Setup completed" : "Setup Now"}
-                    </Button>
-                  </div>
+                  {setup ? (
+                    <div className="setupdone">
+                      <h1>
+                        <span className="icon">
+                          <CheckCircleOutlined />
+                        </span>
+                        The Hardware setup is done
+                      </h1>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="actionBtn">
+                        <Checkbox onChange={onChange} />
+                        <p>Hardware setup has been done manually</p>
+                        {showCards ? (
+                          <Button onClick={handleTheSetup}>
+                            Setup completed
+                          </Button>
+                        ) : (
+                          <Button>Setup Now</Button>
+                        )}
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
@@ -113,22 +135,22 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
               return (
                 <div className="cardsConatiner_card">
                   <div className="cards">
-                  <div className="card_title">
-                    <h1>
-                      {obj.title}
+                    <div className="card_title">
+                      <h1>
+                        {obj.title}
 
-                      {obj.subTitle}
-                    </h1>
-                  </div>
-                  <div className="cardContainer">
-                    {" "}
-                    <div>
-                      <p> {obj.desc} </p>
-                      <p>{obj.subDesc}</p>
+                        {obj.subTitle}
+                      </h1>
                     </div>
+                    <div className="cardContainer">
+                      {" "}
+                      <div>
+                        <p> {obj.desc} </p>
+                        <p>{obj.subDesc}</p>
+                      </div>
+                    </div>
+                    <img className="nextIcons" src={nextIcon} alt="ok" />
                   </div>
-                  <img className="nextIcons" src={nextIcon} alt="ok" />
-                </div>
                 </div>
               );
             })}

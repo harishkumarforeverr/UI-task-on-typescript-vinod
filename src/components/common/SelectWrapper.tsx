@@ -63,7 +63,7 @@ function SelectWrapper({
           className="GuiSupport"
           style={{
             fontSize: "12px",
-            opacity: "0.5",
+            opacity: "0.8",
           }}
         >
           {devSubDesc}

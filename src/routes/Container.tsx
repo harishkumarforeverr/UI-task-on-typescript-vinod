@@ -1,17 +1,18 @@
-import React from "react"; 
-import Nav from "../components/Nav/Nav";
+import React from "react";
+import Header from "../components/Header/Header";
 import Sidebar from "../components/Sidebar/Sidebar";
 
-const Container = (props: any) => { 
+const Container = (props: any) => {
   return (
-     <div
+    <div
       style={{
         height: "100vh",
+        overflow: "hidden",
       }}
     >
       <div className="head">
         {" "}
-        <Nav/>
+        <Header />
       </div>
       <div
         style={{
@@ -21,12 +22,10 @@ const Container = (props: any) => {
       >
         <div className="sidebar">
           {" "}
-          <Sidebar   />
+          <Sidebar />
         </div>
         <div className="body_container">
-          <div className="body">
-             {props.children}
-          </div>
+          <div className="body">{props.children}</div>
         </div>
       </div>
     </div>

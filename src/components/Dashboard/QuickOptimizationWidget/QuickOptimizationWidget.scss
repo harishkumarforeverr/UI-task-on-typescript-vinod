@@ -2,6 +2,7 @@
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
+  padding-right: 20px;
   .Conatiner2sIconsTitle {
     .QuickOptimizationWidget_hardwareSetup {
       display: flex;
@@ -67,6 +68,29 @@
 
             color: #231f20;
           }
+          .setupdone {
+            margin-left: 3rem;
+            margin-top: 1.5rem;
+            h1 {
+              font-family: "Helvetica";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              /* identical to box height, or 150% */
+
+              /* Secondary Color */
+
+              color: #118899;
+            }
+            .icon {
+              .anticon {
+                font-size: 1.3rem;
+              }
+              margin-right: 10px;
+              // border: 1.5px solid #40c36c;
+            }
+          }
           .actionBtn {
             margin-left: 3rem;
             display: flex;
@@ -113,7 +137,7 @@
       .cards {
         padding-top: 1rem;
 
-        opacity: 0.7;
+        // opacity: 0.7;
         text-align: center;
         // padding-top: 3%;
         position: relative;
@@ -124,7 +148,7 @@
         min-height: 342px;
         // left: 140px;
         // top: 424px;
-// margin-left: auto;
+        // margin-left: auto;
         /* Secondary Color */
 
         background: #118899;

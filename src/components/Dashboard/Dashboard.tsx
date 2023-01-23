@@ -95,29 +95,29 @@ function Dashboard({ setView }: { setView: any }) {
           })}
         </div>
       </div>
-      <div>
-        <div className="knowYourDevice">
-          <div className="knowYourDevice_head">
-            <h1>Know Your Device</h1>
-          </div>
-          <div className="knowYourDevice_context">
-            <img src={Assests.DashboardImageCircut} alt="Assests" />
-            <div>
-              <p>
-                The MCF8316A is a 4.5-V to 35-V, 8-A peak integrated three-phase
-                gate driver IC with sensorless field-oriented control for motor
-                drive applications. It provides three accurately trimmed and
-                temperature compensated halfbridge MOSFETS, gate drivers, charge
-                pump, current sense amplifier, linear regulator for the external
-                load and adjustable buck regulator. The I2C interface variant
-                (MCF8316A) also provides a standard I2C interface for
-                configuring the various device settings and reading fault
-                diagnostic information through an external controller.
-              </p>
-            </div>
+      {/* <div> */}
+      <div className="knowYourDevice">
+        <div className="knowYourDevice_head">
+          <h1>Know Your Device</h1>
+        </div>
+        <div className="knowYourDevice_context">
+          <img src={Assests.DashboardImageCircut} alt="Assests" />
+          <div>
+            <p>
+              The MCF8316A is a 4.5-V to 35-V, 8-A peak integrated three-phase
+              gate driver IC with sensorless field-oriented control for motor
+              drive applications. It provides three accurately trimmed and
+              temperature compensated halfbridge MOSFETS, gate drivers, charge
+              pump, current sense amplifier, linear regulator for the external
+              load and adjustable buck regulator. The I2C interface variant
+              (MCF8316A) also provides a standard I2C interface for configuring
+              the various device settings and reading fault diagnostic
+              information through an external controller.
+            </p>
           </div>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }
