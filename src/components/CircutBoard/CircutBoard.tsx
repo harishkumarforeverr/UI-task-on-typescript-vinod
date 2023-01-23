@@ -10,7 +10,8 @@ import circutBoardImage from "../Assests/circutBoard.png";
 function CircutBoard() {
   return (
     <div className="CircutBoard">
-      <img src={circutBoardImage} />
+      {/* <img src={circutBoardImage} /> */}
+      <p>circutBoard page is under progress</p>
     </div>
   );
 }
