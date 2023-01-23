@@ -11,7 +11,7 @@ import {
 import "./index.scss";
 import QuickOptimizationWidget from "./QuickOptimizationWidget/QuickOptimizationWidget";
 function DashboardConatiner() {
-  const [view, setView] = useState("Dashboard");
+  const [view, setView] = useState("QuickOptimizationWidget");
   const [open, setOpen] = useState(false);
   return (
     <div>

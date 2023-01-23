@@ -111,7 +111,8 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
           >
             {cardsObj.map((obj) => {
               return (
-                <div className="cards">
+                <div className="cardsConatiner_card">
+                  <div className="cards">
                   <div className="card_title">
                     <h1>
                       {obj.title}
@@ -127,6 +128,7 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
                     </div>
                   </div>
                   <img className="nextIcons" src={nextIcon} alt="ok" />
+                </div>
                 </div>
               );
             })}

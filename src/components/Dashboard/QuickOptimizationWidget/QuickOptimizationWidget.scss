@@ -9,8 +9,8 @@
       .hardwareSetup {
         display: flex;
         gap: 2rem;
-        width: 887px;
-        height: 326px;
+        min-width: 887px;
+        min-height: 326px;
         padding-left: 1rem;
         background: #f2f8fb;
         border: 1px solid #118899;
@@ -102,23 +102,29 @@
     }
     .cardsConatiner {
       display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
+      justify-content: space-between;
       gap: 1.5%;
       margin-top: 2rem;
       margin-left: 1rem;
+      .cardsConatiner_card {
+        flex-basis: 100%;
+      }
       .cards {
+        padding-top: 1rem;
+
         opacity: 0.7;
         text-align: center;
         // padding-top: 3%;
         position: relative;
         box-sizing: border-box;
-
+        // width: 80%;
         // position: absolute;
-        width: 260px;
-        height: 332px;
+        min-width: 260px;
+        min-height: 342px;
         // left: 140px;
         // top: 424px;
-
+// margin-left: auto;
         /* Secondary Color */
 
         background: #118899;
@@ -140,8 +146,8 @@
           justify-content: center;
           align-items: center;
           box-sizing: border-box;
-          width: 260px;
-          height: 281px;
+          min-width: 260px;
+          min-height: 281px;
           background: #f2f8fb;
           border: 1px solid #f2f8fb;
           box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);

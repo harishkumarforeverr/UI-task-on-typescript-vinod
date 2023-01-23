@@ -1,11 +1,11 @@
 .HeadersIconsTitle {
   display: flex;
   margin-left: 120px;
-  width: 100%;
+  // width: 100%;
   gap: 6%;
   font-size: 1.2rem;
   color: white;
-  height: 4rem;
+  min-height: 4rem;
   align-items: center;
 
   font-family: "Helvetica";
