@@ -29,6 +29,20 @@ function DashboardConatiner() {
               <p>C2I</p>
             </span>
           </div>
+          <div
+            onClick={() => {
+              setOpen(true);
+            }}
+            style={{
+              marginTop: "1.6rem",
+            }}
+            className="i2cControlFalse"
+          >
+            <RightOutlined className="rightIcon" />
+            <span className="i2cLabel">
+              <p>Faults</p>
+            </span>
+          </div>
         </div>
       </div>
       {view == "Dashboard" && <Dashboard setView={setView} />}

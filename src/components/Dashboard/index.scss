@@ -4,7 +4,8 @@
     right: 0;
     top: 2rem;
   }
-  .i2cControl {
+  .i2cControl,
+  .i2cControlFalse {
     cursor: pointer;
     width: 36px;
     height: 54px;
@@ -32,5 +33,9 @@
         writing-mode: vertical-lr;
       }
     }
+  }
+  .i2cControlFalse {
+    width: 36px;
+    height: 86px;
   }
 }
