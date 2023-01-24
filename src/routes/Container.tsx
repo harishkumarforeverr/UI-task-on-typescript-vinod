@@ -7,7 +7,7 @@ const Container = (props: any) => {
     <div
       style={{
         height: "100vh",
-        overflow: "hidden",
+        // overflow: "hidden",
       }}
     >
       <div className="head">
