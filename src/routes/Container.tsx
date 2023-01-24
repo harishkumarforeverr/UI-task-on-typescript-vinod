@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Sidebar from "../components/Sidebar/Sidebar";
-
+import "./Container.scss";
 const Container = (props: any) => {
   return (
     <div
@@ -25,7 +25,7 @@ const Container = (props: any) => {
           <Sidebar />
         </div>
         <div className="body_container">
-          <div className="body">{props.children}</div>
+          <div className="body_contain">{props.children}</div>
         </div>
       </div>
     </div>

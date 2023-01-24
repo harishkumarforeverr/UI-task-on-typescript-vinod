@@ -14,7 +14,7 @@ function DashboardConatiner() {
   const [view, setView] = useState("Dashboard");
   const [open, setOpen] = useState(false);
   return (
-    <div>
+    <>
       {/* <div className="appConatiner_DashboardConatiner">
         <DrawerSide open={open} setOpen={setOpen} />
         <div className="appConatiner_drawer">
@@ -49,7 +49,7 @@ function DashboardConatiner() {
       {view == "QuickOptimizationWidget" && (
         <QuickOptimizationWidget setView={setView} />
       )}
-    </div>
+    </>
   );
 }
 

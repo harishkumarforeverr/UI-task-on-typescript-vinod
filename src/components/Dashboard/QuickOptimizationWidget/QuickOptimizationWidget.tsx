@@ -49,7 +49,7 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
   return (
     <div className="QuickOptimizationWidget">
       <div className="Conatiner2sIconsTitle">
-        <div>
+        <>
           <div className="QuickOptimizationWidget_hardwareSetup">
             <div>
               <SelectWrapper
@@ -126,8 +126,8 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
           {/* {showCards && ( */}
           <div
             style={{
-              opacity: showCards ? 1 : 0.4,
-              cursor: !showCards ? "not-allowed" : "pointer",
+              opacity: setup ? 1 : 0.4,
+              cursor: !setup ? "not-allowed" : "pointer",
             }}
             className="cardsConatiner"
           >
@@ -156,7 +156,7 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
             })}
           </div>
           {/* )} */}
-        </div>
+        </>
       </div>
     </div>
   );
