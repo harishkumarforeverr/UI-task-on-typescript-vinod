@@ -10,7 +10,7 @@ import {
 import "./Dashboard.scss";
 import { paths } from "../../utils/constant";
 import { useNavigate } from "react-router-dom";
-import { Assests } from "../Assests";
+import { Assests } from "./Assests";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { Card } from "antd";
 import SelectWrapper from "../common/SelectWrapper";
