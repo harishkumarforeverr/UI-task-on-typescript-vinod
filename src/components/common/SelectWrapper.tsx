@@ -41,9 +41,9 @@ function SelectWrapper({
               label="Select Device*"
               onChange={handleChange}
             >
-              <MenuItem value={10}>samsung galary 1</MenuItem>
-              <MenuItem value={20}>iphone 13 pro</MenuItem>
-              <MenuItem value={30}>macbook pro</MenuItem>
+              <MenuItem value={10}>MCF83164EVM</MenuItem>
+              <MenuItem value={20}>MCF8315EVM</MenuItem>
+              <MenuItem value={30}>MCF8316EVM</MenuItem>
             </Select>
           </FormControl>
         </>
