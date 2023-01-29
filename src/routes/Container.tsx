@@ -3,10 +3,7 @@ import Header from "../components/Header/Header";
 import Nav from "../components/Nav/Nav";
 
 import "./Container.scss";
-{
-  /* <Header />
-<Nav /> */
-}
+ 
 const Container = (props: any) => {
   return (
     <div
