@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "../../Header/Header";
-import Nav from "../../Nav/Nav";
-// import Header from "../components/Header/Header";
-// import Sidebar from "../components/Sidebar/Sidebar";
+import Header from "../components/Header/Header";
+import Nav from "../components/Nav/Nav";
+
 import "./Container.scss";
 {
   /* <Header />
@@ -13,8 +12,7 @@ const Container = (props: any) => {
     <div
       style={
         {
-          // height: "100vh",
-          // overflow: "hidden",
+          
         }
       }
     >

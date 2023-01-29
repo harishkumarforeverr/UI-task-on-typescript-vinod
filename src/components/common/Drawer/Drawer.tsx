@@ -14,7 +14,7 @@ import {
   FormControl,
   InputLabel,
   MenuItem,
-  // Select,
+  
   SelectChangeEvent,
 } from "@mui/material";
 
@@ -32,12 +32,7 @@ const marks: SliderMarks = {
   25: "25",
   50: "50",
   100: "100",
-  // 100: {
-  //   style: {
-  //     color: "#f50",
-  //   },
-  //   label: <strong>100°C</strong>,
-  // },
+  
 };
 const motorObj = [
   {
@@ -228,17 +223,11 @@ const DrawerSide = (props: any) => {
           className="drawerConatiner_Parent"
         >
           <div className="appConatiner_DashboardConatiner">
-            {/* <DrawerSide
-              open={open}
-              setOpen={setOpen}
-              drawerType={drawerType}
-              setDrawerType={setDrawerType}
-             
-            /> */}
+            
             <div
               style={
                 {
-                  // opacity: open && drawerType == "i2c" ? 1 : 0.5,
+                 
                 }
               }
               className={
@@ -284,7 +273,7 @@ const DrawerSide = (props: any) => {
               <div
                 style={
                   {
-                    // opacity: open && drawerType == "faults" ? 1 : 0.5,
+                    
                   }
                 }
                 onClick={() => {
@@ -322,55 +311,6 @@ const DrawerSide = (props: any) => {
               </div>
             </div>
           </div>
-          {/* <div className="Drawer_appConatiner_DashboardConatiner">
-            <div className="appConatiner_drawer">
-              <div
-                onClick={() => {
-                  if (drawerType == "i2c" && open) {
-                    setOpen(false);
-                  } else {
-                    setOpen(true);
-                  }
-                  setDrawerType("i2c");
-                }}
-                className="i2cControl"
-              >
-                {drawerType == "i2c" ? (
-                  <RightOutlined className="rightIcon" />
-                ) : (
-                  <LeftOutlined className="rightIcon" />
-                )}
-
-                <span className="i2cLabel">
-                  <p>C2I </p>
-                </span>
-              </div>
-            </div>
-            <div className="appConatiner_faultsdrawer">
-              <div
-                onClick={() => {
-                  // setOpen(true);
-                  if (drawerType == "faults" && open) {
-                    setOpen(false);
-                  } else {
-                    setOpen(true);
-                  }
-                  setDrawerType("faults");
-                }}
-                className="faultsControl"
-              >
-                {drawerType == "faults" ? (
-                  <RightOutlined className="rightIcon" />
-                ) : (
-                  <LeftOutlined className="rightIcon" />
-                )}
-
-                <span className="faultsLabel">
-                  <p>Faults</p>
-                </span>
-              </div>
-            </div>
-          </div> */}
           {open && (
             <div className="drawerBody">
               {drawerType == "i2c" && (
