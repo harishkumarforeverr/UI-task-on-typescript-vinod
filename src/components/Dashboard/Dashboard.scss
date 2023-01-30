@@ -4,7 +4,9 @@
   margin-right: 20px;
   margin-top: 20px;
   gap: 37px;
+  padding-left: 2%;
   height: 52rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   overflow-y: hidden;
   padding-bottom: 2rem;
@@ -36,9 +38,9 @@
       width: unset !important;
       min-height: 8.5 !important;
 
-      background: #f2f8fb;
-      box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
-      border-radius: 6px;
+      background:  #F2F8FB !important;
+      box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2) !important;
+      border-radius: 6px !important;
     }
     .rightConatinesIcons {
       display: grid;
@@ -60,12 +62,16 @@
       height: 45px !important;
     }
     .titleRightConatiner {
-      font-family: Helvetica;
+      font-family: 'Helvetica';
       font-style: normal;
       font-weight: 400;
-      font-size: 15px;
-      line-height: 21px;
-      color: #1c99c4;
+      font-size: 18px;
+      line-height: 21px; 
+      margin-top: 4px;
+      color: #1C99C4;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 
@@ -110,23 +116,28 @@
       }
     }
     .knowYourDevice_context {
-      margin-top: 20px;
+      // margin-top: 20px;
       display: grid;
       justify-content: center;
       align-items: center;
-      img {
+      .imageKnowContainer{
         display: grid;
         justify-content: center;
         align-items: center;
         // min-width: 469px;
         // min-height: 301px;
-        width: 95%;
+        // padding: 2rem;
+        margin: 1rem 0;
+      }
+      img {
+        width: 93%;
         margin: 0 auto;
+      
       }
       p {
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
-        margin-top: 20px;
+        // margin-top: 20px;
         // min-width: 469px;
         min-height: 167px;
 
@@ -134,7 +145,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
-        line-height: 28px;
+        line-height: 2rem;
         text-align: justify;
         letter-spacing: 0.04em;
         font-family: Roboto;
@@ -142,5 +153,19 @@
         color: #231f20;
       }
     }
+  }
+}
+
+.GetImages{
+  position: relative;
+  .GetImages_child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_inner{
+    width: 36px;
+height: 36px;
   }
 }

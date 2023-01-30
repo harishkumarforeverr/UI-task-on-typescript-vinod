@@ -1,9 +1,11 @@
 .QuickOptimizationWidget {
+  padding-left: 2%; 
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
   padding-right: 20px;
   height: 100%;
+  padding-right: 3%;
   .Conatiner2sIconsTitle {
     height: 100%;
     .QuickOptimizationWidget_hardwareSetup {
@@ -94,6 +96,7 @@
             gap: 1rem;
             margin-top: 3rem;
             p {
+              white-space: nowrap;
               margin: 0;
               font-family: Helvetica;
               font-style: normal;
