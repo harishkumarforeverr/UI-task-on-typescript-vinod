@@ -24,9 +24,9 @@
     "electron-is-dev": "^2.0.0",
     "electron-log": "^4.4.8",
     "electron-reload": "^2.0.0-alpha.1",
-    "node-sass": "^8.0.0",
     "history": "^5.3.0",
     "i": "^0.3.7",
+    "node-sass": "^8.0.0",
     "npm": "^9.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -42,7 +42,9 @@
     "build:desktop": "tsc -p public/tsconfig.json",
     "start:desktop": "npm run build:desktop && electron ./build/app.js",
     "electron-dev": "concurrently \"BROWSER=none npm run start:web\" \"wait-on http://localhost:3000 && npm run start:desktop .\"",
-    "test": "react-scripts test",
+    "test": "react-scripts test --silent",
+    "testD": "react-scripts test",
+    "coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -68,6 +70,25 @@
     "cross-env": "^7.0.3",
     "electron": "^22.0.0",
     "electron-builder": "^23.6.0",
+    "enzyme": "^3.11.0",
+    "@cfaester/enzyme-adapter-react-18": "^0.6.0",
+    "fetch-mock": "^5.12.2",
+    "jest-cli": "^20.0.4",
+    "react-test-renderer": "^15.6.1",
+    "redux-mock-store": "^1.2.3",
     "wait-on": "^7.0.1"
+  },
+  "jest": {
+    "resetMocks": false,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90,
+        "statements": 90
+      }
+    }
   }
 }

@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard im testin g fagagahajkb jajd asd as snapshot test cases in Dashboard  1`] = `
+"<BrowserRouter>
+  <Router basename={[undefined]} location={{...}} navigationType=\\"POP\\" navigator={{...}}>
+    <Dashboard>
+      <div className=\\"dashboard\\">
+        <div className=\\"ConatinersIconsTitle\\">
+          <div>
+            <SelectWrapper handleChange={[Function: handleChange]} handleTheMotor={[Function: handleTheMotor]} BtnSelectDeviceOpacity=\\"1\\" dotColor=\\"#cc0000\\" deviceTitle=\\"MCF8316EVM\\" devDesc=\\"This GUI supports MCF8316EVM\\">
+              <Card className=\\"conatinerCard\\" bordered={false} style={{...}}>
+                <Empty />
+                <div style={{...}} className=\\"ant-card conatinerCard css-dev-only-do-not-override-1n7nwfa\\">
+                  <div className=\\"ant-card-body\\" style={{...}}>
+                    <div>
+                      <ForwardRef(FormControl) fullWidth={true}>
+                        <MuiFormControlRoot as=\\"div\\" ownerState={{...}} className=\\"MuiFormControl-root MuiFormControl-fullWidth\\">
+                          <Insertion cache={{...}} serialized={{...}} isStringTag={true} />
+                          <div className=\\"MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root\\">
+                            <ForwardRef(InputLabel) shrink={true} id=\\"selectlabelCommon\\">
+                              <MuiInputLabelRoot data-shrink={true} ownerState={{...}} className=\\"MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined\\" id=\\"selectlabelCommon\\" classes={{...}}>
+                                <Insertion cache={{...}} serialized={{...}} isStringTag={false} />
+                                <ForwardRef(FormLabel) data-shrink={true} className=\\"MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-11u0km3-MuiInputLabel-root\\" id=\\"selectlabelCommon\\" classes={{...}}>
+                                  <MuiFormLabelRoot as=\\"label\\" ownerState={{...}} className=\\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-11u0km3-MuiInputLabel-root\\" data-shrink={true} id=\\"selectlabelCommon\\" classes={{...}}>
+                                    <Insertion cache={{...}} serialized={{...}} isStringTag={true} />
+                                    <label className=\\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root\\" data-shrink={true} id=\\"selectlabelCommon\\">
+                                      Select Device*
+                                    </label>
+                                  </MuiFormLabelRoot>
+                                </ForwardRef(FormLabel)>
+                              </MuiInputLabelRoot>
+                            </ForwardRef(InputLabel)>
+                            <ForwardRef(Select) sx={{...}} labelId=\\"selectlabelCommon\\" id=\\"demo-simple-select\\" label=\\"Select Device*\\" onChange={[Function: handleChange]} defaultValue=\\"Select Your Device\\">
+                              <MuiSelectRoot label=\\"Select Device*\\" inputComponent={{...}} inputProps={{...}} className=\\"\\" variant=\\"outlined\\" sx={{...}} onChange={[Function: handleChange]} defaultValue=\\"Select Your Device\\">
+                                <Insertion cache={{...}} serialized={{...}} isStringTag={false} />
+                                <ForwardRef(OutlinedInput) label=\\"Select Device*\\" inputComponent={{...}} inputProps={{...}} className=\\" css-1d96ykd-MuiSelect-root\\" onChange={[Function: handleChange]} defaultValue=\\"Select Your Device\\">
+                                  <ForwardRef(InputBase) slots={{...}} renderSuffix={[Function: renderSuffix]} fullWidth={false} inputComponent={{...}} multiline={false} type=\\"text\\" inputProps={{...}} className=\\" css-1d96ykd-MuiSelect-root\\" onChange={[Function: handleChange]} defaultValue=\\"Select Your Device\\" classes={{...}}>
+                                    <GlobalStyles styles={{...}}>
+                                      <GlobalStyles styles={{...}} defaultTheme={{...}}>
+                                        <EmotionGlobal styles={{...}} />
+                                      </GlobalStyles>
+                                    </GlobalStyles>
+                                    <MuiOutlinedInputRoot ownerState={{...}} onClick={[Function: handleClick]} classes={{...}} className=\\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1d96ykd-MuiSelect-root\\">
+                                      <Insertion cache={{...}} serialized={{...}} isStringTag={true} />
+                                      <div onClick={[Function: handleClick]} className=\\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-4gwozz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\\">
+                                        <MuiOutlinedInputInput ownerState={{...}} aria-invalid={false} aria-describedby={[undefined]} autoComplete={[undefined]} autoFocus={[undefined]} defaultValue=\\"Select Your Device\\" disabled={false} id={[undefined]} onAnimationStart={[Function: handleAutoFill]} name={[undefined]} placeholder={[undefined]} readOnly={[undefined]} required={false} rows={[undefined]} value={[undefined]} onKeyDown={[undefined]} onKeyUp={[undefined]} type={[undefined]} IconComponent={{...}} variant=\\"outlined\\" multiple={false} autoWidth={false} defaultOpen={false} displayEmpty={false} labelId=\\"selectlabelCommon\\" MenuProps={[undefined]} onClose={[undefined]} onOpen={[undefined]} open={[undefined]} renderValue={[undefined]} SelectDisplayProps={{...}} classes={{...}} as={{...}} className=\\"MuiInputBase-input MuiOutlinedInput-input\\" onBlur={[Function: handleBlur]} onChange={[Function: handleChange]} onFocus={[Function: handleFocus]}>
+                                          <Insertion cache={{...}} serialized={{...}} isStringTag={false} />
+                                          <ForwardRef(SelectInput) aria-invalid={false} aria-describedby={[undefined]} autoComplete={[undefined]} autoFocus={[undefined]} defaultValue=\\"Select Your Device\\" disabled={false} id={[undefined]} onAnimationStart={[Function: handleAutoFill]} name={[undefined]} placeholder={[undefined]} readOnly={[undefined]} required={false} rows={[undefined]} value={[undefined]} onKeyDown={[undefined]} onKeyUp={[undefined]} type={[undefined]} IconComponent={{...}} variant=\\"outlined\\" multiple={false} autoWidth={false} defaultOpen={false} displayEmpty={false} labelId=\\"selectlabelCommon\\" MenuProps={[undefined]} onClose={[undefined]} onOpen={[undefined]} open={[undefined]} renderValue={[undefined]} SelectDisplayProps={{...}} classes={{...}} className=\\"MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input\\" onBlur={[Function: handleBlur]} onChange={[Function: handleChange]} onFocus={[Function: handleFocus]}>
+                                            <MuiSelectSelect tabIndex={0} role=\\"button\\" aria-disabled={[undefined]} aria-expanded=\\"false\\" aria-haspopup=\\"listbox\\" aria-label={[undefined]} aria-labelledby=\\"selectlabelCommon demo-simple-select\\" aria-describedby={[undefined]} onKeyDown={[Function: handleKeyDown]} onMouseDown={[Function: handleMouseDown]} onBlur={[Function: handleBlur]} onFocus={[Function: handleFocus]} id=\\"demo-simple-select\\" ownerState={{...}} className=\\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input\\">
+                                              <Insertion cache={{...}} serialized={{...}} isStringTag={true} />
+                                              <div tabIndex={0} role=\\"button\\" aria-disabled={[undefined]} aria-expanded=\\"false\\" aria-haspopup=\\"listbox\\" aria-label={[undefined]} aria-labelledby=\\"selectlabelCommon demo-simple-select\\" aria-describedby={[undefined]} onKeyDown={[Function: handleKeyDown]} onMouseDown={[Function: handleMouseDown]} onBlur={[Function: handleBlur]} onFocus={[Function: handleFocus]} id=\\"demo-simple-select\\" className=\\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\\">
+                                                Select Your Device
+                                              </div>
+                                            </MuiSelectSelect>
+                                            <MuiSelectNativeInput value=\\"Select Your Device\\" name={[undefined]} aria-hidden={true} onChange={[Function: handleChange]} tabIndex={-1} disabled={false} className=\\"MuiSelect-nativeInput\\" autoFocus={[undefined]} ownerState={{...}} autoComplete={[undefined]} id={[undefined]} onAnimationStart={[Function: handleAutoFill]} placeholder={[undefined]} required={false} rows={[undefined]} onKeyDown={[undefined]} onKeyUp={[undefined]} classes={{...}}>
+                                              <Insertion cache={{...}} serialized={{...}} isStringTag={true} />
+                                              <input value=\\"Select Your Device\\" name={[undefined]} aria-hidden={true} onChange={[Function: handleChange]} tabIndex={-1} disabled={false} className=\\"MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput\\" autoFocus={[undefined]} autoComplete={[undefined]} id={[undefined]} onAnimationStart={[Function: handleAutoFill]} placeholder={[undefined]} required={false} rows={[undefined]} onKeyDown={[undefined]} onKeyUp={[undefined]} />
+                                            </MuiSelectNativeInput>
+                                            <MuiSelectIcon as={{...}} className=\\"MuiSelect-icon MuiSelect-iconOutlined\\" ownerState={{...}}>
+                                              <Insertion cache={{...}} serialized={{...}} isStringTag={false} />
+                                              <ForwardRef(ArrowDropDownIcon) className=\\"MuiSelect-icon MuiSelect-iconOutlined css-3qbkez-MuiSelect-icon\\">
+                                                <ForwardRef(SvgIcon) data-testid=\\"ArrowDropDownIcon\\" className=\\"MuiSelect-icon MuiSelect-iconOutlined css-3qbkez-MuiSelect-icon\\">
+                                                  <MuiSvgIconRoot as=\\"svg\\" className=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-3qbkez-MuiSelect-icon\\" focusable=\\"false\\" color={[undefined]} aria-hidden={true} role={[undefined]} viewBox=\\"0 0 24 24\\" data-testid=\\"ArrowDropDownIcon\\" ownerState={{...}}>
+                                                    <Insertion cache={{...}} serialized={{...}} isStringTag={true} />
+                                                    <svg className=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon\\" focusable=\\"false\\" color={[undefined]} aria-hidden={true} role={[undefined]} viewBox=\\"0 0 24 24\\" data-testid=\\"ArrowDropDownIcon\\">
+                                                      <path d=\\"M7 10l5 5 5-5z\\" />
+                                                    </svg>
+                                                  </MuiSvgIconRoot>
+                                                </ForwardRef(SvgIcon)>
+                                              </ForwardRef(ArrowDropDownIcon)>
+                                            </MuiSelectIcon>
+                                            <ForwardRef(Menu) id=\\"menu-\\" anchorEl={{...}} open={false} onClose={[Function: handleClose]} anchorOrigin={{...}} transformOrigin={{...}} MenuListProps={{...}} PaperProps={{...}}>
+                                              <MuiMenuRoot onClose={[Function: handleClose]} anchorOrigin={{...}} transformOrigin={{...}} PaperProps={{...}} className=\\"MuiMenu-root\\" open={false} transitionDuration=\\"auto\\" TransitionProps={{...}} ownerState={{...}} id=\\"menu-\\" anchorEl={{...}} classes={[undefined]}>
+                                                <Insertion cache={{...}} serialized={{...}} isStringTag={false} />
+                                                <ForwardRef(Popover) onClose={[Function: handleClose]} anchorOrigin={{...}} transformOrigin={{...}} PaperProps={{...}} className=\\"MuiMenu-root css-oouctw-MuiMenu-root\\" open={false} transitionDuration=\\"auto\\" TransitionProps={{...}} id=\\"menu-\\" anchorEl={{...}} classes={[undefined]}>
+                                                  <MuiPopoverRoot BackdropProps={{...}} className=\\"MuiPopover-root MuiMenu-root css-oouctw-MuiMenu-root\\" container={{...}} open={false} ownerState={{...}} onClose={[Function: handleClose]} id=\\"menu-\\" classes={[undefined]}>
+                                                    <Insertion cache={{...}} serialized={{...}} isStringTag={false} />
+                                                    <ForwardRef(Modal) BackdropProps={{...}} className=\\"MuiPopover-root MuiMenu-root css-bclbye-MuiPopover-root-MuiMenu-root\\" container={{...}} open={false} onClose={[Function: handleClose]} id=\\"menu-\\">
+                                                      <ForwardRef(ModalUnstyled) slots={{...}} slotProps={{...}} onTransitionEnter={[Function: onTransitionEnter]} onTransitionExited={[Function: onTransitionExited]} className=\\"MuiPopover-root MuiMenu-root css-bclbye-MuiPopover-root-MuiMenu-root\\" container={{...}} open={false} onClose={[Function: handleClose]} id=\\"menu-\\" classes={[undefined]} closeAfterTransition={false} disableAutoFocus={false} disableEnforceFocus={false} disableEscapeKeyDown={false} disablePortal={false} disableRestoreFocus={false} disableScrollLock={false} hideBackdrop={false} keepMounted={false} />
+                                                    </ForwardRef(Modal)>
+                                                  </MuiPopoverRoot>
+                                                </ForwardRef(Popover)>
+                                              </MuiMenuRoot>
+                                            </ForwardRef(Menu)>
+                                          </ForwardRef(SelectInput)>
+                                        </MuiOutlinedInputInput>
+                                        <MuiOutlinedInputNotchedOutline ownerState={{...}} className=\\"MuiOutlinedInput-notchedOutline\\" label=\\"Select Device*\\" notched={true}>
+                                          <Insertion cache={{...}} serialized={{...}} isStringTag={false} />
+                                          <NotchedOutline className=\\"MuiOutlinedInput-notchedOutline css-rki20w-MuiOutlinedInput-notchedOutline\\" label=\\"Select Device*\\" notched={true}>
+                                            <Styled(fieldset) aria-hidden={true} className=\\"MuiOutlinedInput-notchedOutline css-rki20w-MuiOutlinedInput-notchedOutline\\" ownerState={{...}}>
+                                              <Insertion cache={{...}} serialized={{...}} isStringTag={true} />
+                                              <fieldset aria-hidden={true} className=\\"MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline\\">
+                                                <Styled(legend) ownerState={{...}}>
+                                                  <Insertion cache={{...}} serialized={{...}} isStringTag={true} />
+                                                  <legend className=\\"css-14lo706\\">
+                                                    <span>
+                                                      Select Device*
+                                                    </span>
+                                                  </legend>
+                                                </Styled(legend)>
+                                              </fieldset>
+                                            </Styled(fieldset)>
+                                          </NotchedOutline>
+                                        </MuiOutlinedInputNotchedOutline>
+                                      </div>
+                                    </MuiOutlinedInputRoot>
+                                  </ForwardRef(InputBase)>
+                                </ForwardRef(OutlinedInput)>
+                              </MuiSelectRoot>
+                            </ForwardRef(Select)>
+                          </div>
+                        </MuiFormControlRoot>
+                      </ForwardRef(FormControl)>
+                    </div>
+                    <div>
+                      <div className=\\"deatiles\\">
+                        <span style={{...}} className=\\"ColorContainer\\" />
+                        <span className=\\"numberText\\">
+                          MCF8316EVM
+                        </span>
+                      </div>
+                      <p className=\\"GuiSupport\\">
+                        This GUI supports MCF8316EVM
+                      </p>
+                      <p className=\\"GuiSupport\\" style={{...}} />
+                    </div>
+                    <Button style={{...}} className=\\"lightRed btn\\" onClick={[Function: handleTheMotor]}>
+                      <Empty />
+                      <Wave disabled={false}>
+                        <button style={{...}} onClick={[Function: handleClick]} type=\\"button\\" className=\\"ant-btn css-dev-only-do-not-override-1n7nwfa ant-btn-default lightRed btn\\" disabled={false}>
+                          <LoadingIcon existIcon={false} prefixCls=\\"ant-btn\\" loading={false}>
+                            <CSSMotion visible={false} motionName=\\"ant-btn-loading-icon-motion\\" removeOnLeave={true} onAppearStart={[Function: getCollapsedWidth]} onAppearActive={[Function: getRealWidth]} onEnterStart={[Function: getCollapsedWidth]} onEnterActive={[Function: getRealWidth]} onLeaveStart={[Function: getRealWidth]} onLeaveActive={[Function: getCollapsedWidth]}>
+                              <DomWrapper />
+                            </CSSMotion>
+                          </LoadingIcon>
+                          <span>
+                            Select Device
+                          </span>
+                        </button>
+                      </Wave>
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            </SelectWrapper>
+          </div>
+          <div className=\\"cardsRigghtContainer\\">
+            <Card className=\\"conatinerCardImage\\" bordered={false} style={{...}} onClick={[Function: onClick]}>
+              <Empty />
+              <div style={{...}} onClick={[Function: onClick]} className=\\"ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa\\">
+                <div className=\\"ant-card-body\\" style={{...}}>
+                  <div className=\\"rightConatinesIcons\\">
+                    <GetImages>
+                      <div className=\\"GetImages\\">
+                        <img className=\\"ellipse_image\\" src=\\"Ellipse.png\\" />
+                        <div className=\\"GetImages_child\\">
+                          <img className=\\"image_inner\\" src=\\"cardImage_1.png\\" alt=\\"image_inner\\" />
+                           
+                        </div>
+                      </div>
+                    </GetImages>
+                  </div>
+                  <div className=\\"titleRightConatiner\\">
+                    Users&#39;s Guide
+                  </div>
+                </div>
+              </div>
+            </Card>
+            <Card className=\\"conatinerCardImage\\" bordered={false} style={{...}} onClick={[Function: onClick]}>
+              <Empty />
+              <div style={{...}} onClick={[Function: onClick]} className=\\"ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa\\">
+                <div className=\\"ant-card-body\\" style={{...}}>
+                  <div className=\\"rightConatinesIcons\\">
+                    <GetImages>
+                      <div className=\\"GetImages\\">
+                        <img className=\\"ellipse_image\\" src=\\"Ellipse.png\\" />
+                        <div className=\\"GetImages_child\\">
+                          <img className=\\"image_inner\\" src=\\"cardImage_2.png\\" alt=\\"image_inner\\" />
+                           
+                        </div>
+                      </div>
+                    </GetImages>
+                  </div>
+                  <div className=\\"titleRightConatiner\\">
+                    Product Page
+                  </div>
+                </div>
+              </div>
+            </Card>
+            <Card className=\\"conatinerCardImage\\" bordered={false} style={{...}} onClick={[Function: onClick]}>
+              <Empty />
+              <div style={{...}} onClick={[Function: onClick]} className=\\"ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa\\">
+                <div className=\\"ant-card-body\\" style={{...}}>
+                  <div className=\\"rightConatinesIcons\\">
+                    <GetImages>
+                      <div className=\\"GetImages\\">
+                        <img className=\\"ellipse_image\\" src=\\"Ellipse.png\\" />
+                        <div className=\\"GetImages_child\\">
+                          <img className=\\"image_inner\\" src=\\"cardImage_3.png\\" alt=\\"image_inner\\" />
+                           
+                        </div>
+                      </div>
+                    </GetImages>
+                  </div>
+                  <div className=\\"titleRightConatiner\\">
+                    Data Sheet
+                  </div>
+                </div>
+              </div>
+            </Card>
+            <Card className=\\"conatinerCardImage\\" bordered={false} style={{...}} onClick={[Function: onClick]}>
+              <Empty />
+              <div style={{...}} onClick={[Function: onClick]} className=\\"ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa\\">
+                <div className=\\"ant-card-body\\" style={{...}}>
+                  <div className=\\"rightConatinesIcons\\">
+                    <GetImages>
+                      <div className=\\"GetImages\\">
+                        <img className=\\"ellipse_image\\" src=\\"Ellipse.png\\" />
+                        <div className=\\"GetImages_child\\">
+                          <img className=\\"image_inner\\" src=\\"cardImage_4.png\\" alt=\\"image_inner\\" />
+                           
+                        </div>
+                      </div>
+                    </GetImages>
+                  </div>
+                  <div className=\\"titleRightConatiner\\">
+                    Tuning Page
+                  </div>
+                </div>
+              </div>
+            </Card>
+            <Card className=\\"conatinerCardImage\\" bordered={false} style={{...}} onClick={[Function: onClick]}>
+              <Empty />
+              <div style={{...}} onClick={[Function: onClick]} className=\\"ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa\\">
+                <div className=\\"ant-card-body\\" style={{...}}>
+                  <div className=\\"rightConatinesIcons\\">
+                    <GetImages>
+                      <div className=\\"GetImages\\">
+                        <img className=\\"ellipse_image\\" src=\\"Ellipse.png\\" />
+                        <div className=\\"GetImages_child\\">
+                          <img className=\\"image_inner\\" src=\\"cardImage_5.png\\" alt=\\"image_inner\\" />
+                           
+                        </div>
+                      </div>
+                    </GetImages>
+                  </div>
+                  <div className=\\"titleRightConatiner\\">
+                    Tools Page
+                  </div>
+                </div>
+              </div>
+            </Card>
+            <Card className=\\"conatinerCardImage\\" bordered={false} style={{...}} onClick={[Function: onClick]}>
+              <Empty />
+              <div style={{...}} onClick={[Function: onClick]} className=\\"ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa\\">
+                <div className=\\"ant-card-body\\" style={{...}}>
+                  <div className=\\"rightConatinesIcons\\">
+                    <GetImages>
+                      <div className=\\"GetImages\\">
+                        <img className=\\"ellipse_image\\" src=\\"Ellipse.png\\" />
+                        <div className=\\"GetImages_child\\">
+                          <img className=\\"image_inner\\" src=\\"cardImage_6.png\\" alt=\\"image_inner\\" />
+                           
+                        </div>
+                      </div>
+                    </GetImages>
+                  </div>
+                  <div className=\\"titleRightConatiner\\">
+                    E2E testing
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+        <div className=\\"knowYourDevice\\">
+          <div className=\\"knowYourDevice_head\\">
+            <h1>
+              Know Your Device
+            </h1>
+          </div>
+          <div className=\\"knowYourDevice_context\\">
+            <div className=\\"imageKnowContainer\\">
+              <img src=\\"DashboardImageCircut.png\\" alt=\\"Assests\\" />
+            </div>
+              
+            <div>
+              <p>
+                The MCF8316A is a 4.5-V to 35-V, 8-A peak integrated three-phase gate driver IC with sensorless field-oriented control for motor drive applications. It provides three accurately trimmed and temperature compensated halfbridge MOSFETS, gate drivers, charge pump, current sense amplifier, linear regulator for the external load and adjustable buck regulator. The I2C interface variant (MCF8316A) also provides a standard I2C interface for configuring the various device settings and reading fault diagnostic information through an external controller.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Dashboard>
+  </Router>
+</BrowserRouter>"
+`;
