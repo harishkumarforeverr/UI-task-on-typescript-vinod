@@ -32,7 +32,7 @@ function Dashboard({ setView }: { setView: any }) {
   const GetImages = (props: any) => {
     return (
       <div className="GetImages">
-        <img src={Assests.Ellipse} />
+        <img className="ellipse_image" src={Assests.Ellipse} />
         <div className="GetImages_child">{props.children}</div>
       </div>
     );

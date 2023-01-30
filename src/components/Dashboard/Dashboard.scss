@@ -65,10 +65,11 @@
       font-family: 'Helvetica';
       font-style: normal;
       font-weight: 400;
-      font-size: 18px;
-      line-height: 21px; 
+      font-size: 20px;
+      line-height: 21px;
       margin-top: 4px;
       color: #1C99C4;
+      white-space: nowrap;
       &:hover{
         text-decoration: underline;
       }
@@ -97,7 +98,7 @@
       // min-width: 529px;
       min-height: 48px;
       background: #d4e5ee;
-      border-bottom: 1px solid #1c99c4;
+      border-bottom: 2px solid #1c99c4;
       border-radius: 6px 6px 0px 0px;
       display: flex;
       align-items: center;
@@ -109,7 +110,7 @@
         font-family: Helvetica;
         font-style: normal;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 14px;
         letter-spacing: 0.04em;
 
         color: #1c99c4;
@@ -144,7 +145,7 @@
         font-family: Helvetica;
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 2rem;
         text-align: justify;
         letter-spacing: 0.04em;
@@ -158,6 +159,9 @@
 
 .GetImages{
   position: relative;
+  .ellipse_image{
+    width: 4rem;
+  }
   .GetImages_child{
     position: absolute;
     top: 50%;
@@ -165,7 +169,7 @@
     transform: translate(-50%, -50%);
   }
   .image_inner{
-    width: 36px;
-height: 36px;
+    width: 2.5rem;
+height: 2.5rem;
   }
 }
