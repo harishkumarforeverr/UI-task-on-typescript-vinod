@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`creating the snapshot of the compoenent correctly 1`] = `
-<div>
-  UserGuidesPage page is under progress
-</div>
-`;
