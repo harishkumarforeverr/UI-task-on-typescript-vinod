@@ -163,7 +163,13 @@ exports[`renders correctly 1`] = `
         <div
           className="body_contain"
         >
-          <div>
+          <div
+            style={
+              Object {
+                "minHeight": "30rem",
+              }
+            }
+          >
             <div
               style={
                 Object {
@@ -308,7 +314,7 @@ exports[`renders correctly 1`] = `
                             type="button"
                           >
                             <span>
-                              Select Device
+                               Select Device
                             </span>
                           </button>
                         </div>

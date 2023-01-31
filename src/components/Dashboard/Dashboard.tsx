@@ -14,7 +14,7 @@ import { Assests } from "./Assests";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { Card } from "antd";
 import { usersLinks } from "./pdf/index.js";
-import SelectWrapper from "../common/SelectWrapper";
+import SelectWrapper from "./SelectWrapper/SelectWrapper";
 function Dashboard({ setView }: { setView: any }) {
   // const [age, setAge] = React.useState<string>("");
 
@@ -99,7 +99,7 @@ function Dashboard({ setView }: { setView: any }) {
             handleChange={handleChange}
             handleTheMotor={handleTheMotor}
             BtnSelectDeviceOpacity="1"
-            dotColor="#cc0000"
+            dotColor={Assests.bubbleRed}
             deviceTitle="MCF8316EVM"
             devDesc="This GUI supports MCF8316EVM"
             // devSubDesc="Correct device detected : MCF8316A"

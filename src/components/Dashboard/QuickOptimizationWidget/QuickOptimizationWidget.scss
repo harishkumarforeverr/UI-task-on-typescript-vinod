@@ -10,11 +10,13 @@
     height: 100%;
     .QuickOptimizationWidget_hardwareSetup {
       display: flex;
-      gap: 2rem;
+      // gap: 2rem;
+      gap:3%;
       .hardwareSetup {
         display: flex;
         gap: 2rem;
-        min-width: 887px;
+        // min-width: 887px;
+        width: 100%;
         min-height: 373px;
         padding-left: 1rem;
         background: #f2f8fb;

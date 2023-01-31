@@ -6,8 +6,10 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import "./SelectWrapper.scss";
+import ButtonWrapper from "../ButtonWrapper/ButtonWrapper";
+import { Assests } from "../Assests";
 interface propsType {
-  dotColor: string;
+  dotColor: any;
   deviceTitle: string;
   devDesc?: string;
   devSubDesc?: string;
@@ -67,12 +69,19 @@ function SelectWrapper({
       </div>
       <div>
         <div className="deatiles">
-          <span
+          {/* <span
             style={{
               background: dotColor,
             }}
             className="ColorContainer"
-          ></span>
+          ></span> */}
+          <span>
+            <img
+            style={{
+              width:"1.8rem"
+            }}
+             src={dotColor} alt="redColorBubble" />
+          </span>
           <span className="numberText">{deviceTitle}</span>
         </div>
         <p className="GuiSupport">{devDesc}</p>
@@ -86,7 +95,7 @@ function SelectWrapper({
           {devSubDesc}
         </p>
       </div>
-      <Button
+      <ButtonWrapper
         style={{
           opacity: BtnSelectDeviceOpacity,
         }}
@@ -94,7 +103,7 @@ function SelectWrapper({
         onClick={handleTheMotor}
       >
         Select Device
-      </Button>
+      </ButtonWrapper>
     </Card>
   );
 }

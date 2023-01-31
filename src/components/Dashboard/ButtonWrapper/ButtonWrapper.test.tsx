@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import renderer from "react-test-renderer"; 
-import Drawer from "./Drawer";
+import ButtonWrapper from "./ButtonWrapper";
 
 const mockHistoryPush = jest.fn();
 const mockGoBack = jest.fn();
@@ -27,41 +27,29 @@ jest.mock("react-router-dom", () => ({
   useNavigate: () => ({
     pathParam: "haribusine-HOAoFA",
   }), 
-}));
-const setView=jest.fn((arg:any)=>arg)
-test('renders the compoenet and finding whether a text present in the dom or not', () => {
-  const MyDrawer=()=>{
+})); 
+
+ test('renders the and finding whether a text present in the dom or not', () => {
+  const MyButtonWrapper=()=>{
     return (
       <Router>
-        <Drawer setView={setView} />
+         <ButtonWrapper className="btn">button label</ButtonWrapper>
       </Router>
     )
   }
-  render(<MyDrawer />);
-  const linkElement = screen.getByText("Faults");
-  expect(linkElement).toBeInTheDocument();
-});
-test('renders the compoenet whether a text present in the dom or not', () => {
-  const MyDrawer=()=>{
-    return (
-      <Router>
-        <Drawer setView={setView} />
-      </Router>
-    )
-  }
-  render(<MyDrawer />);
-  const linkElement = screen.getByText("I2C");
+  render(<MyButtonWrapper />);
+  const linkElement = screen.getByText("button label");
   expect(linkElement).toBeInTheDocument();
 }); 
 
 it("creating the snapshot of the compoenent correctly", () => {
-  const MyDrawer = () => {
+  const MyButtonWrapper = () => {
     return (
       <Router>
-        <Drawer setView={setView} />
+         <ButtonWrapper className="btn">button label</ButtonWrapper>
       </Router>
     );
   };
-  const tree = renderer.create(<MyDrawer />).toJSON();
+  const tree = renderer.create(<MyButtonWrapper />).toJSON();
   expect(tree).toMatchSnapshot();
 });

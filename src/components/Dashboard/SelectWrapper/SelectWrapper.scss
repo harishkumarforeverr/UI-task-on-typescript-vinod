@@ -1,6 +1,6 @@
 .conatinerCard {
   margin: 1%;
-  min-width: 286px;
+  min-width: 320px;
   min-height: 271px;
   max-height: 373px;
   height: 100%;
@@ -17,7 +17,7 @@
   }
   .ant-card-body {
     // display: grid;
-    width: 286px;
+    width: 320px;
     height: 326px;
     // height: 100%;
   }
@@ -31,7 +31,8 @@
     margin-left: 20px;
   }
   .deatiles {
-    margin-top: 2.3rem;
+     margin-top: 2.3rem;
+    display: flex;
   }
   .btn {
     position: absolute;
@@ -70,7 +71,8 @@
     /* identical to box height, or 133% */
 
     /* Text color */
-
+    display: flex;
+    align-items: center;
     color: #231f20;
   }
 }

@@ -126,7 +126,7 @@ exports[`creating the snapshot of the compoenent correctly 1`] = `
       type="button"
     >
       <span>
-        Select Device
+         Select Device
       </span>
     </button>
   </div>

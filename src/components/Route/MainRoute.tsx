@@ -9,8 +9,7 @@ import Setting from "../Setting/Setting";
 import { Box } from "@mui/material";
 import DashboardConatiner from "../Dashboard";
 import "./mainRoute.scss";
-import PrivateRoute from "../../routes/PrivateRoute";
-import DrawerSide from "../common/Drawer/Drawer";
+import PrivateRoute from "../../routes/PrivateRoute"; 
 
 const MainRoute = () => {
   return (
@@ -21,10 +20,10 @@ const MainRoute = () => {
           element={
             <PrivateRoute
               component={() => (
-                <div>
-                  <DrawerSide>
-                  <DashboardConatiner />
-                  </DrawerSide>
+                <div style={{
+                  minHeight:"30rem"
+                }}> 
+                  <DashboardConatiner />  
                 </div>
               )}
             />

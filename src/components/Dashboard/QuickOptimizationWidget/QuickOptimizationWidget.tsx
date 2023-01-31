@@ -3,10 +3,11 @@ import React, { useEffect, useState } from "react";
 import nextIcon from "../Assests/nextIcon.png";
 import "./QuickOptimizationWidget.scss";
 import { Button, Card, Checkbox, Select } from "antd";
-import SelectWrapper from "../../common/SelectWrapper";
+import SelectWrapper from "../SelectWrapper/SelectWrapper";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
 import { Assests } from "../Assests";
 import { CheckCircleOutlined } from "@ant-design/icons";
+import ButtonWrapper from "../ButtonWrapper/ButtonWrapper";
 function QuickOptimizationWidget({ setView }: { setView: any }) {
   const cardsObj = [
     {
@@ -52,7 +53,7 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
             <div>
               <SelectWrapper
                 BtnSelectDeviceOpacity="0.5"
-                dotColor="#40C36C"
+                dotColor={Assests.bubbleGreen}
                 deviceTitle="MCF8316EVM"
                 devDesc="This GUI supports MCF8316EVM"
                 devSubDesc="Correct device detected : MCF8316A"
@@ -107,14 +108,14 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
                         <Checkbox onChange={onChange} />
                         <p>Hardware setup has been done manually</p>
                         {showCards ? (
-                          <Button
+                          <ButtonWrapper
                             className="Setup_completed_btn"
                             onClick={handleTheSetup}
                           >
                             Setup completed
-                          </Button>
+                          </ButtonWrapper>
                         ) : (
-                          <Button>Setup Now</Button>
+                          <ButtonWrapper>Setup Now</ButtonWrapper>
                         )}
                       </div>
                     </>

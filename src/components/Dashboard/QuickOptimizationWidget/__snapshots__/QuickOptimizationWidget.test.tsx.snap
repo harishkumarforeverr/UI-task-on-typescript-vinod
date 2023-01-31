@@ -136,7 +136,7 @@ exports[`creating the snapshot of the compoenent correctly 1`] = `
               type="button"
             >
               <span>
-                Select Device
+                 Select Device
               </span>
             </button>
           </div>
@@ -219,7 +219,7 @@ exports[`creating the snapshot of the compoenent correctly 1`] = `
                 type="button"
               >
                 <span>
-                  Setup Now
+                   Setup Now
                 </span>
               </button>
             </div>
