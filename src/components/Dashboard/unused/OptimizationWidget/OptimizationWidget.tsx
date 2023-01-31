@@ -9,38 +9,38 @@ import {
 } from "@ant-design/icons";
 import "./OptimizationWidget.scss";
 import { Button, Card, Select } from "antd";
-import SelectWrapper from "../../common/SelectWrapper";
+import SelectWrapper from "../../../common/SelectWrapper";
 function OptimizationWidget() {
   const userInfoObj = [
     {
-      image: require("../Assests/capture1.PNG"),
+      // image: require("../Assests/capture1.PNG"),
       title: "Hardware Setup",
       desc: "configure harware and perform and GUI and comminucation checkup",
     },
     {
-      image: require("../Assests/Capture2.PNG"),
+      // image: require("../Assests/Capture2.PNG"),
       title: "software Setup",
       desc: "Samart harware and perform ",
     },
   ];
   const InfoObj = [
     {
-      image: require("../Assests/Capture3.PNG"),
+      // image: require("../Assests/Capture3.PNG"),
       title: "Edge Setup",
       desc: "configure harware and perform and GUI and comminucation checkup",
     },
     {
-      image: require("../Assests/Capture4.PNG"),
+      // image: require("../Assests/Capture4.PNG"),
       title: "Popup Setup",
       desc: "Samart harware and perform ",
     },
     {
-      image: require("../Assests/Capture5.PNG"),
+      // image: require("../Assests/Capture5.PNG"),
       title: "Iron Setup",
       desc: "configure harware and perform and GUI and comminucation checkup",
     },
     {
-      image: require("../Assests/Capture6.PNG"),
+      // image: require("../Assests/Capture6.PNG"),
       title: "Apple Setup",
       desc: "Samart harware and perform ",
     },
@@ -154,7 +154,7 @@ function OptimizationWidget() {
                     }}
                   >
                     <div>
-                      <img src={obj.image} />
+                      {/* <img src={obj.image} /> */}
                     </div>
                     <div>
                       <h3>{obj.title}</h3>
@@ -172,6 +172,7 @@ function OptimizationWidget() {
             {InfoObj.map((obj) => {
               return (
                 <Card
+                key={obj.title}
                   className="boxshadow hardware"
                   bordered={false}
                   style={{ width: 300 }}
@@ -185,7 +186,7 @@ function OptimizationWidget() {
                     }}
                   >
                     <div>
-                      <img src={obj.image} />
+                      {/* <img src={obj.image} /> */}
                     </div>
                     <div>
                       <h3>{obj.title}</h3>

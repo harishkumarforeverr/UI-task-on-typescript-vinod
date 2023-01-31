@@ -21,7 +21,6 @@ function Dashboard({ setView }: { setView: any }) {
   // const handleChange = (event: SelectChangeEvent) => {
   //   // setAge(event.target.value);
   // };
-  console.log("sshkvhsvdsa")
   const [motor, setMotor] = useState("");
   const navigate = useNavigate();
   const handleTheMotor = () => {

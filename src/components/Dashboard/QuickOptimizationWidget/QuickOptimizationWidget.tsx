@@ -108,8 +108,9 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
                         <p>Hardware setup has been done manually</p>
                         {showCards ? (
                           <Button
-                          className="Setup_completed_btn"
-                          onClick={handleTheSetup}>
+                            className="Setup_completed_btn"
+                            onClick={handleTheSetup}
+                          >
                             Setup completed
                           </Button>
                         ) : (
@@ -123,7 +124,6 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
             </div>
           </div>
 
-        
           <div
             style={{
               opacity: setup ? 1 : 0.4,
@@ -133,7 +133,7 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
           >
             {cardsObj.map((obj) => {
               return (
-                <div className="cardsConatiner_card">
+                <div key={obj.title} className="cardsConatiner_card">
                   <div className="cards">
                     <div className="card_title">
                       <h1>
@@ -149,7 +149,11 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
                         <p>{obj.subDesc}</p>
                       </div>
                     </div>
-                    <img className="nextIcons" src={!setup?nextIcon:Assests.nextIcon_pro} alt="ok" />
+                    <img
+                      className="nextIcons"
+                      src={!setup ? nextIcon : Assests.nextIcon_pro}
+                      alt="ok"
+                    />
                   </div>
                 </div>
               );

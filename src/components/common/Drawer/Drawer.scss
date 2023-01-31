@@ -1,5 +1,13 @@
 .drawerContainer {
-
+  
+  .ant-collapse-arrow {
+    font-size: 13px;
+    transform: rotate(180deg)
+  }
+  .ant-collapse-arrow svg{
+    font-size: 13px;
+    transform: rotate(270deg)
+  }
   .ant-collapse-content-box {
     background: #f2f8fb;
   }
@@ -15,7 +23,13 @@
   .ant-slider-track {
     background: #118899;
   }
-  
+  // box-sizing: border-box;
+
+  // position: absolute;
+  // width: 330px;
+  // height: 221px;
+  // left: 1026px;
+  // top: 58px;
 
   background: #f2f8fb;
   border: 1px solid #f2f8fb;
@@ -29,31 +43,33 @@
   }
   .drawerContainer_label {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    gap:1rem;
     align-items: center;
     p {
       opacity: 0.9;
       // position: absolute;
       width: 138px;
       height: 18px;
-      
+      // left: 1036px;
+      // top: 98px;
 
-      font-family: Roboto;
+      font-family:Helvetica;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 12px;
       line-height: 18px;
-      
+      /* identical to box height, or 150% */
 
-      color: #323232;
+      color: #323232; 
     }
     .Enabled {
-      font-family: Roboto;
+      font-family: Helvetica;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 12px;
       line-height: 18px;
-      
+      /* identical to box height, or 150% */
 
       color: #323232;
     }
@@ -64,16 +80,20 @@
     align-items: center;
     p {
       opacity: 0.9;
+      // position: absolute;
       width: 135px;
       height: 18px;
+      // left: 1036px;
+      // top: 132px;
       margin: 0;
       margin-bottom: 10px;
 
-      font-family: Roboto;
+      font-family: Helvetica;
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
       line-height: 18px;
+      /* identical to box height, or 150% */
 
       color: #323232;
     }
@@ -81,9 +101,11 @@
     .inputTag {
       box-sizing: border-box;
       width: 96%;
-      
+      // position: absolute;
+      // width: 206px;
       height: 36px;
-      
+      // left: 1036px;
+      // top: 154px;
 
       background: #ffffff;
       border: 1px solid #9c9c9c;
@@ -92,16 +114,19 @@
     .btn {
       box-sizing: border-box;
 
-     
+      // position: absolute;
+      // width: 97px;
       margin-top: 25px;
       height: 36px;
-     
+      // left: 1249px;
+      // top: 154px;
 
-      font-family: Roboto;
+      font-family: Helvetica;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 12px;
       line-height: 18px;
+      /* identical to box height, or 150% */
 
       color: #118899;
 
@@ -129,16 +154,19 @@
     }
     p {
       opacity: 0.9;
+      // position: absolute;
       width: 181px;
       height: 18px;
-     
+      // left: 1036px;
+      // top: 206px;
       margin: 0;
 
-      font-family: Roboto;
+      font-family: Helvetica;
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
       line-height: 18px;
+      /* identical to box height, or 150% */
 
       color: #323232;
     }
@@ -150,7 +178,9 @@
   border: 1px solid #f2f8fb;
   box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  margin-top: 20px;
+  margin-top: 5px;
+  min-height: 23rem;
+  height: 100%;
   padding: 4%;
   h1 {
     font-family: "Helvetica";
@@ -158,6 +188,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
+    /* identical to box height, or 112% */
 
     color: #1c99c4;
   }
@@ -166,8 +197,10 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+    /* identical to box height, or 100% */
 
-    font-family: Roboto;
+    /* Text color */
+    font-family: Helvetica;
 
     color: #231f20;
   }
@@ -200,8 +233,11 @@
     column-gap: 1rem;
     padding-top: 15px;
     .motorCards {
+      // position: absolute;
       min-width: 150px;
       min-height: 43px;
+      // left: 1036px;
+      // top: 397px;
 
       background: #ffffff;
       box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -214,6 +250,7 @@
         font-weight: 700;
         font-size: 12px;
         line-height: 18px;
+        /* identical to box height, or 150% */
 
         color: #1c99c4;
 
@@ -229,6 +266,7 @@
         font-weight: 400;
         font-size: 10px;
         line-height: 18px;
+        /* identical to box height, or 180% */
 
         color: #767676;
       }
@@ -243,6 +281,17 @@
   height: 100vh;
   padding-top: 0;
   padding-left: 8px;
+  .ant-tabs-nav-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .ant-tabs-nav-wrap {
+    display: grid !important;
+  }
+  .ant-tabs-tab {
+    margin: 0 !important;
+    padding-left: 10px !important;
+  }
   .ant-drawer-body {
     padding-top: 0;
   }
@@ -253,11 +302,12 @@
   }
   .tabs {
     h1 {
-      font-family: "Roboto";
+      font-family: "Helvetica";
       font-style: normal;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 14px;
       line-height: 18px;
+      /* identical to box height, or 129% */
 
       color: #323232;
       opacity: 0.8;
@@ -298,6 +348,12 @@
     .titleConatiner {
       display: flex;
     }
+    .redBubbleCircle {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 10px;
+      margin-left: 5px;
+    }
     .subTitleConatiner_parent {
       margin-top: 1rem;
       margin-left: 3rem;
@@ -317,12 +373,12 @@
     background: #cc0000;
   }
   .bigCircle_title {
-    font-family: Roboto;
+    font-family: Helvetica;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    
+    /* identical to box height, or 129% */
 
     color: #323232;
   }
@@ -334,13 +390,14 @@
   margin-left: auto;
 }
 .drawerConatiner_Parent {
+  // position: relative;
   display: flex;
   position: relative;
   margin-left: auto;
   box-shadow: 0 6px 16px -8px #00000014, 0 9px 28px #0000000d,
     0 12px 48px 16px #00000008;
   background: white;
-  
+  // padding-left: 10px;
   margin-top: 2px;
 }
 .drawerBody {
@@ -360,7 +417,7 @@
   }
   .appConatiner_drawer_expand {
     position: absolute;
-    left: -1.6rem;
+    left: -2.19rem;
     top: 3rem;
     opacity: 1;
     z-index: 100;
@@ -391,8 +448,9 @@
       font-family: "Helvetica";
       font-style: normal;
       font-weight: 700;
-      font-size: 12px;
+      font-size: 13px;
       line-height: 12px;
+    
 
       p {
         color: #323232;
@@ -402,7 +460,11 @@
       }
     }
   }
-  
+  // .appConatiner_faultsdrawer {
+  //   position: fixed;
+  //   right: 0;
+  //   top: 11rem;
+  // }
   .enabledTheDrawerLabel {
     color: #1c99c4 !important;
     opacity: 1 !important;
@@ -427,7 +489,7 @@
       font-family: "Helvetica";
       font-style: normal;
       font-weight: 700;
-      font-size: 12px;
+      font-size: 13px;
       line-height: 12px;
 
       p {
@@ -455,4 +517,146 @@
 .expandedGreen {
   margin-left: 13px;
   margin-top: 7px;
+}
+
+.configable_modal {
+  width: 80% !important;
+  // max-height: 526px !important;
+  max-width: 1316px !important;
+  // margin-bottom: 3rem;
+  .ant-modal-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 30rem;
+    // border-radius: 30px;
+  }
+  .ant-modal-body {
+    // padding-left: 3%;
+    // padding-right: 0%;
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-close-x {
+    display: none;
+  }
+}
+.ConfigureModel {
+  padding-bottom: 2rem;
+  &_header {
+    color: #fff !important;
+    background-color: #cc0000 !important;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      color: #fff;
+      text-shadow: 1px 1px #0000007a;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 18px !important;
+      font-weight: bold;
+      text-overflow: ellipsis;
+    }
+    .closeIcon {
+      font-size: 25px;
+    }
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: Roboto, sans-serif;
+    background-color: transparent;
+    color: #63666a;
+    font-weight: 400; 
+  }
+  .configContainer {
+    padding-left: 2%;
+    padding: 3%;
+    height: 30rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0.8rem;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #cccccc;
+      border-radius: 100rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #cccccc;
+      border-radius: 190px;
+      border-right: none;
+      border-left: none;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #cccccc;
+    }
+    &::-webkit-scrollbar-button {
+      width: 10px; 
+    }
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 3%;
+    .switchConatin {
+      margin-bottom: 2rem;
+      margin-top: 14px;
+      .ant-switch-inner {
+        transition: background-color linear 0.08s;
+        background-color: #98999b;
+      }
+      .switch_value {
+        margin-top: 2px;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        p {
+          max-width: 15rem;
+        }
+      }
+    }
+    .configSelect {
+      max-width: 18.5rem;
+      margin-top: 1rem;
+      .ant-select-selector {
+        border: 1px solid #ccc;
+        border-radius: 0;
+      }
+      .ant-select-selection-item {
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word;
+        word-break: break-all;
+        font-family: Roboto, sans-serif;
+        background-color: transparent;
+        color: #63666a !important;
+        opacity: 0.7;
+      }
+      .antSelectselector {
+        background-color: #fff;
+        background-image: none;
+        line-height: 1.42857143;
+        text-align: left;
+        text-decoration: none;
+        font-weight: normal;
+        font-style: normal;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        font-family: Roboto, sans-serif;
+        color: #63666a !important;
+        cursor: pointer;
+        font-size: 12px !important;
+        width: 100%;
+        // padding: 4px 8px !important;
+        // width: 100% !important;
+      }
+    }
+  }
 }

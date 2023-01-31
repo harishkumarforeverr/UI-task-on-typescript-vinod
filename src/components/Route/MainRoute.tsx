@@ -22,9 +22,9 @@ const MainRoute = () => {
             <PrivateRoute
               component={() => (
                 <div>
-                  {/* <DrawerSide> */}
+                  <DrawerSide>
                   <DashboardConatiner />
-                  {/* </DrawerSide> */}
+                  </DrawerSide>
                 </div>
               )}
             />
