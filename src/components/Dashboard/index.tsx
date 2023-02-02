@@ -4,7 +4,7 @@ import Dashboard from "./Dashboard";
 
 import "./index.scss";
 import QuickOptimizationWidget from "./QuickOptimizationWidget/QuickOptimizationWidget";
-function DashboardContainer() {
+function Home() {
   const [view, setView] = useState("Dashboard");
   const [open, setOpen] = useState(false);
   const location=useLocation(); 
@@ -23,4 +23,4 @@ function DashboardContainer() {
   );
 }
 
-export default DashboardContainer;
+export default Home;
