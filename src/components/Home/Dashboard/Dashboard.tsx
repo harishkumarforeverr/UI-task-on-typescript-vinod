@@ -7,14 +7,14 @@ import {
   ExperimentOutlined,
   TransactionOutlined,
 } from "@ant-design/icons";
-import "./Dashboard.scss";
-import { paths } from "../../utils/constant";
-import { useNavigate } from "react-router-dom";
-import { Assests } from "../../images/DashboardAssests";
+import "./Dashboard.scss"; 
+import { useNavigate } from "react-router-dom"; 
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-import { Card } from "antd";
-import { usersLinks } from "./pdf/index.js";
-import SelectWrapper from "./SelectWrapper/SelectWrapper";
+import { Card } from "antd"; 
+import { paths } from "../../../utils/constant";
+import { Assests } from "../../../images/DashboardAssests";
+import { usersLinks } from "../pdf";
+import SelectWrapper from "../SelectWrapper/SelectWrapper";
 function Dashboard({ setView }: { setView: any }) {
  
   const [motor, setMotor] = useState("");

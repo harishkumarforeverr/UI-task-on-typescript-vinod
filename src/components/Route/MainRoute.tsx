@@ -6,11 +6,9 @@ import MPET from "../MPET/MPET";
 import Nav from "../Nav/Nav";
 import QuickTuning from "../QuickTuning/QuickTuning";
 import Setting from "../Setting/Setting";
-import { Box } from "@mui/material";
-import Home from "../Home";
-
-
+import { Box } from "@mui/material"; 
 import HardwareSetup from "../HardwareSetup/HardwareSetup";
+import Home from "../Home/Index";
 const MainRoute = () => {
   return (
     <>
