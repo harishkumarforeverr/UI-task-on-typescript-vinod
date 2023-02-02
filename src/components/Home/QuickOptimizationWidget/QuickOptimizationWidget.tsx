@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import nextIcon from "../Assests/nextIcon.png";
+import nextIcon from "../../../images/DashboardAssests/nextIcon.png";
 import "./QuickOptimizationWidget.scss";
 import { Button, Card, Checkbox, Select } from "antd";
 import SelectWrapper from "../SelectWrapper/SelectWrapper";

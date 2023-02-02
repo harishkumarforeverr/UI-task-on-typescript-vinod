@@ -7,7 +7,7 @@ import Nav from "../Nav/Nav";
 import QuickTuning from "../QuickTuning/QuickTuning";
 import Setting from "../Setting/Setting";
 import { Box } from "@mui/material";
-import Home from "../Dashboard";
+import Home from "../Home";
 
 
 import HardwareSetup from "../HardwareSetup/HardwareSetup";
