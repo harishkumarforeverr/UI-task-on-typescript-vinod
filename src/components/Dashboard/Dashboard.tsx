@@ -10,17 +10,13 @@ import {
 import "./Dashboard.scss";
 import { paths } from "../../utils/constant";
 import { useNavigate } from "react-router-dom";
-import { Assests } from "./Assests";
+import { Assests } from "../../images/DashboardAssests";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { Card } from "antd";
 import { usersLinks } from "./pdf/index.js";
 import SelectWrapper from "./SelectWrapper/SelectWrapper";
 function Dashboard({ setView }: { setView: any }) {
-  // const [age, setAge] = React.useState<string>("");
-
-  // const handleChange = (event: SelectChangeEvent) => {
-  //   // setAge(event.target.value);
-  // };
+ 
   const [motor, setMotor] = useState("");
   const navigate = useNavigate();
   const handleTheMotor = () => {
@@ -102,7 +98,6 @@ function Dashboard({ setView }: { setView: any }) {
             dotColor={Assests.bubbleRed}
             deviceTitle="MCF8316EVM"
             devDesc="This GUI supports MCF8316EVM"
-            // devSubDesc="Correct device detected : MCF8316A"
           />
         </div>
         <div className="cardsRigghtContainer">
@@ -125,7 +120,7 @@ function Dashboard({ setView }: { setView: any }) {
           })}
         </div>
       </div>
-      {/* <div> */}
+      
       <div className="knowYourDevice">
         <div className="knowYourDevice_head">
           <h1>Know Your Device</h1>
@@ -148,7 +143,6 @@ function Dashboard({ setView }: { setView: any }) {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 }

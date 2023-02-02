@@ -93,14 +93,17 @@ exports[`creating the snapshot of the compoenent correctly 1`] = `
               <div
                 className="deatiles"
               >
-                <span
-                  className="ColorContainer"
-                  style={
-                    Object {
-                      "background": "#40C36C",
+                <span>
+                  <img
+                    alt="redColorBubble"
+                    src="bubbleGreen.png"
+                    style={
+                      Object {
+                        "width": "1.8rem",
+                      }
                     }
-                  }
-                />
+                  />
+                </span>
                 <span
                   className="numberText"
                 >

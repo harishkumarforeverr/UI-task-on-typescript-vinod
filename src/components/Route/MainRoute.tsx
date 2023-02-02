@@ -7,36 +7,25 @@ import Nav from "../Nav/Nav";
 import QuickTuning from "../QuickTuning/QuickTuning";
 import Setting from "../Setting/Setting";
 import { Box } from "@mui/material";
-import DashboardConatiner from "../Dashboard";
-import "./mainRoute.scss";
-import PrivateRoute from "../../routes/PrivateRoute"; 
+import DashboardContainer from "../Dashboard";
 
+
+import HardwareSetup from "../HardwareSetup/HardwareSetup";
 const MainRoute = () => {
   return (
-    <Box>
-      <Routes>
-        <Route
-          path={"/"}
-          element={
-            <PrivateRoute
-              component={() => (
-                <div style={{
-                  minHeight:"30rem"
-                }}> 
-                  <DashboardConatiner />  
-                </div>
-              )}
-            />
-          }
-        />
-        <Route path="/setting" element={<PrivateRoute component={Setting} />} />
-        <Route
-          path="/quick_tuning"
-          element={<PrivateRoute component={QuickTuning} />}
-        />
-        <Route path="/mpet" element={<PrivateRoute component={MPET} />} />
-      </Routes>
-    </Box>
+    <>
+      <Header />
+      <Nav />
+
+      <Box padding={3}>
+        <Routes>
+          <Route path="/" element={<DashboardContainer />} />
+          <Route path="/setting" element={<HardwareSetup boardType={1} />} />
+          <Route path="/quick_tuning" element={<QuickTuning />} />
+          <Route path="/mpet" element={<MPET />} />
+        </Routes>
+      </Box>
+    </>
   );
 };
 

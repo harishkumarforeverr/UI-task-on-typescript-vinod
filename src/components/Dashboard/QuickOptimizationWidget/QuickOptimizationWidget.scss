@@ -1,7 +1,7 @@
 .QuickOptimizationWidget {
   padding-left: 2%; 
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: -8px;
+  margin-left: 90px;
   margin-bottom: 20px;
   padding-right: 20px;
   height: 100%;
@@ -11,7 +11,7 @@
     .QuickOptimizationWidget_hardwareSetup {
       display: flex;
       // gap: 2rem;
-      gap:3%;
+      gap:4%;
       .hardwareSetup {
         display: flex;
         gap: 2rem;
@@ -34,7 +34,7 @@
             color: #118899;
           }
           img {
-            width: 378.73px;
+          margin-left: 10px;
             height: 300px;
           }
         }
@@ -43,16 +43,17 @@
             font-family: "Helvetica";
             font-style: normal;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 18px;
             color: #118899;
+            margin-top: 20px;
           }
           ol {
             li {
               font-family: Roboto;
               font-style: normal;
               font-weight: 400;
-              font-size: 14px;
+              font-size: 15px;
               line-height: 18px;
               color: #231f20;
               margin-bottom: 7px;
@@ -64,11 +65,12 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 15px;
             word-break: break-all;
             line-height: 20px;
             line-height: 1.6rem; 
             color: #231f20;
+            margin-top: 30px;
           }
           .setupdone {
             margin-left: 3rem;
@@ -96,7 +98,10 @@
             display: flex;
             align-items: baseline;
             gap: 1rem;
-            margin-top: 3rem;
+            margin-top: 2rem;
+            .checkboxReadOnly{
+              pointer-events: none;
+            }
             p {
               white-space: nowrap;
               margin: 0;
@@ -120,13 +125,13 @@
               min-width: 6.5rem;
               margin-left: auto;
               margin-right: 5rem;
-              border-radius: 0px;
+              border-radius: 5px;
             }
             .Setup_completed_btn{
               background-color: #cc0000;;
               color: white;
-              margin-right: 1rem;
-              border-radius: 0px;
+             
+              border-radius: 5px;
             }
           }
         }
@@ -136,12 +141,10 @@
       display: flex;
     
       justify-content: space-between;
-      //  edi gap
       gap: 5%;
-      margin-top: 2rem;
+      margin-top: 3rem;
       margin-left: 1rem;
       .cardsConatiner_card {
-        //  edi width
         flex-basis: 100%;
         border-bottom-right-radius: 2%;
         overflow: hidden;
@@ -155,8 +158,6 @@
         
         position: relative;
         box-sizing: border-box;
-         
-        //  edi height
         height: 26rem;
         
         background: #118899;
@@ -178,9 +179,6 @@
           justify-content: center;
           align-items: center;
           box-sizing: border-box;
-          // min-width: 260px;
-
-          // min-height: 281px;
           background: #f2f8fb;
           border: 1px solid #f2f8fb;
           box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);

@@ -171,534 +171,427 @@ exports[`renders correctly 1`] = `
             }
           >
             <div
-              style={
-                Object {
-                  "display": "flex",
-                }
-              }
+              className="dashboard"
             >
               <div
-                style={
-                  Object {
-                    "flexGrow": 1,
-                  }
-                }
+                className="ConatinersIconsTitle"
               >
-                <div
-                  className="dashboard"
-                >
+                <div>
                   <div
-                    className="ConatinersIconsTitle"
+                    className="ant-card conatinerCard css-dev-only-do-not-override-1n7nwfa"
+                    style={
+                      Object {
+                        "width": 300,
+                      }
+                    }
                   >
-                    <div>
-                      <div
-                        className="ant-card conatinerCard css-dev-only-do-not-override-1n7nwfa"
-                        style={
-                          Object {
-                            "width": 300,
-                          }
-                        }
-                      >
+                    <div
+                      className="ant-card-body"
+                      style={Object {}}
+                    >
+                      <div>
                         <div
-                          className="ant-card-body"
-                          style={Object {}}
+                          className="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root"
                         >
-                          <div>
+                          <label
+                            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                            data-shrink={true}
+                            id="selectlabelCommon"
+                          >
+                            Select Device*
+                          </label>
+                          <div
+                            className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-4gwozz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                            onClick={[Function]}
+                          >
                             <div
-                              className="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root"
+                              aria-expanded="false"
+                              aria-haspopup="listbox"
+                              aria-labelledby="selectlabelCommon demo-simple-select"
+                              className="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                              id="demo-simple-select"
+                              onBlur={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onMouseDown={[Function]}
+                              role="button"
+                              tabIndex={0}
                             >
-                              <label
-                                className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
-                                data-shrink={true}
-                                id="selectlabelCommon"
-                              >
-                                Select Device*
-                              </label>
-                              <div
-                                className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-4gwozz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
-                                onClick={[Function]}
-                              >
-                                <div
-                                  aria-expanded="false"
-                                  aria-haspopup="listbox"
-                                  aria-labelledby="selectlabelCommon demo-simple-select"
-                                  className="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-                                  id="demo-simple-select"
-                                  onBlur={[Function]}
-                                  onFocus={[Function]}
-                                  onKeyDown={[Function]}
-                                  onMouseDown={[Function]}
-                                  role="button"
-                                  tabIndex={0}
-                                >
-                                  Select Your Device
-                                </div>
-                                <input
-                                  aria-hidden={true}
-                                  className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
-                                  disabled={false}
-                                  onAnimationStart={[Function]}
-                                  onChange={[Function]}
-                                  required={false}
-                                  tabIndex={-1}
-                                  value="Select Your Device"
-                                />
-                                <svg
-                                  aria-hidden={true}
-                                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
-                                  data-testid="ArrowDropDownIcon"
-                                  focusable="false"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    d="M7 10l5 5 5-5z"
-                                  />
-                                </svg>
-                                <fieldset
-                                  aria-hidden={true}
-                                  className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-                                >
-                                  <legend
-                                    className="css-14lo706"
-                                  >
-                                    <span>
-                                      Select Device*
-                                    </span>
-                                  </legend>
-                                </fieldset>
-                              </div>
+                              Select Your Device
                             </div>
-                          </div>
-                          <div>
-                            <div
-                              className="deatiles"
+                            <input
+                              aria-hidden={true}
+                              className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                              disabled={false}
+                              onAnimationStart={[Function]}
+                              onChange={[Function]}
+                              required={false}
+                              tabIndex={-1}
+                              value="Select Your Device"
+                            />
+                            <svg
+                              aria-hidden={true}
+                              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                              data-testid="ArrowDropDownIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <span
-                                className="ColorContainer"
-                                style={
-                                  Object {
-                                    "background": "#cc0000",
-                                  }
-                                }
+                              <path
+                                d="M7 10l5 5 5-5z"
                               />
-                              <span
-                                className="numberText"
-                              >
-                                MCF8316EVM
-                              </span>
-                            </div>
-                            <p
-                              className="GuiSupport"
+                            </svg>
+                            <fieldset
+                              aria-hidden={true}
+                              className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                             >
-                              This GUI supports MCF8316EVM
-                            </p>
-                            <p
-                              className="GuiSupport"
+                              <legend
+                                className="css-14lo706"
+                              >
+                                <span>
+                                  Select Device*
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          className="deatiles"
+                        >
+                          <span>
+                            <img
+                              alt="redColorBubble"
+                              src="bubbleRed.png"
                               style={
                                 Object {
-                                  "fontSize": "12px",
-                                  "opacity": "0.8",
+                                  "width": "1.8rem",
                                 }
                               }
                             />
-                          </div>
-                          <button
-                            className="ant-btn css-dev-only-do-not-override-1n7nwfa ant-btn-default lightRed btn"
-                            disabled={false}
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "opacity": "1",
-                              }
-                            }
-                            type="button"
+                          </span>
+                          <span
+                            className="numberText"
                           >
-                            <span>
-                               Select Device
-                            </span>
-                          </button>
+                            MCF8316EVM
+                          </span>
                         </div>
+                        <p
+                          className="GuiSupport"
+                        >
+                          This GUI supports MCF8316EVM
+                        </p>
+                        <p
+                          className="GuiSupport"
+                          style={
+                            Object {
+                              "fontSize": "12px",
+                              "opacity": "0.8",
+                            }
+                          }
+                        />
                       </div>
+                      <button
+                        className="ant-btn css-dev-only-do-not-override-1n7nwfa ant-btn-default lightRed btn"
+                        disabled={false}
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "opacity": "1",
+                          }
+                        }
+                        type="button"
+                      >
+                        <span>
+                           Select Device
+                        </span>
+                      </button>
                     </div>
+                  </div>
+                </div>
+                <div
+                  className="cardsRigghtContainer"
+                >
+                  <div
+                    className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "width": 300,
+                      }
+                    }
+                  >
                     <div
-                      className="cardsRigghtContainer"
+                      className="ant-card-body"
+                      style={Object {}}
                     >
                       <div
-                        className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 300,
-                          }
-                        }
+                        className="rightConatinesIcons"
                       >
                         <div
-                          className="ant-card-body"
-                          style={Object {}}
+                          className="GetImages"
                         >
+                          <img
+                            className="ellipse_image"
+                            src="Ellipse.png"
+                          />
                           <div
-                            className="rightConatinesIcons"
+                            className="GetImages_child"
                           >
-                            <div
-                              className="GetImages"
-                            >
-                              <img
-                                className="ellipse_image"
-                                src="Ellipse.png"
-                              />
-                              <div
-                                className="GetImages_child"
-                              >
-                                <img
-                                  alt="image_inner"
-                                  className="image_inner"
-                                  src="cardImage_1.png"
-                                />
-                                 
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            className="titleRightConatiner"
-                          >
-                            Users's Guide
+                            <img
+                              alt="image_inner"
+                              className="image_inner"
+                              src="cardImage_1.png"
+                            />
+                             
                           </div>
                         </div>
                       </div>
                       <div
-                        className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 300,
-                          }
-                        }
+                        className="titleRightConatiner"
                       >
-                        <div
-                          className="ant-card-body"
-                          style={Object {}}
-                        >
-                          <div
-                            className="rightConatinesIcons"
-                          >
-                            <div
-                              className="GetImages"
-                            >
-                              <img
-                                className="ellipse_image"
-                                src="Ellipse.png"
-                              />
-                              <div
-                                className="GetImages_child"
-                              >
-                                <img
-                                  alt="image_inner"
-                                  className="image_inner"
-                                  src="cardImage_2.png"
-                                />
-                                 
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            className="titleRightConatiner"
-                          >
-                            Product Page
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 300,
-                          }
-                        }
-                      >
-                        <div
-                          className="ant-card-body"
-                          style={Object {}}
-                        >
-                          <div
-                            className="rightConatinesIcons"
-                          >
-                            <div
-                              className="GetImages"
-                            >
-                              <img
-                                className="ellipse_image"
-                                src="Ellipse.png"
-                              />
-                              <div
-                                className="GetImages_child"
-                              >
-                                <img
-                                  alt="image_inner"
-                                  className="image_inner"
-                                  src="cardImage_3.png"
-                                />
-                                 
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            className="titleRightConatiner"
-                          >
-                            Data Sheet
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 300,
-                          }
-                        }
-                      >
-                        <div
-                          className="ant-card-body"
-                          style={Object {}}
-                        >
-                          <div
-                            className="rightConatinesIcons"
-                          >
-                            <div
-                              className="GetImages"
-                            >
-                              <img
-                                className="ellipse_image"
-                                src="Ellipse.png"
-                              />
-                              <div
-                                className="GetImages_child"
-                              >
-                                <img
-                                  alt="image_inner"
-                                  className="image_inner"
-                                  src="cardImage_4.png"
-                                />
-                                 
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            className="titleRightConatiner"
-                          >
-                            Tuning Page
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 300,
-                          }
-                        }
-                      >
-                        <div
-                          className="ant-card-body"
-                          style={Object {}}
-                        >
-                          <div
-                            className="rightConatinesIcons"
-                          >
-                            <div
-                              className="GetImages"
-                            >
-                              <img
-                                className="ellipse_image"
-                                src="Ellipse.png"
-                              />
-                              <div
-                                className="GetImages_child"
-                              >
-                                <img
-                                  alt="image_inner"
-                                  className="image_inner"
-                                  src="cardImage_5.png"
-                                />
-                                 
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            className="titleRightConatiner"
-                          >
-                            Tools Page
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
-                        onClick={[Function]}
-                        style={
-                          Object {
-                            "width": 300,
-                          }
-                        }
-                      >
-                        <div
-                          className="ant-card-body"
-                          style={Object {}}
-                        >
-                          <div
-                            className="rightConatinesIcons"
-                          >
-                            <div
-                              className="GetImages"
-                            >
-                              <img
-                                className="ellipse_image"
-                                src="Ellipse.png"
-                              />
-                              <div
-                                className="GetImages_child"
-                              >
-                                <img
-                                  alt="image_inner"
-                                  className="image_inner"
-                                  src="cardImage_6.png"
-                                />
-                                 
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            className="titleRightConatiner"
-                          >
-                            E2E testing
-                          </div>
-                        </div>
+                        Users's Guide
                       </div>
                     </div>
                   </div>
                   <div
-                    className="knowYourDevice"
+                    className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "width": 300,
+                      }
+                    }
                   >
                     <div
-                      className="knowYourDevice_head"
-                    >
-                      <h1>
-                        Know Your Device
-                      </h1>
-                    </div>
-                    <div
-                      className="knowYourDevice_context"
+                      className="ant-card-body"
+                      style={Object {}}
                     >
                       <div
-                        className="imageKnowContainer"
+                        className="rightConatinesIcons"
                       >
-                        <img
-                          alt="Assests"
-                          src="DashboardImageCircut.png"
-                        />
+                        <div
+                          className="GetImages"
+                        >
+                          <img
+                            className="ellipse_image"
+                            src="Ellipse.png"
+                          />
+                          <div
+                            className="GetImages_child"
+                          >
+                            <img
+                              alt="image_inner"
+                              className="image_inner"
+                              src="cardImage_2.png"
+                            />
+                             
+                          </div>
+                        </div>
                       </div>
-                        
-                      <div>
-                        <p>
-                          The MCF8316A is a 4.5-V to 35-V, 8-A peak integrated three-phase gate driver IC with sensorless field-oriented control for motor drive applications. It provides three accurately trimmed and temperature compensated halfbridge MOSFETS, gate drivers, charge pump, current sense amplifier, linear regulator for the external load and adjustable buck regulator. The I2C interface variant (MCF8316A) also provides a standard I2C interface for configuring the various device settings and reading fault diagnostic information through an external controller.
-                        </p>
+                      <div
+                        className="titleRightConatiner"
+                      >
+                        Product Page
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "width": 300,
+                      }
+                    }
+                  >
+                    <div
+                      className="ant-card-body"
+                      style={Object {}}
+                    >
+                      <div
+                        className="rightConatinesIcons"
+                      >
+                        <div
+                          className="GetImages"
+                        >
+                          <img
+                            className="ellipse_image"
+                            src="Ellipse.png"
+                          />
+                          <div
+                            className="GetImages_child"
+                          >
+                            <img
+                              alt="image_inner"
+                              className="image_inner"
+                              src="cardImage_3.png"
+                            />
+                             
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="titleRightConatiner"
+                      >
+                        Data Sheet
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "width": 300,
+                      }
+                    }
+                  >
+                    <div
+                      className="ant-card-body"
+                      style={Object {}}
+                    >
+                      <div
+                        className="rightConatinesIcons"
+                      >
+                        <div
+                          className="GetImages"
+                        >
+                          <img
+                            className="ellipse_image"
+                            src="Ellipse.png"
+                          />
+                          <div
+                            className="GetImages_child"
+                          >
+                            <img
+                              alt="image_inner"
+                              className="image_inner"
+                              src="cardImage_4.png"
+                            />
+                             
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="titleRightConatiner"
+                      >
+                        Tuning Page
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "width": 300,
+                      }
+                    }
+                  >
+                    <div
+                      className="ant-card-body"
+                      style={Object {}}
+                    >
+                      <div
+                        className="rightConatinesIcons"
+                      >
+                        <div
+                          className="GetImages"
+                        >
+                          <img
+                            className="ellipse_image"
+                            src="Ellipse.png"
+                          />
+                          <div
+                            className="GetImages_child"
+                          >
+                            <img
+                              alt="image_inner"
+                              className="image_inner"
+                              src="cardImage_5.png"
+                            />
+                             
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="titleRightConatiner"
+                      >
+                        Tools Page
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="ant-card conatinerCardImage css-dev-only-do-not-override-1n7nwfa"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "width": 300,
+                      }
+                    }
+                  >
+                    <div
+                      className="ant-card-body"
+                      style={Object {}}
+                    >
+                      <div
+                        className="rightConatinesIcons"
+                      >
+                        <div
+                          className="GetImages"
+                        >
+                          <img
+                            className="ellipse_image"
+                            src="Ellipse.png"
+                          />
+                          <div
+                            className="GetImages_child"
+                          >
+                            <img
+                              alt="image_inner"
+                              className="image_inner"
+                              src="cardImage_6.png"
+                            />
+                             
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="titleRightConatiner"
+                      >
+                        E2E testing
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div>
+              <div
+                className="knowYourDevice"
+              >
                 <div
-                  className="drawerConatiner_Parent"
-                  style={
-                    Object {
-                      "marginLeft": "auto",
-                    }
-                  }
+                  className="knowYourDevice_head"
+                >
+                  <h1>
+                    Know Your Device
+                  </h1>
+                </div>
+                <div
+                  className="knowYourDevice_context"
                 >
                   <div
-                    className="appConatiner_DashboardConatiner"
+                    className="imageKnowContainer"
                   >
-                    <div
-                      className="appConatiner_drawer"
-                      style={Object {}}
-                    >
-                      <div
-                        className="i2cControl"
-                        onClick={[Function]}
-                      >
-                        <span
-                          aria-label="left"
-                          className="anticon anticon-left rightIcon"
-                          role="img"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            data-icon="left"
-                            fill="currentColor"
-                            focusable="false"
-                            height="1em"
-                            viewBox="64 64 896 896"
-                            width="1em"
-                          >
-                            <path
-                              d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
-                            />
-                          </svg>
-                        </span>
-                        <span
-                          className="i2cLabel"
-                        >
-                          <p
-                            className=""
-                          >
-                            I2C
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      className="appConatiner_drawer faults_expanded"
-                    >
-                      <div
-                        className="faultsControl"
-                        onClick={[Function]}
-                        style={Object {}}
-                      >
-                        <span
-                          aria-label="left"
-                          className="anticon anticon-left rightIcon"
-                          role="img"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            data-icon="left"
-                            fill="currentColor"
-                            focusable="false"
-                            height="1em"
-                            viewBox="64 64 896 896"
-                            width="1em"
-                          >
-                            <path
-                              d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
-                            />
-                          </svg>
-                        </span>
-                        <span
-                          className="faultsLabel"
-                        >
-                          <p
-                            className=""
-                          >
-                            Faults
-                          </p>
-                          <div
-                            className="smallCircle greenColor expandedGreen"
-                          />
-                        </span>
-                      </div>
-                    </div>
+                    <img
+                      alt="Assests"
+                      src="DashboardImageCircut.png"
+                    />
+                  </div>
+                    
+                  <div>
+                    <p>
+                      The MCF8316A is a 4.5-V to 35-V, 8-A peak integrated three-phase gate driver IC with sensorless field-oriented control for motor drive applications. It provides three accurately trimmed and temperature compensated halfbridge MOSFETS, gate drivers, charge pump, current sense amplifier, linear regulator for the external load and adjustable buck regulator. The I2C interface variant (MCF8316A) also provides a standard I2C interface for configuring the various device settings and reading fault diagnostic information through an external controller.
+                    </p>
                   </div>
                 </div>
               </div>

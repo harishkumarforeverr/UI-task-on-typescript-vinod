@@ -7,7 +7,7 @@ import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import "./SelectWrapper.scss";
 import ButtonWrapper from "../ButtonWrapper/ButtonWrapper";
-import { Assests } from "../Assests";
+import { Assests } from "../../../images/DashboardAssests";
 interface propsType {
   dotColor: any;
   deviceTitle: string;
@@ -69,12 +69,6 @@ function SelectWrapper({
       </div>
       <div>
         <div className="deatiles">
-          {/* <span
-            style={{
-              background: dotColor,
-            }}
-            className="ColorContainer"
-          ></span> */}
           <span>
             <img
             style={{

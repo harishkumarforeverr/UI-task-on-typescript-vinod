@@ -5,9 +5,10 @@ import "./QuickOptimizationWidget.scss";
 import { Button, Card, Checkbox, Select } from "antd";
 import SelectWrapper from "../SelectWrapper/SelectWrapper";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
-import { Assests } from "../Assests";
+import { Assests } from "../../../images/DashboardAssests";
 import { CheckCircleOutlined } from "@ant-design/icons";
 import ButtonWrapper from "../ButtonWrapper/ButtonWrapper";
+import { useLocation, useNavigate } from "react-router-dom";
 function QuickOptimizationWidget({ setView }: { setView: any }) {
   const cardsObj = [
     {
@@ -42,9 +43,16 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
     setShowCards(value);
   };
   const handleTheSetup = () => {
-    console.log("sssssssssssss");
+  
     setSetup(true);
   };
+  const location=useLocation(); 
+  useEffect(()=>{ 
+    if(location.state!==null){
+      setShowCards(true);
+    }
+  }, [location])
+  const Navigate=useNavigate()
   return (
     <div className="QuickOptimizationWidget">
       <div className="Conatiner2sIconsTitle">
@@ -85,12 +93,10 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
                   </ol>
                   <div>
                     <p>
-                      Connect the motor to J8. Supply a voltage compliant with
-                      the Power Supply Voltage (VM). Recommended voltage range
-                      is 4.5V – 35V. Connect the positive terminal to VBAT (PIN3
-                      of J7) and negative terminal to PGND (PIN2 of J7).Plug in
-                      the micro-USB, from the computer that holds the GUI, to
-                      the USB Connector J2.
+                      Connect the motor to J8.
+                      Supply a voltage compliant with the Power Supply Voltage (VM).
+                      Recommended voltage range is 4.5V – 35V. 
+                      Connect the positive terminal to VBAT (PIN3 of J7) and negative terminal to PGND (PIN2 of J7).Plug in the micro-USB, from the computer that holds the GUI, to the USB Connector J2.
                     </p>
                   </div>
                   {setup ? (
@@ -105,7 +111,10 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
                   ) : (
                     <>
                       <div className="actionBtn">
-                        <Checkbox onChange={onChange} />
+                        <Checkbox 
+                        
+                        className="checkboxReadOnly"
+                        checked={showCards} onChange={onChange} />
                         <p>Hardware setup has been done manually</p>
                         {showCards ? (
                           <ButtonWrapper
@@ -115,7 +124,10 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
                             Setup completed
                           </ButtonWrapper>
                         ) : (
-                          <ButtonWrapper>Setup Now</ButtonWrapper>
+                          <ButtonWrapper onClick={()=>{
+                           
+                            Navigate("/setting")
+                          }}>Setup Now</ButtonWrapper>
                         )}
                       </div>
                     </>
@@ -160,7 +172,6 @@ function QuickOptimizationWidget({ setView }: { setView: any }) {
               );
             })}
           </div>
-          {/* )} */}
         </>
       </div>
     </div>

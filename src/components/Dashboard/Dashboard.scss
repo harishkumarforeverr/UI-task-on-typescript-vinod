@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: -8px;
   gap: 37px;
-  padding-left: 2%;
-  height: 52rem;
+  padding-left: 5%;
+  height: 50rem;
   margin-bottom: 3rem;
   overflow: hidden;
   overflow-y: hidden;
@@ -27,15 +27,13 @@
     margin-left: 10px;
     grid-template-columns: 1fr 1fr 1fr !important;
     height: 100%;
-    gap: 20px;
+    gap: 40px;
     .conatinerCardImage {
       cursor: pointer;
       display: grid;
       justify-content: center;
       align-items: center;
       box-sizing: border-box;
-
-      width: unset !important;
       min-height: 8.5 !important;
 
       background:  #F2F8FB !important;
@@ -78,12 +76,9 @@
 
   .knowYourDevice {
     box-sizing: border-box;
-    // min-width: 529px;
-    // height: 662px;
+    
     height: 100%;
     padding-bottom: 1.1%;
-    // flex-basis: 45%;
-    flex-basis: 60%;
     margin-top: auto;
     margin-top: 1rem;
 
@@ -95,7 +90,6 @@
     left:817px;
     .knowYourDevice_head {
       box-sizing: border-box;
-      // min-width: 529px;
       min-height: 48px;
       background: #d4e5ee;
       border-bottom: 2px solid #1c99c4;
@@ -104,7 +98,6 @@
       align-items: center;
       padding-left: 20px;
       h1 {
-        // min-width: 121px;
         min-height: 18px;
         white-space: nowrap;
         font-family: Helvetica;
@@ -117,19 +110,15 @@
       }
     }
     .knowYourDevice_context {
-      // margin-top: 20px;
       display: grid;
-      justify-content: center;
+      
       align-items: center;
       .imageKnowContainer{
         display: grid;
-        justify-content: center;
+        
         align-items: center;
-        // min-width: 469px;
-        // min-height: 301px;
-        // padding: 2rem;
-        margin: 1rem 0;
-      }
+        margin: 2rem 0;
+      }margin-left: 5px;
       img {
         width: 93%;
         margin: 0 auto;
@@ -138,14 +127,12 @@
       p {
         width: 90%;
         margin: 0 auto;
-        // margin-top: 20px;
-        // min-width: 469px;
         min-height: 167px;
 
         font-family: Helvetica;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 2rem;
         text-align: justify;
         letter-spacing: 0.04em;

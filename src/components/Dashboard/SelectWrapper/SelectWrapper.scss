@@ -1,6 +1,6 @@
 .conatinerCard {
   margin: 1%;
-  min-width: 320px;
+  min-width: 380px;
   min-height: 271px;
   max-height: 373px;
   height: 100%;
@@ -17,18 +17,17 @@
   }
   .ant-card-body {
     // display: grid;
-    width: 320px;
+    width: 380px;
     height: 326px;
-    // height: 100%;
   }
   .GuiSupport {
     font-family: Helvetica;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     color: #3d3d3d;
-    margin-left: 20px;
+    margin-left: 40px;
   }
   .deatiles {
      margin-top: 2.3rem;
@@ -49,7 +48,7 @@
     height: 44px;
 
     background: #cc0000;
-    border-radius: 2px;
+    border-radius: 5px;
     color: white;
   }
   .ColorContainer {
@@ -59,7 +58,6 @@
     top: 197px;
     border-radius: 50%;
     display: inline-block;
-    // background: #cc0000;
   }
   .numberText {
     font-family: Helvetica;
@@ -68,9 +66,6 @@
     font-size: 18px;
     line-height: 24px;
     margin-left: 10px;
-    /* identical to box height, or 133% */
-
-    /* Text color */
     display: flex;
     align-items: center;
     color: #231f20;

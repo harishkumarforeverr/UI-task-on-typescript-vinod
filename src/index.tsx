@@ -4,8 +4,11 @@ import './index.css';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
-import { store } from "./store";
-import { BrowserRouter as Router } from "react-router-dom";
+import { history, store } from "./store";
+import {  ReduxRouter,ReduxRouterSelector } from '@lagunovsky/redux-react-router';
+
+type State = ReturnType<typeof store.getState>
+const routerSelector: ReduxRouterSelector<State> = (state) => state.navigator
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,9 +16,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
      <Provider store={store}>
-        <Router>
+     <ReduxRouter history={history} routerSelector={routerSelector}>
           <App />
-        </Router>
+        </ReduxRouter>
       </Provider>
 
   </React.StrictMode>
