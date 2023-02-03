@@ -38,7 +38,7 @@ test('renders the compoenet and finding whether a text present in the dom or not
     )
   }
   render(<MyApp />);
-  const linkElement = screen.getByText("Users's Guide");
+  const linkElement = screen.getByText("Hardware Setup");
   expect(linkElement).toBeInTheDocument();
 }); 
 
