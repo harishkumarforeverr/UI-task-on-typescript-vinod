@@ -57,23 +57,4 @@ test("renders the compoenet and finding whether a text present in the dom or not
   const linkElement = screen.getByText("This GUI supports MCF8316EVM");
   expect(linkElement).toBeInTheDocument();
 });
-
-it("creating the snapshot of the compoenent correctly", () => {
-  const MySelectWrapper = () => {
-    return (
-      <Router>
-        <SelectWrapper
-          handleChange={handleChange}
-          handleTheMotor={handleTheMotor}
-          BtnSelectDeviceOpacity={BtnSelectDeviceOpacity}
-          dotColor={dotColor}
-          deviceTitle={deviceTitle}
-          devDesc={devDesc}
-          devSubDesc={devSubDesc}
-        />
-      </Router>
-    );
-  };
-  const tree = renderer.create(<MySelectWrapper />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+ 

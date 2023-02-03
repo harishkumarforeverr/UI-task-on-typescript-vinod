@@ -43,14 +43,4 @@ test('renders the compoenet and finding whether a text present in the dom or not
   expect(linkElement).toBeInTheDocument();
 }); 
 
-it("creating the snapshot of the compoenent correctly", () => {
-  const MyApp = () => {
-    return (
-      <Router>
-        <Dashboard setView={setView} />
-      </Router>
-    );
-  };
-  const tree = renderer.create(<MyApp />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+ 

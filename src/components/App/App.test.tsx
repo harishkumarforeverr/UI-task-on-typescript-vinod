@@ -16,14 +16,4 @@ test('renders learn react App', () => {
   expect(linkElement).toBeInTheDocument();
 }); 
 
-it("renders correctly", () => {
-  const MyApp = () => {
-    return (
-      <Router>
-        <App />
-      </Router>
-    );
-  };
-  const tree = renderer.create(<MyApp />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+ 

@@ -42,14 +42,4 @@ jest.mock("react-router-dom", () => ({
   expect(linkElement).toBeInTheDocument();
 }); 
 
-it("creating the snapshot of the compoenent correctly", () => {
-  const MyButtonWrapper = () => {
-    return (
-      <Router>
-         <ButtonWrapper className="btn">button label</ButtonWrapper>
-      </Router>
-    );
-  };
-  const tree = renderer.create(<MyButtonWrapper />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+ 

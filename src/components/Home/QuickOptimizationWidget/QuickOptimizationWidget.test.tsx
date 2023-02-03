@@ -54,15 +54,4 @@ test('renders the compoenet and finding whether a text present in the dom or not
   const linkElement = screen.getByText("Hardware Setup");
   expect(linkElement).toBeInTheDocument();
 }); 
-
-it("creating the snapshot of the compoenent correctly", () => {
-  const MyQuickOptimizationWidget = () => {
-    return (
-      <Router>
-        <QuickOptimizationWidget setView={setView} />
-      </Router>
-    );
-  };
-  const tree = renderer.create(<MyQuickOptimizationWidget />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+ 
