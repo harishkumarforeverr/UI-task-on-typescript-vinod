@@ -1,10 +1,10 @@
-.appConatiner_DashboardConatiner .appConatiner_drawer {
+/* .appConatiner_DashboardConatiner .appConatiner_drawer {
   position: fixed;
   right: 0;
   top: 2rem;
-}
+} */
 
-.appConatiner_DashboardConatiner .i2cControl,
+/* .appConatiner_DashboardConatiner .i2cControl,
 .appConatiner_DashboardConatiner .i2cControlFalse {
   cursor: pointer;
   width: 36px;
@@ -16,9 +16,9 @@
   flex-direction: column;
   gap: 0.5rem;
   padding-top: 0.4rem;
-}
+} */
 
-.appConatiner_DashboardConatiner .i2cControl .rightIcon,
+/* .appConatiner_DashboardConatiner .i2cControl .rightIcon,
 .appConatiner_DashboardConatiner .i2cControlFalse .rightIcon {
   font-size: 0.81rem;
 }
@@ -43,7 +43,7 @@
 .appConatiner_DashboardConatiner .i2cControlFalse {
   width: 36px;
   height: 86px;
-}
+} */
 .dashboard {
   display: flex;
   justify-content: space-between;
