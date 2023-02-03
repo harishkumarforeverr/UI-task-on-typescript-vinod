@@ -13,7 +13,7 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { Card } from "antd"; 
 import { paths } from "../../../utils/constant";
 import { Assests } from "../../../images/DashboardAssests";
-import { usersLinks } from "../pdf";
+import { usersLinks } from "../urlLinks";
 import SelectWrapper from "../SelectWrapper/SelectWrapper";
 function Dashboard({ setView }: { setView: any }) {
  
