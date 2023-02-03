@@ -41,7 +41,7 @@ function Dashboard({ setView }: { setView: any }) {
           <img className="image_inner" src={Assests.cardImage_1} alt="image_inner" />{" "}
         </GetImages>
       ),
-      link: usersLinks.link1,
+      link: usersLinks.userGuidesLink,
     },
     {
       title: "Product Page",  icons: (
@@ -49,7 +49,7 @@ function Dashboard({ setView }: { setView: any }) {
           <img className="image_inner" src={Assests.cardImage_2} alt="image_inner" />{" "}
         </GetImages>
       ),
-      link: usersLinks.link2,
+      link: usersLinks.ProductPageLink,
     },
     {
       title: "Data Sheet",  icons: (
@@ -57,7 +57,7 @@ function Dashboard({ setView }: { setView: any }) {
           <img className="image_inner" src={Assests.cardImage_3} alt="image_inner" />{" "}
         </GetImages>
       ),
-      link: usersLinks.link3,
+      link: usersLinks.DataSheetLink,
     },
     {
       title: "Tuning Page",  icons: (
@@ -65,7 +65,7 @@ function Dashboard({ setView }: { setView: any }) {
           <img className="image_inner" src={Assests.cardImage_4} alt="image_inner" />{" "}
         </GetImages>
       ),
-      link: usersLinks.link4,
+      link: usersLinks.TuningLink,
     },
     {
       title: "Tools Page",  icons: (
@@ -73,7 +73,7 @@ function Dashboard({ setView }: { setView: any }) {
           <img className="image_inner" src={Assests.cardImage_5} alt="image_inner" />{" "}
         </GetImages>
       ),
-      link: usersLinks.link5,
+      link: usersLinks.ToolsPageLink,
     },
     {
       title: "E2E testing",  icons: (
@@ -81,7 +81,7 @@ function Dashboard({ setView }: { setView: any }) {
           <img className="image_inner" src={Assests.cardImage_6} alt="image_inner" />{" "}
         </GetImages>
       ),
-      link: usersLinks.link6,
+      link: usersLinks.E2ETestingLink,
     },
   ];
   const handleChange = (event: SelectChangeEvent) => {
