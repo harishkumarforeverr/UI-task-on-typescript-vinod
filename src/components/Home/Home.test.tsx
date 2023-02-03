@@ -1,13 +1,19 @@
 import { render, screen } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom";
-import renderer from "react-test-renderer";
+import { BrowserRouter as Router } from "react-router-dom"; 
 import DashboardContainer, {
   ButtonWrapper,
   Dashboard,
   QuickOptimizationWidget,
   SelectWrapper,
-} from "./Home";
-// import DashboardContainer, { ButtonWrapper, Dashboard, QuickOptimizationWidget, SelectWrapper } from "./index.tsx";
+} from "./Home"; 
+
+const handleChange = jest.fn((arg: any) => arg);
+const handleTheMotor = jest.fn(() => null);
+const BtnSelectDeviceOpacity = "0.5";
+const dotColor = "#40C36C";
+const deviceTitle = "MCF8316EVM";
+const devDesc = "This GUI supports MCF8316EVM";
+const devSubDesc = "Correct device detected : MCF8316A";
 
 const mockHistoryPush = jest.fn();
 const mockGoBack = jest.fn();
@@ -100,14 +106,6 @@ test("renders the and QuickOptimizationWidget whether a text present in the dom 
   const linkElement = screen.getByText("Hardware Setup");
   expect(linkElement).toBeInTheDocument();
 });
-
-const handleChange = jest.fn((arg: any) => arg);
-const handleTheMotor = jest.fn(() => null);
-const BtnSelectDeviceOpacity = "0.5";
-const dotColor = "#40C36C";
-const deviceTitle = "MCF8316EVM";
-const devDesc = "This GUI supports MCF8316EVM";
-const devSubDesc = "Correct device detected : MCF8316A";
 
 test("renders the SelectWrapper and finding whether a text present in the dom or not", () => {
   const MySelectWrapper = () => {
