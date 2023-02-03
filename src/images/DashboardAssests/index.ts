@@ -9,7 +9,7 @@ import cardImage_6 from "./cardImage_6.png";
 import cardImage_5 from "./cardImage_5.png";
 import bubbleRed from "./bubbleRed.png";
 import bubbleGreen from "./bubbleGreen.png";
-
+import nextIcon from "./nextIcon.png"
 export const Assests = {
   DashboardImageCircut,
   nextIcon_pro,
@@ -20,5 +20,5 @@ export const Assests = {
   cardImage_3,
   cardImage_4,
   cardImage_5,
-  cardImage_6,
+  cardImage_6,nextIcon
 };

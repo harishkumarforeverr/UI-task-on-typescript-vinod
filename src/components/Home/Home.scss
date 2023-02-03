@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap");
+
+.appConatiner_DashboardConatiner {
+  .appConatiner_drawer {
+    position: fixed;
+    right: 0;
+    top: 2rem;
+  }
+  .i2cControl,
+  .i2cControlFalse {
+    cursor: pointer;
+    width: 36px;
+    height: 54px;
+
+    background: #ffffff;
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.4rem;
+    .rightIcon {
+      font-size: 0.81rem;
+    }
+    .i2cLabel {
+      width: 19px;
+      height: 12px;
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 12px;
+      color: #1c99c4;
+
+      p {
+        writing-mode: vertical-lr;
+      }
+    }
+  }
+  .i2cControlFalse {
+    width: 36px;
+    height: 86px;
+  }
+}
+// ?Dashboard starts here
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-top: -8px;
+  gap: 37px;
+  padding-left: 5%;
+  height: 50rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  overflow-y: hidden;
+  padding-bottom: 2rem;
+  .lightRed {
+    color: white;
+  }
+  .ConatinersIconsTitle {
+    padding: 1%;
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+  }
+  .cardsRigghtContainer {
+    display: grid;
+    // display: flex;
+    // flex-wrap: wrap;
+    margin-left: 10px;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    height: 100%;
+    gap: 40px;
+    .conatinerCardImage {
+      cursor: pointer;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      min-height: 8.5 !important;
+
+      background: #f2f8fb !important;
+      box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2) !important;
+      border-radius: 6px !important;
+    }
+    .rightConatinesIcons {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .rightConatinesIcons .anticon {
+      background: #fac7c7;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: rgba(0, 0, 0, 0.489);
+
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      width: 45px !important;
+      height: 45px !important;
+    }
+    .titleRightConatiner {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 21px;
+      margin-top: 4px;
+      color: #1c99c4;
+      white-space: nowrap;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .knowYourDevice {
+    box-sizing: border-box;
+
+    height: 100%;
+    padding-bottom: 1.1%;
+    margin-top: auto;
+    margin-top: 1rem;
+
+    min-height: 41.3rem;
+    height: 100%;
+    background: #f2f8fb;
+    box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    left: 817px;
+    .knowYourDevice_head {
+      box-sizing: border-box;
+      min-height: 48px;
+      background: #d4e5ee;
+      border-bottom: 2px solid #1c99c4;
+      border-radius: 6px 6px 0px 0px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      h1 {
+        min-height: 18px;
+        white-space: nowrap;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+
+        color: #1c99c4;
+      }
+    }
+    .knowYourDevice_context {
+      display: grid;
+
+      align-items: center;
+      .imageKnowContainer {
+        display: grid;
+
+        align-items: center;
+        margin: 2rem 0;
+      }
+      margin-left: 5px;
+      img {
+        width: 93%;
+        margin: 0 auto;
+      }
+      p {
+        width: 90%;
+        margin: 0 auto;
+        min-height: 167px;
+
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 2rem;
+        text-align: justify;
+        letter-spacing: 0.04em;
+        font-family: Roboto;
+
+        color: #231f20;
+      }
+    }
+  }
+}
+
+.GetImages {
+  position: relative;
+  .ellipse_image {
+    width: 4rem;
+  }
+  .GetImages_child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_inner {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+// ?Dashboard ends here
+
+// select wrapper start here
+.conatinerCard {
+  margin: 1%;
+  min-width: 380px;
+  min-height: 271px;
+  max-height: 373px;
+  height: 100%;
+  background: #f2f8fb !important;
+  box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 6px !important;
+  position: relative;
+  #selectlabelCommon {
+    color: black !important;
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+      color: black !important;
+    }
+  }
+  .ant-card-body {
+    // display: grid;
+    width: 380px;
+    height: 326px;
+  }
+  .GuiSupport {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3d3d3d;
+    margin-left: 40px;
+  }
+  .deatiles {
+    margin-top: 2.3rem;
+    display: flex;
+  }
+  .btn {
+    position: absolute;
+    bottom: 27px;
+    align-self: end;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 8px;
+    width: 114px;
+    height: 44px;
+
+    background: #cc0000;
+    border-radius: 5px;
+    color: white;
+  }
+  .ColorContainer {
+    width: 18px;
+    height: 18px;
+    left: 151px;
+    top: 197px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .numberText {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #231f20;
+  }
+}
+
+// start wrapper ends her
+
+// QuickOptimizationWidget start here
+.QuickOptimizationWidget {
+  padding-left: 2%;
+  margin-top: -8px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  height: 100%;
+  padding-right: 3%;
+  .Conatiner2sIconsTitle {
+    height: 100%;
+    .QuickOptimizationWidget_hardwareSetup {
+      display: flex;
+      // gap: 2rem;
+      gap: 4%;
+      .hardwareSetup {
+        display: flex;
+        gap: 2rem;
+        // min-width: 887px;
+        width: 100%;
+        min-height: 373px;
+        padding-left: 1rem;
+        background: #f2f8fb;
+        border: 1px solid #118899;
+        border-radius: 12px;
+        .hardWareTitleAndImage {
+          h1 {
+            font-family: "Helvetica";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 24px;
+
+            color: #118899;
+          }
+          img {
+            margin-left: 10px;
+            height: 300px;
+          }
+        }
+        .hardWareDescription {
+          h1 {
+            font-family: "Helvetica";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #118899;
+            margin-top: 20px;
+          }
+          ol {
+            li {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 18px;
+              color: #231f20;
+              margin-bottom: 7px;
+            }
+          }
+          p {
+            padding-right: 4%;
+            margin-left: 3rem;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            word-break: break-all;
+            line-height: 20px;
+            line-height: 1.6rem;
+            color: #231f20;
+            margin-top: 30px;
+          }
+          .setupdone {
+            margin-left: 3rem;
+            margin-top: 1.5rem;
+            h1 {
+              font-family: "Helvetica";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 24px;
+
+              color: #118899;
+            }
+            .icon {
+              .anticon {
+                font-size: 1.3rem;
+              }
+              margin-right: 10px;
+            }
+          }
+          .actionBtn {
+            margin-left: 3rem;
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+            margin-top: 2rem;
+            .checkboxReadOnly {
+              pointer-events: none;
+            }
+            p {
+              white-space: nowrap;
+              margin: 0;
+              font-family: Helvetica;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 24px;
+
+              color: #118899;
+            }
+            button {
+              font-family: "Helvetica";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
+              border: 2px solid #cc0000;
+              color: #cc0000;
+              height: 33px;
+              min-width: 6.5rem;
+              margin-left: auto;
+              margin-right: 5rem;
+              border-radius: 5px;
+            }
+            .Setup_completed_btn {
+              background-color: #cc0000;
+              color: white;
+
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+    .cardsConatiner {
+      display: flex;
+
+      justify-content: space-between;
+      gap: 5%;
+      margin-top: 3rem;
+      margin-left: 1rem;
+      .cardsConatiner_card {
+        flex-basis: 100%;
+        border-bottom-right-radius: 2%;
+        overflow: hidden;
+      }
+      .cards {
+        height: 100%;
+        padding-top: 1rem;
+
+        text-align: center;
+
+        position: relative;
+        box-sizing: border-box;
+        height: 26rem;
+
+        background: #118899;
+        border-radius: 12px;
+        .card_title {
+          h1 {
+            font-family: "Helvetica";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #ffffff;
+          }
+        }
+        .cardContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          background: #f2f8fb;
+          border: 1px solid #f2f8fb;
+          box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2);
+          border-radius: 12px;
+          // height: 22rem;
+          width: 100%;
+          height: 100%;
+          p {
+            font-family: "Helvetica";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+
+            text-align: center;
+
+            color: #323232;
+          }
+        }
+        .nextIcons {
+          position: absolute;
+          bottom: -0.3rem;
+          right: 0;
+          width: 68px;
+          height: 48px;
+        }
+      }
+    }
+  }
+}
+
+// QuickOptimizationWidget ends here
