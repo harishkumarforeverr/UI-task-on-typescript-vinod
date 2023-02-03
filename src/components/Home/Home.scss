@@ -40,9 +40,7 @@
     width: 36px;
     height: 86px;
   }
-}
-// ?Dashboard starts here
-
+} 
 .dashboard {
   display: flex;
   justify-content: space-between;
@@ -187,8 +185,7 @@
       }
     }
   }
-}
-
+} 
 .GetImages {
   position: relative;
   .ellipse_image {
@@ -204,11 +201,7 @@
     width: 2.5rem;
     height: 2.5rem;
   }
-}
-
-// ?Dashboard ends here
-
-// select wrapper start here
+} 
 .conatinerCard {
   margin: 1%;
   min-width: 380px;
@@ -283,11 +276,7 @@
     align-items: center;
     color: #231f20;
   }
-}
-
-// start wrapper ends her
-
-// QuickOptimizationWidget start here
+} 
 .QuickOptimizationWidget {
   padding-left: 2%;
   margin-top: -8px;
@@ -493,6 +482,4 @@
       }
     }
   }
-}
-
-// QuickOptimizationWidget ends here
+} 
