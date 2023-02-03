@@ -1,49 +1,3 @@
-/* .appConatiner_DashboardConatiner .appConatiner_drawer {
-  position: fixed;
-  right: 0;
-  top: 2rem;
-} */
-
-/* .appConatiner_DashboardConatiner .i2cControl,
-.appConatiner_DashboardConatiner .i2cControlFalse {
-  cursor: pointer;
-  width: 36px;
-  height: 54px;
-
-  background: #ffffff;
-  border-radius: 8px 0px 0px 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding-top: 0.4rem;
-} */
-
-/* .appConatiner_DashboardConatiner .i2cControl .rightIcon,
-.appConatiner_DashboardConatiner .i2cControlFalse .rightIcon {
-  font-size: 0.81rem;
-}
-
-.appConatiner_DashboardConatiner .i2cControl .i2cLabel,
-.appConatiner_DashboardConatiner .i2cControlFalse .i2cLabel {
-  width: 19px;
-  height: 12px;
-  font-family: "Helvetica";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 12px;
-  color: #1c99c4;
-}
-
-.appConatiner_DashboardConatiner .i2cControl .i2cLabel p,
-.appConatiner_DashboardConatiner .i2cControlFalse .i2cLabel p {
-  writing-mode: vertical-lr;
-}
-
-.appConatiner_DashboardConatiner .i2cControlFalse {
-  width: 36px;
-  height: 86px;
-} */
 .dashboard {
   display: flex;
   justify-content: space-between;
@@ -74,7 +28,7 @@
   height: 100%;
   gap: 40px;
 }
-.dashboard .cardsRigghtContainer .conatinerCardImage {
+.dashboard .conatinerCardImage {
   cursor: pointer;
   display: grid;
   justify-content: center;
@@ -86,12 +40,12 @@
   box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.2) !important;
   border-radius: 6px !important;
 }
-.dashboard .cardsRigghtContainer .rightConatinesIcons {
+.dashboard .rightConatinesIcons {
   display: grid;
   justify-content: center;
   align-items: center;
 }
-.dashboard .cardsRigghtContainer .rightConatinesIcons .anticon {
+.dashboard .rightConatinesIcons .anticon {
   background: #fac7c7;
 
   display: flex;
@@ -105,7 +59,7 @@
   width: 45px !important;
   height: 45px !important;
 }
-.dashboard .cardsRigghtContainer .titleRightConatiner {
+.dashboard .titleRightConatiner {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
@@ -116,7 +70,7 @@
   white-space: nowrap;
 }
 
-.dashboard .cardsRigghtContainer .titleRightConatiner:hover {
+.dashboard .titleRightConatiner:hover {
   text-decoration: underline;
 }
 
@@ -136,7 +90,7 @@
   left: 817px;
 }
 
-.dashboard .knowYourDevice .knowYourDevice_head {
+.dashboard .knowYourDevice_head {
   box-sizing: border-box;
   min-height: 48px;
   background: #d4e5ee;
@@ -146,7 +100,7 @@
   align-items: center;
   padding-left: 20px;
 }
-.dashboard .knowYourDevice .knowYourDevice_head h1 {
+.dashboard .knowYourDevice_head h1 {
   min-height: 18px;
   white-space: nowrap;
   font-family: Helvetica;
@@ -158,23 +112,23 @@
   color: #1c99c4;
 }
 
-.dashboard .knowYourDevice .knowYourDevice_context {
+.dashboard .knowYourDevice_context {
   display: grid;
 
   margin-left: 5px;
   align-items: center;
 }
-.dashboard .knowYourDevice .knowYourDevice_context .imageKnowContainer {
+.dashboard .imageKnowContainer {
   display: grid;
 
   align-items: center;
   margin: 2rem 0;
 }
-.dashboard .knowYourDevice .knowYourDevice_context img {
+.dashboard .knowYourDevice_context img {
   width: 93%;
   margin: 0 auto;
 }
-.dashboard .knowYourDevice .knowYourDevice_context p {
+.dashboard .knowYourDevice_context p {
   width: 90%;
   margin: 0 auto;
   min-height: 167px;
@@ -221,11 +175,7 @@
 .conatinerCard #selectlabelCommon {
   color: black !important;
 }
-.conatinerCard #selectlabelCommon:hover,
-.conatinerCard #selectlabelCommon:active,
-.conatinerCard #selectlabelCommon:focus,
-.conatinerCard #selectlabelCommon:focus,
-.conatinerCard #selectlabelCommon:focus-within {
+.conatinerCard #selectlabelCommon:hover {
   color: black !important;
 }
 .conatinerCard .ant-card-body {
@@ -294,17 +244,12 @@
 .QuickOptimizationWidget .Conatiner2sIconsTitle {
   height: 100%;
 }
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup {
+.QuickOptimizationWidget .QuickOptimizationWidget_hardwareSetup {
   display: flex;
   gap: 4%;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup {
+.QuickOptimizationWidget .hardwareSetup {
   display: flex;
   gap: 2rem;
   width: 100%;
@@ -314,12 +259,7 @@
   border: 1px solid #118899;
   border-radius: 12px;
 }
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareTitleAndImage
-  h1 {
+.QuickOptimizationWidget .hardWareTitleAndImage h1 {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
@@ -329,22 +269,12 @@
   color: #118899;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareTitleAndImage
-  img {
+.QuickOptimizationWidget .hardWareTitleAndImage img {
   margin-left: 10px;
   height: 300px;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  h1 {
+.QuickOptimizationWidget .hardWareDescription h1 {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
@@ -354,13 +284,7 @@
   margin-top: 20px;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  ol
-  li {
+.QuickOptimizationWidget li {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -370,12 +294,7 @@
   margin-bottom: 7px;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  p {
+.QuickOptimizationWidget .hardWareDescription p {
   padding-right: 4%;
   margin-left: 3rem;
   font-family: Roboto;
@@ -389,23 +308,12 @@
   margin-top: 30px;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  .setupdone {
+.QuickOptimizationWidget .setupdone {
   margin-left: 3rem;
   margin-top: 1.5rem;
   margin-right: 10px;
 }
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  .setupdone
-  h1 {
+.QuickOptimizationWidget .setupdone h1 {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
@@ -415,22 +323,10 @@
   color: #118899;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  .setupdone
-  .icon
-  .anticon {
+.QuickOptimizationWidget .setupdone .anticon {
   font-size: 1.3rem;
 }
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  .actionBtn {
+.QuickOptimizationWidget .actionBtn {
   margin-left: 3rem;
   display: flex;
   align-items: baseline;
@@ -438,23 +334,11 @@
   margin-top: 2rem;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  .actionBtn
-  .checkboxReadOnly {
+.QuickOptimizationWidget .checkboxReadOnly {
   pointer-events: none;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  .actionBtn
-  p {
+.QuickOptimizationWidget .actionBtn p {
   white-space: nowrap;
   margin: 0;
   font-family: Helvetica;
@@ -466,13 +350,7 @@
   color: #118899;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  .actionBtn
-  button {
+.QuickOptimizationWidget .actionBtn button {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
@@ -487,19 +365,13 @@
   border-radius: 5px;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .QuickOptimizationWidget_hardwareSetup
-  .hardwareSetup
-  .hardWareDescription
-  .actionBtn
-  .Setup_completed_btn {
+.QuickOptimizationWidget .Setup_completed_btn {
   background-color: #cc0000;
   color: white;
 
   border-radius: 5px;
 }
-.QuickOptimizationWidget .Conatiner2sIconsTitle .cardsConatiner {
+.QuickOptimizationWidget .cardsConatiner {
   display: flex;
 
   justify-content: space-between;
@@ -507,16 +379,13 @@
   margin-top: 3rem;
   margin-left: 1rem;
 }
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .cardsConatiner
-  .cardsConatiner_card {
+.QuickOptimizationWidget .cardsConatiner_card {
   flex-basis: 100%;
   border-bottom-right-radius: 2%;
   overflow: hidden;
 }
 
-.QuickOptimizationWidget .Conatiner2sIconsTitle .cardsConatiner .cards {
+.QuickOptimizationWidget .cards {
   height: 100%;
   padding-top: 1rem;
 
@@ -529,12 +398,7 @@
   background: #118899;
   border-radius: 12px;
 }
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .cardsConatiner
-  .cards
-  .card_title
-  h1 {
+.QuickOptimizationWidget .card_title h1 {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
@@ -544,11 +408,7 @@
   color: #ffffff;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .cardsConatiner
-  .cards
-  .cardContainer {
+.QuickOptimizationWidget .cardContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -560,12 +420,7 @@
   width: 100%;
   height: 100%;
 }
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .cardsConatiner
-  .cards
-  .cardContainer
-  p {
+.QuickOptimizationWidget .cardContainer p {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
@@ -577,11 +432,7 @@
   color: #323232;
 }
 
-.QuickOptimizationWidget
-  .Conatiner2sIconsTitle
-  .cardsConatiner
-  .cards
-  .nextIcons {
+.QuickOptimizationWidget .nextIcons {
   position: absolute;
   bottom: -0.3rem;
   right: 0;
