@@ -3,7 +3,7 @@ import "./Home.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
 import { CheckCircleOutlined } from "@ant-design/icons";
-import { Assests } from "../../images/DashboardAssests";
+import { Assests } from "../../images/DashboardAssests/HomePageImages";
 import { Button, Card, Checkbox } from "antd";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
