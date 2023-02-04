@@ -2,13 +2,38 @@ import { useState, useEffect } from "react";
 import "./Home.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
-import { CheckCircleOutlined } from "@ant-design/icons";
-import { Assests } from "../../images/DashboardAssests/HomePageImages";
+import { CheckCircleOutlined } from "@ant-design/icons"; 
+import DashboardImageCircut from "../../images/Home/DashboardImageCircut.png";
+import nextIcon_pro from "../../images/Home/nextIcon_pro.png";
+import Ellipse from "../../images/Home/Ellipse.png";
+import cardImage_1 from "../../images/Home/cardImage_1.png";
+import cardImage_2 from "../../images/Home/cardImage_2.png";
+import cardImage_3 from "../../images/Home/cardImage_3.png";
+import cardImage_4 from "../../images/Home/cardImage_4.png";
+import cardImage_6 from "../../images/Home/cardImage_6.png";
+import cardImage_5 from "../../images/Home/cardImage_5.png";
+import bubbleRed from "../../images/Home/bubbleRed.png";
+import bubbleGreen from "../../images/Home/bubbleGreen.png";
+import nextIcon from "../../images/Home/nextIcon.png";
 import { Button, Card, Checkbox } from "antd";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
+
+
+export const Assests = {
+  DashboardImageCircut,
+  nextIcon_pro,
+  Ellipse,
+  cardImage_1,
+  bubbleRed,bubbleGreen,
+  cardImage_2,
+  cardImage_3,
+  cardImage_4,
+  cardImage_5,
+  cardImage_6,nextIcon
+};
 
 const userGuidesLink =
   "https://dev.ti.com/gallery/view/BLDC/MCF8316A_GUI/ver/1.1.6/";
