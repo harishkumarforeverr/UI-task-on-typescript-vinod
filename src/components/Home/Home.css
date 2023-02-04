@@ -11,6 +11,7 @@
   overflow-y: hidden;
   padding-bottom: 2rem;
 }
+
 .dashboard .lightRed {
   color: white;
 }
@@ -144,7 +145,9 @@
 
   color: #231f20;
 }
-
+ul.MuiMenu-list li:first-child{
+  display: none;
+}
 .GetImages {
   position: relative;
 }

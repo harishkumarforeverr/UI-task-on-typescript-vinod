@@ -85,6 +85,7 @@ export function SelectWrapper({
               labelId="selectlabelCommon"
               id="demo-simple-select"
               // value={age}
+              className="select_wrapper"
               label="Select Device*"
               onChange={handleChange}
               defaultValue="Select Your Device"
