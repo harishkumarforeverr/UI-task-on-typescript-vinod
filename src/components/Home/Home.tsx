@@ -20,6 +20,7 @@ import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
+import DeviceConstant from "./constants/MCF8315_EEPROM.json";
 import {
   userGuidesLink,
   TuningLink,
@@ -86,14 +87,6 @@ const usersLinks:
       E2ETestingLink?: undefined;
     } = getDashboardLinks("MCF8316EVM");
 
-export const Buttons = (props: any) => {
-  return (
-    <>
-      <Button {...props}> {props.children}</Button>
-    </>
-  );
-};
-
 export function SelectWrapper({
   dotColor,
   deviceTitle,
@@ -139,9 +132,9 @@ export function SelectWrapper({
               <MenuItem value={"Select Your Device"}>
                 Select Your Device
               </MenuItem>
-              <MenuItem value={10}>MCF83164EVM</MenuItem>
-              <MenuItem value={20}>MCF8315EVM</MenuItem>
-              <MenuItem value={30}>MCF8316EVM</MenuItem>
+              <MenuItem value={DeviceConstant.device_name}>
+                {DeviceConstant.device_name}
+              </MenuItem>
             </Select>
           </FormControl>
         </>
@@ -170,7 +163,7 @@ export function SelectWrapper({
           {devSubDesc}
         </p>
       </div>
-      <Buttons
+      <Button
         style={{
           opacity: BtnSelectDeviceOpacity,
         }}
@@ -178,7 +171,7 @@ export function SelectWrapper({
         onClick={handleTheMotor}
       >
         Select Device
-      </Buttons>
+      </Button>
     </div>
   );
 }
@@ -434,20 +427,20 @@ export function QuickOptimizationWidget({ setView }: { setView: any }) {
                         />
                         <p>Hardware setup has been done manually</p>
                         {showCards ? (
-                          <Buttons
+                          <Button
                             className="Setup_completed_btn redbgm"
                             onClick={handleTheSetup}
                           >
                             Setup completed
-                          </Buttons>
+                          </Button>
                         ) : (
-                          <Buttons
+                          <Button
                             onClick={() => {
                               Navigate("/setting");
                             }}
                           >
                             Setup Now
-                          </Buttons>
+                          </Button>
                         )}
                       </div>
                     </>

@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom"; 
-import DashboardContainer, {
-  Buttons,
+import DashboardContainer, { 
   Dashboard,
   QuickOptimizationWidget,
   SelectWrapper,
@@ -68,18 +67,7 @@ test("renders the compoenets and finding whether a text present in the dom or no
   expect(linkElement).toBeInTheDocument();
 });
 
-test("renders the and finding whether a text present in the dom or not", () => {
-  const MyButtonWrapper = () => {
-    return (
-      <Router>
-        <Buttons className="btn">button label</Buttons>
-      </Router>
-    );
-  };
-  render(<MyButtonWrapper />);
-  const linkElement = screen.getByText("button label");
-  expect(linkElement).toBeInTheDocument();
-});
+ 
 
 test("renders the QuickOptimizationWidget and finding whether a text present in the dom or not", () => {
   const MyQuickOptimizationWidget = () => {
