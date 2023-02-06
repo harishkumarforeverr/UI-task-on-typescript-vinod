@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom"; 
 import DashboardContainer, {
-  ButtonWrapper,
+  Buttons,
   Dashboard,
   QuickOptimizationWidget,
   SelectWrapper,
@@ -72,7 +72,7 @@ test("renders the and finding whether a text present in the dom or not", () => {
   const MyButtonWrapper = () => {
     return (
       <Router>
-        <ButtonWrapper className="btn">button label</ButtonWrapper>
+        <Buttons className="btn">button label</Buttons>
       </Router>
     );
   };

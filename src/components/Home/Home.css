@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap");
+
 .dashboard {
   display: flex;
   justify-content: space-between;
@@ -165,6 +167,7 @@ ul.MuiMenu-list li:first-child {
   height: 2.5rem;
 }
 .conatinerCard {
+  padding: 2%;
   margin: 1%;
   min-width: 380px;
   min-height: 271px;
@@ -329,10 +332,9 @@ ul.MuiMenu-list li:first-child {
 .QuickOptimizationWidget .setupdone .anticon {
   font-size: 1.3rem;
 }
-
-.QuickOptimizationWidget .setupdone .anticon svg {
-  width: 1.82rem;
-  height: 1.82rem;
+.iconsSetup {
+  width: 1.82rem !important;
+  height: 1.82rem !important;
   transform: translateY(7px);
   margin-right: 10px;
 }

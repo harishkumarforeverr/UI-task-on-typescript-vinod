@@ -20,7 +20,30 @@ import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
+import {
+  userGuidesLink,
+  TuningLink,
+  DataSheetLink,
+  ProductPageLink,
+  ToolsPageLink,
+  E2ETestingLink,
+} from "../../config/config";
 
+const getDashboardLinks = (arg: string) => {
+  switch (arg) {
+    case "MCF8316EVM":
+      return {
+        userGuidesLink,
+        ProductPageLink,
+        DataSheetLink,
+        TuningLink,
+        ToolsPageLink,
+        E2ETestingLink,
+      };
+    default:
+      return {};
+  }
+};
 export const Assests = {
   DashboardImageCircut,
   nextIcon_pro,
@@ -36,18 +59,6 @@ export const Assests = {
   nextIcon,
 };
 
-const userGuidesLink =
-  "https://dev.ti.com/gallery/view/BLDC/MCF8316A_GUI/ver/1.1.6/";
-const TuningLink =
-  "https://www.ti.com/lit/ug/sllu335a/sllu335a.pdf?ts=1675330262927";
-const DataSheetLink =
-  "https://www.ti.com/lit/ds/symlink/mcf8316a.pdf?ts=1675329689450&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FMCF8316A";
-
-const ProductPageLink = "https://www.ti.com/product/MCF8316A";
-const ToolsPageLink = "https://www.ti.com/tool/MCF8316AEVM";
-const E2ETestingLink =
-  "https://e2e.ti.com/support/motor-drivers-group/motor-drivers/f/motor-drivers-forum";
-
 interface propsType {
   dotColor: any;
   deviceTitle: string;
@@ -57,16 +68,25 @@ interface propsType {
   handleChange?: (event: SelectChangeEvent) => void;
   handleTheMotor?: () => void;
 }
-const usersLinks = {
-  userGuidesLink,
-  ProductPageLink,
-  DataSheetLink,
-  TuningLink,
-  ToolsPageLink,
-  E2ETestingLink,
-};
+const usersLinks:
+  | {
+      userGuidesLink: string;
+      ProductPageLink: string;
+      DataSheetLink: string;
+      TuningLink: string;
+      ToolsPageLink: string;
+      E2ETestingLink: string;
+    }
+  | {
+      userGuidesLink?: undefined;
+      ProductPageLink?: undefined;
+      DataSheetLink?: undefined;
+      TuningLink?: undefined;
+      ToolsPageLink?: undefined;
+      E2ETestingLink?: undefined;
+    } = getDashboardLinks("MCF8316EVM");
 
-export const ButtonWrapper = (props: any) => {
+export const Buttons = (props: any) => {
   return (
     <>
       <Button {...props}> {props.children}</Button>
@@ -150,7 +170,7 @@ export function SelectWrapper({
           {devSubDesc}
         </p>
       </div>
-      <ButtonWrapper
+      <Buttons
         style={{
           opacity: BtnSelectDeviceOpacity,
         }}
@@ -158,7 +178,7 @@ export function SelectWrapper({
         onClick={handleTheMotor}
       >
         Select Device
-      </ButtonWrapper>
+      </Buttons>
     </div>
   );
 }
@@ -183,89 +203,59 @@ export function Dashboard({ setView }: { setView: any }) {
       </div>
     );
   };
+  const getTheUserInfoJsx = (
+    title: string,
+    srcIconUrl: string,
+    link: string | undefined
+  ) => {
+    return {
+      title,
+      icons: (
+        <GetImages>
+          <img className="image_inner" src={srcIconUrl} alt="image_inner" />{" "}
+        </GetImages>
+      ),
+      link,
+    };
+  };
   const userInfoObj: {
     title: string;
     icons: JSX.Element;
-    link: string;
+    link: string | undefined;
   }[] = [
-    {
-      title: "Users's Guide",
-      icons: (
-        <GetImages>
-          <img
-            className="image_inner"
-            src={Assests.cardImage_1}
-            alt="image_inner"
-          />{" "}
-        </GetImages>
-      ),
-      link: usersLinks.userGuidesLink,
-    },
-    {
-      title: "Product Page",
-      icons: (
-        <GetImages>
-          <img
-            className="image_inner"
-            src={Assests.cardImage_2}
-            alt="image_inner"
-          />{" "}
-        </GetImages>
-      ),
-      link: usersLinks.ProductPageLink,
-    },
-    {
-      title: "Data Sheet",
-      icons: (
-        <GetImages>
-          <img
-            className="image_inner"
-            src={Assests.cardImage_3}
-            alt="image_inner"
-          />{" "}
-        </GetImages>
-      ),
-      link: usersLinks.DataSheetLink,
-    },
-    {
-      title: "Tuning Page",
-      icons: (
-        <GetImages>
-          <img
-            className="image_inner"
-            src={Assests.cardImage_4}
-            alt="image_inner"
-          />{" "}
-        </GetImages>
-      ),
-      link: usersLinks.TuningLink,
-    },
-    {
-      title: "Tools Page",
-      icons: (
-        <GetImages>
-          <img
-            className="image_inner"
-            src={Assests.cardImage_5}
-            alt="image_inner"
-          />{" "}
-        </GetImages>
-      ),
-      link: usersLinks.ToolsPageLink,
-    },
-    {
-      title: "E2E testing",
-      icons: (
-        <GetImages>
-          <img
-            className="image_inner"
-            src={Assests.cardImage_6}
-            alt="image_inner"
-          />{" "}
-        </GetImages>
-      ),
-      link: usersLinks.E2ETestingLink,
-    },
+    getTheUserInfoJsx(
+      "Users's Guide",
+      Assests.cardImage_1,
+      usersLinks.userGuidesLink
+    ),
+    getTheUserInfoJsx(
+      "Product Page",
+      Assests.cardImage_2,
+      usersLinks.ProductPageLink
+    ),
+
+    getTheUserInfoJsx(
+      "Data Sheet",
+      Assests.cardImage_3,
+      usersLinks.DataSheetLink
+    ),
+
+    getTheUserInfoJsx(
+      "Tuning Page",
+      Assests.cardImage_4,
+      usersLinks.TuningLink
+    ),
+    getTheUserInfoJsx(
+      "Tools Page",
+      Assests.cardImage_5,
+      usersLinks.ToolsPageLink
+    ),
+
+    getTheUserInfoJsx(
+      "E2E testing",
+      Assests.cardImage_6,
+      usersLinks.E2ETestingLink
+    ),
   ];
   const handleChange = (event: SelectChangeEvent) => {
     setMotor(event.target.value);
@@ -335,7 +325,7 @@ export function QuickOptimizationWidget({ setView }: { setView: any }) {
     subTitle: string;
     desc: string;
     subDesc: string;
-}[] = [
+  }[] = [
     {
       title: "Quick Spin",
       subTitle: "",
@@ -429,7 +419,7 @@ export function QuickOptimizationWidget({ setView }: { setView: any }) {
                     <div className="setupdone">
                       <h1>
                         <span className="icon">
-                          <CheckCircleIcon />
+                          <CheckCircleIcon className="iconsSetup" />
                         </span>
                         The Hardware setup is done
                       </h1>
@@ -444,20 +434,20 @@ export function QuickOptimizationWidget({ setView }: { setView: any }) {
                         />
                         <p>Hardware setup has been done manually</p>
                         {showCards ? (
-                          <ButtonWrapper
+                          <Buttons
                             className="Setup_completed_btn redbgm"
                             onClick={handleTheSetup}
                           >
                             Setup completed
-                          </ButtonWrapper>
+                          </Buttons>
                         ) : (
-                          <ButtonWrapper
+                          <Buttons
                             onClick={() => {
                               Navigate("/setting");
                             }}
                           >
                             Setup Now
-                          </ButtonWrapper>
+                          </Buttons>
                         )}
                       </div>
                     </>
@@ -517,14 +507,6 @@ function Home() {
   }, [location]);
   return (
     <>
-      <div>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet"
-        />
-      </div>
       {view === "Dashboard" && <Dashboard setView={setView} />}
       {view === "QuickOptimizationWidget" && (
         <QuickOptimizationWidget setView={setView} />
