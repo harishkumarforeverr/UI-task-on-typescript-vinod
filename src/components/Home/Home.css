@@ -372,7 +372,7 @@ button.redbgm.MuiButtonBase-root:hover {
   font-size: 14px;
   line-height: 24px;
   border: 2px solid #cc0000;
-  /* color: #cc0000; */
+  color: #cc0000 !important;
   height: 33px;
   min-width: 6.5rem;
   margin-left: auto;
