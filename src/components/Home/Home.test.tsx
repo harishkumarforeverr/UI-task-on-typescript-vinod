@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom"; 
-import DashboardContainer, { 
+import { BrowserRouter as Router } from "react-router-dom";
+import DashboardContainer, {
   Dashboard,
   QuickOptimizationWidget,
   SelectWrapper,
-} from "./Home"; 
+} from "./Home";
 
 const handleChange = jest.fn((arg: any) => arg);
 const handleTheMotor = jest.fn(() => null);
@@ -58,7 +58,11 @@ test("renders the compoenets and finding whether a text present in the dom or no
   const MyApp = () => {
     return (
       <Router>
-        <Dashboard setView={setView} />
+        <Dashboard
+          setView={setView}
+          selectedDevice="M13"
+          setselectedDevice={(arg: any) => {}}
+        />
       </Router>
     );
   };
@@ -67,13 +71,15 @@ test("renders the compoenets and finding whether a text present in the dom or no
   expect(linkElement).toBeInTheDocument();
 });
 
- 
-
 test("renders the QuickOptimizationWidget and finding whether a text present in the dom or not", () => {
   const MyQuickOptimizationWidget = () => {
     return (
       <Router>
-        <QuickOptimizationWidget setView={setView} />
+        <QuickOptimizationWidget
+          selectedDevice="M13"
+          setselectedDevice={(arg: any) => {}}
+          setView={setView}
+        />
       </Router>
     );
   };
@@ -86,7 +92,11 @@ test("renders the and QuickOptimizationWidget whether a text present in the dom 
   const MyQuickOptimizationWidget = () => {
     return (
       <Router>
-        <QuickOptimizationWidget setView={setView} />
+        <QuickOptimizationWidget
+          selectedDevice="M13"
+          setselectedDevice={(arg: any) => {}}
+          setView={setView}
+        />
       </Router>
     );
   };
@@ -100,11 +110,12 @@ test("renders the SelectWrapper and finding whether a text present in the dom or
     return (
       <Router>
         <SelectWrapper
+          selectedDevice="M13"
+          setselectedDevice={(arg: any) => {}}
           handleChange={handleChange}
           handleTheMotor={handleTheMotor}
           BtnSelectDeviceOpacity={BtnSelectDeviceOpacity}
           dotColor={dotColor}
-          deviceTitle={deviceTitle}
           devDesc={devDesc}
           devSubDesc={devSubDesc}
         />

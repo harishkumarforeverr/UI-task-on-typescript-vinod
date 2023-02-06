@@ -380,12 +380,6 @@ button.redbgm.MuiButtonBase-root:hover {
   border-radius: 5px;
 }
 
-.QuickOptimizationWidget .Setup_completed_btn {
-  background-color: #cc0000;
-  color: white;
-
-  border-radius: 5px;
-}
 .QuickOptimizationWidget .cardsConatiner {
   display: flex;
 
@@ -453,4 +447,11 @@ button.redbgm.MuiButtonBase-root:hover {
   right: 0;
   width: 68px;
   height: 48px;
+}
+ 
+.QuickOptimizationWidget button.Setup_completed_btn  {
+  background-color: #cc0000;
+  color: white !important;
+
+  border-radius: 5px;
 }
