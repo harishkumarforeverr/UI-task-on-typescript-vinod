@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import "./Home.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import { CheckboxChangeEvent } from "antd/es/checkbox";
-import { CheckCircleOutlined } from "@ant-design/icons"; 
 import DashboardImageCircut from "../../images/Home/DashboardImageCircut.png";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import nextIcon_pro from "../../images/Home/nextIcon_pro.png";
 import Ellipse from "../../images/Home/Ellipse.png";
 import cardImage_1 from "../../images/Home/cardImage_1.png";
@@ -15,24 +14,26 @@ import cardImage_5 from "../../images/Home/cardImage_5.png";
 import bubbleRed from "../../images/Home/bubbleRed.png";
 import bubbleGreen from "../../images/Home/bubbleGreen.png";
 import nextIcon from "../../images/Home/nextIcon.png";
-import { Button, Card, Checkbox } from "antd";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-
+import Button from "@mui/material/Button";
+import Checkbox from "@mui/material/Checkbox";
 
 export const Assests = {
   DashboardImageCircut,
   nextIcon_pro,
   Ellipse,
   cardImage_1,
-  bubbleRed,bubbleGreen,
+  bubbleRed,
+  bubbleGreen,
   cardImage_2,
   cardImage_3,
   cardImage_4,
   cardImage_5,
-  cardImage_6,nextIcon
+  cardImage_6,
+  nextIcon,
 };
 
 const userGuidesLink =
@@ -83,7 +84,7 @@ export function SelectWrapper({
   handleTheMotor,
 }: propsType) {
   return (
-    <Card className="conatinerCard" bordered={false} style={{ width: 300 }}>
+    <div className="conatinerCard" style={{ width: 300 }}>
       <div>
         <>
           <FormControl fullWidth>
@@ -153,12 +154,12 @@ export function SelectWrapper({
         style={{
           opacity: BtnSelectDeviceOpacity,
         }}
-        className="lightRed btn"
+        className="lightRed btn redbgm"
         onClick={handleTheMotor}
       >
         Select Device
       </ButtonWrapper>
-    </Card>
+    </div>
   );
 }
 
@@ -182,7 +183,11 @@ export function Dashboard({ setView }: { setView: any }) {
       </div>
     );
   };
-  const userInfoObj = [
+  const userInfoObj: {
+    title: string;
+    icons: JSX.Element;
+    link: string;
+  }[] = [
     {
       title: "Users's Guide",
       icons: (
@@ -281,10 +286,9 @@ export function Dashboard({ setView }: { setView: any }) {
         <div className="cardsRigghtContainer">
           {userInfoObj.map((obj) => {
             return (
-              <Card
+              <div
                 key={obj.title}
                 className="conatinerCardImage"
-                bordered={false}
                 style={{ width: 300 }}
                 onClick={() => {
                   // navigate(obj.link);
@@ -293,7 +297,7 @@ export function Dashboard({ setView }: { setView: any }) {
               >
                 <div className="rightConatinesIcons">{obj.icons}</div>
                 <div className="titleRightConatiner">{obj.title}</div>
-              </Card>
+              </div>
             );
           })}
         </div>
@@ -326,7 +330,12 @@ export function Dashboard({ setView }: { setView: any }) {
   );
 }
 export function QuickOptimizationWidget({ setView }: { setView: any }) {
-  const cardsObj = [
+  const cardsObj: {
+    title: string;
+    subTitle: string;
+    desc: string;
+    subDesc: string;
+}[] = [
     {
       title: "Quick Spin",
       subTitle: "",
@@ -354,7 +363,7 @@ export function QuickOptimizationWidget({ setView }: { setView: any }) {
   ];
   const [showCards, setShowCards] = useState(false);
   const [setup, setSetup] = useState(false);
-  const onChange = (e: CheckboxChangeEvent) => {
+  const onChange = (e: any) => {
     const value = e.target.checked;
     setShowCards(value);
   };
@@ -420,7 +429,7 @@ export function QuickOptimizationWidget({ setView }: { setView: any }) {
                     <div className="setupdone">
                       <h1>
                         <span className="icon">
-                          <CheckCircleOutlined />
+                          <CheckCircleIcon />
                         </span>
                         The Hardware setup is done
                       </h1>
@@ -436,7 +445,7 @@ export function QuickOptimizationWidget({ setView }: { setView: any }) {
                         <p>Hardware setup has been done manually</p>
                         {showCards ? (
                           <ButtonWrapper
-                            className="Setup_completed_btn"
+                            className="Setup_completed_btn redbgm"
                             onClick={handleTheSetup}
                           >
                             Setup completed

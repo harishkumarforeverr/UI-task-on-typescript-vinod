@@ -145,7 +145,7 @@
 
   color: #231f20;
 }
-ul.MuiMenu-list li:first-child{
+ul.MuiMenu-list li:first-child {
   display: none;
 }
 .GetImages {
@@ -209,7 +209,7 @@ ul.MuiMenu-list li:first-child{
   align-items: center;
   padding: 8px 20px;
   gap: 8px;
-  width: 114px;
+  /* width: 114px; */
   height: 44px;
 
   background: #cc0000;
@@ -329,6 +329,13 @@ ul.MuiMenu-list li:first-child{
 .QuickOptimizationWidget .setupdone .anticon {
   font-size: 1.3rem;
 }
+
+.QuickOptimizationWidget .setupdone .anticon svg {
+  width: 1.82rem;
+  height: 1.82rem;
+  transform: translateY(7px);
+  margin-right: 10px;
+}
 .QuickOptimizationWidget .actionBtn {
   margin-left: 3rem;
   display: flex;
@@ -339,6 +346,7 @@ ul.MuiMenu-list li:first-child{
 
 .QuickOptimizationWidget .checkboxReadOnly {
   pointer-events: none;
+  transform: translateY(7px);
 }
 
 .QuickOptimizationWidget .actionBtn p {
@@ -352,7 +360,9 @@ ul.MuiMenu-list li:first-child{
 
   color: #118899;
 }
-
+button.redbgm.MuiButtonBase-root:hover {
+  background-color: #cc0000 !important ;
+}
 .QuickOptimizationWidget .actionBtn button {
   font-family: "Helvetica";
   font-style: normal;
@@ -360,7 +370,7 @@ ul.MuiMenu-list li:first-child{
   font-size: 14px;
   line-height: 24px;
   border: 2px solid #cc0000;
-  color: #cc0000;
+  /* color: #cc0000; */
   height: 33px;
   min-width: 6.5rem;
   margin-left: auto;
