@@ -1,23 +1,22 @@
 import { useState, useEffect } from "react";
 import "./Home.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import DashboardImageCircut from "../../images/Home/DashboardImageCircut.png";
+import DashboardImageCircut from "../../images/Home/DashboardImageCircut.svg";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import nextIcon_pro from "../../images/Home/nextIcon_pro.png";
-import Ellipse from "../../images/Home/Ellipse.png";
-import cardImage_1 from "../../images/Home/cardImage_1.png";
-import cardImage_2 from "../../images/Home/cardImage_2.png";
-import cardImage_3 from "../../images/Home/cardImage_3.png";
-import cardImage_4 from "../../images/Home/cardImage_4.png";
-import cardImage_6 from "../../images/Home/cardImage_6.png";
-import cardImage_5 from "../../images/Home/cardImage_5.png";
-import bubbleRed from "../../images/Home/bubbleRed.png";
-import bubbleGreen from "../../images/Home/bubbleGreen.png";
-import nextIcon from "../../images/Home/nextIcon.png";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+// import nextIcon_pro from "../../images/Home/nextIcon_pro.png";
+import Ellipse from "../../images/Home/Ellipse.svg";
+import cardImage_1 from "../../images/Home/cardImage_1.svg";
+import cardImage_2 from "../../images/Home/cardImage_2.svg";
+import cardImage_3 from "../../images/Home/cardImage_3.svg";
+import cardImage_4 from "../../images/Home/cardImage_4.svg";
+import cardImage_6 from "../../images/Home/cardImage_6.svg";
+import cardImage_5 from "../../images/Home/cardImage_5.svg";
+import bubbleRed from "../../images/Home/bubbleRed.svg";
+import bubbleGreen from "../../images/Home/bubbleGreen.svg";
+import arrow from "../../images/Home/arrow.svg";
+import vector from "../../images/Home/Vector.svg";
+import Rectangle from "../../images/Home/Rectangle.svg";
+// import nextIcon from "../../images/Home/nextIcon.png";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
 import DeviceConstant from "./constants/MCF8315_EEPROM.json";
@@ -29,6 +28,7 @@ import {
   ToolsPageLink,
   E2ETestingLink,
 } from "../../config/config";
+import { SelectWrapper } from "../SelectDevice/SelectDevice";
 
 const getDashboardLinks = (arg: string) => {
   switch (arg) {
@@ -47,7 +47,7 @@ const getDashboardLinks = (arg: string) => {
 };
 export const Assests = {
   DashboardImageCircut,
-  nextIcon_pro,
+  // nextIcon_pro,
   Ellipse,
   cardImage_1,
   bubbleRed,
@@ -57,20 +57,9 @@ export const Assests = {
   cardImage_4,
   cardImage_5,
   cardImage_6,
-  nextIcon,
+  // nextIcon,
 };
 
-interface propsType {
-  dotColor: any; 
-  devDesc?: string;
-  devSubDesc?: string;
-  BtnSelectDeviceOpacity: string;
-  handleChange: (event: string) => any;
-  handleTheMotor?: () => void;
-  
-  selectedDevice  :string,
-  setselectedDevice : (event: string) => any;
-}
 const usersLinks:
   | {
       userGuidesLink: string;
@@ -89,109 +78,15 @@ const usersLinks:
       E2ETestingLink?: undefined;
     } = getDashboardLinks("MCF8316EVM");
 
-export function SelectWrapper({
-  dotColor, 
-  devDesc,
-  BtnSelectDeviceOpacity,
-  devSubDesc,
-  handleChange,
-  handleTheMotor,
-  selectedDevice  ,
-  setselectedDevice  , 
-}: propsType) {
-  return (
-    <div className="conatinerCard" style={{ width: 300 }}>
-      <div>
-        <>
-          <FormControl fullWidth>
-            <InputLabel shrink={true} id="selectlabelCommon">
-              Select Device*
-            </InputLabel>
-            <Select
-              sx={{
-                color: "black",
-                ".MuiOutlinedInput-notchedOutline": {
-                  borderColor: "black",
-                },
-                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "black",
-                },
-                "&:hover .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "black",
-                },
-                ".MuiSvgIcon-root ": {
-                  fill: "black !important",
-                },
-              }}
-              // notched={true}
-              labelId="selectlabelCommon"
-              id="demo-simple-select"
-              // value={age}
-              className="select_wrapper"
-              label="Select Device*"
-              onChange={(e:any)=>{
-                const {value}=e.target; 
-                setselectedDevice(value)
-                handleChange(value)
-              }}
-              defaultValue="Select Your Device"
-            >
-              <MenuItem value={"Select Your Device"}>
-                Select Your Device
-              </MenuItem>
-              <MenuItem value={DeviceConstant.device_name}>
-                {DeviceConstant.device_name}
-              </MenuItem>
-            </Select>
-          </FormControl>
-        </>
-      </div>
-      <div>
-        <div className="deatiles">
-          <span>
-            <img
-              style={{
-                width: "1.8rem",
-              }}
-              src={dotColor}
-              alt="redColorBubble"
-            />
-          </span>
-          <span className="numberText">{selectedDevice}</span>
-        </div>
-        <p className="GuiSupport">
-          {`${devDesc} ${selectedDevice}`}
-       </p>
-       {
-        devSubDesc && <p
-        className="GuiSupport"
-        style={{
-          fontSize: "12px",
-          opacity: "0.8",
-        }}
-      >
-      {`${devSubDesc} ${selectedDevice}`}
-      
-      </p>
-       }
-       
-      </div>
-      <Button
-        style={{
-          opacity: BtnSelectDeviceOpacity,
-        }}
-        className="lightRed btn redbgm"
-        onClick={handleTheMotor}
-      >
-        Select Device
-      </Button>
-    </div>
-  );
-}
-
-export function Dashboard({ setView ,selectedDevice,
-  setselectedDevice}: { setView: any,selectedDevice:any
-  setselectedDevice:any }) {
+export function Dashboard({
+  setView,
+  selectedDevice,
+  setselectedDevice,
+}: {
+  setView: any;
+  selectedDevice: any;
+  setselectedDevice: any;
+}) {
   const [motor, setMotor] = useState("");
   const handleTheMotor = () => {
     console.log(motor);
@@ -268,7 +163,7 @@ export function Dashboard({ setView ,selectedDevice,
   const handleChange = (str: string) => {
     setMotor(str);
   };
-  
+
   return (
     <div className="dashboard">
       <div className="ConatinersIconsTitle">
@@ -277,10 +172,11 @@ export function Dashboard({ setView ,selectedDevice,
             handleChange={handleChange}
             handleTheMotor={handleTheMotor}
             BtnSelectDeviceOpacity="1"
-            dotColor={Assests.bubbleRed} 
+            dotColor={bubbleRed}
+            className="redColorImage"
             devDesc="This GUI supports "
             selectedDevice={selectedDevice}
-            setselectedDevice={setselectedDevice} 
+            setselectedDevice={setselectedDevice}
           />
         </div>
         <div className="cardsRigghtContainer">
@@ -329,9 +225,14 @@ export function Dashboard({ setView ,selectedDevice,
     </div>
   );
 }
-export function QuickOptimizationWidget({ selectedDevice,
-  setselectedDevice }: { setView: any ,selectedDevice:any
-    setselectedDevice:any}) {
+export function QuickOptimizationWidget({
+  selectedDevice,
+  setselectedDevice,
+}: {
+  setView: any;
+  selectedDevice: any;
+  setselectedDevice: any;
+}) {
   const cardsObj: {
     title: string;
     subTitle: string;
@@ -385,13 +286,14 @@ export function QuickOptimizationWidget({ selectedDevice,
         <>
           <div className="QuickOptimizationWidget_hardwareSetup">
             <div>
-              <SelectWrapper   selectedDevice={selectedDevice}
-      setselectedDevice={setselectedDevice} 
+              <SelectWrapper
+                selectedDevice={selectedDevice}
+                setselectedDevice={setselectedDevice}
                 BtnSelectDeviceOpacity="0.5"
-                dotColor={Assests.bubbleGreen} 
+                dotColor={Assests.bubbleGreen}
                 devDesc="This GUI supports"
                 devSubDesc="Correct device detected : "
-                handleChange={()=>{}}
+                handleChange={() => {}}
               />
             </div>
             <div className="hardwareSetup">
@@ -495,11 +397,34 @@ export function QuickOptimizationWidget({ selectedDevice,
                         <p>{obj.subDesc}</p>
                       </div>
                     </div>
-                    <img
-                      className="nextIcons"
-                      src={!setup ? Assests.nextIcon : Assests.nextIcon_pro}
-                      alt="ok"
-                    />
+                    <div>
+                      <img
+                        style={{
+                          zIndex: 1,
+                        }}
+                        className="nextIcons"
+                        src={Rectangle}
+                        alt="ok"
+                      />
+
+                      <img
+                        style={{
+                          zIndex: 2,
+                        }}
+                        className="nextIcon_two"
+                        src={vector}
+                        alt="ok"
+                      />
+
+                      <img
+                        style={{
+                          zIndex: 3,
+                        }}
+                        className="nextIcon_three"
+                        src={arrow}
+                        alt="ok"
+                      />
+                    </div>
                   </div>
                 </div>
               );
@@ -512,25 +437,29 @@ export function QuickOptimizationWidget({ selectedDevice,
 }
 function Home() {
   const [view, setView] = useState("Dashboard");
-  const [selectedDevice,setselectedDevice]=useState("")
+  const [selectedDevice, setselectedDevice] = useState("");
   const location = useLocation();
   useEffect(() => {
     if (location.state !== null) {
       setView("QuickOptimizationWidget");
-      setselectedDevice(DeviceConstant.device_name)
+      setselectedDevice(DeviceConstant.device_name);
     }
   }, [location]);
   return (
     <>
-      {view === "Dashboard" && <Dashboard
-      selectedDevice={selectedDevice}
-      setselectedDevice={setselectedDevice} setView={setView} />}
+      {view === "Dashboard" && (
+        <Dashboard
+          selectedDevice={selectedDevice}
+          setselectedDevice={setselectedDevice}
+          setView={setView}
+        />
+      )}
       {view === "QuickOptimizationWidget" && (
-        <QuickOptimizationWidget 
-        
-      selectedDevice={selectedDevice}
-      setselectedDevice={setselectedDevice} 
-        setView={setView} />
+        <QuickOptimizationWidget
+          selectedDevice={selectedDevice}
+          setselectedDevice={setselectedDevice}
+          setView={setView}
+        />
       )}
     </>
   );

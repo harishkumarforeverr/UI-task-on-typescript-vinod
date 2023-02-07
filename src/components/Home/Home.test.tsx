@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
+import { SelectWrapper } from "../SelectDevice/SelectDevice";
 import DashboardContainer, {
   Dashboard,
-  QuickOptimizationWidget,
-  SelectWrapper,
+  QuickOptimizationWidget, 
 } from "./Home";
 
 const handleChange = jest.fn((arg: any) => arg);
