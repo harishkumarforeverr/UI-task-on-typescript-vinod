@@ -6,15 +6,15 @@ import {
 } from "@reduxjs/toolkit";
 import { createRouterMiddleware, createRouterReducer } from '@lagunovsky/redux-react-router'
 import { createMemoryHistory } from "history";
+import  homeReducer  from "./components/Home/home.slice"
 // import thunk from 'redux-thunk'
 
 export const history = createMemoryHistory();
 const routerMiddleware = createRouterMiddleware(history)
 //const initialState = {};
-
 const rootReducer = combineReducers({
-  navigator: createRouterReducer(history) 
-  //reducer: combineRed
+  navigator:createRouterReducer(history),
+  home:homeReducer,
 });
 
 export const store = configureStore({

@@ -41,6 +41,7 @@
   width: 120px;
   align-items: center;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25) !important;
+  z-index: 1 !important;
 }
 
 .selected-Tab-bgColor {

@@ -19,7 +19,7 @@ const MainRoute = () => {
       <Box padding={3}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/setting" element={<HardwareSetup boardType={1} />} />
+          <Route path="/setting" element={<HardwareSetup boardType={"1"} />} />
           <Route path="/quick_tuning" element={<QuickTuning />} />
           <Route path="/mpet" element={<MPET />} />
         </Routes>

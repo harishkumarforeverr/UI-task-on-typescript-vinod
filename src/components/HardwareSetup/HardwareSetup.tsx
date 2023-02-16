@@ -1,34 +1,42 @@
 import { Box, Button } from "@mui/material";
-import React, { useState } from "react";
-import TIBoardHardwareSetupData from "./HardwareSetupData";
+import React, { FC, useState } from "react";
+import { TIBoardHardwareSetupData } from "./HardwareSetupData";
 import "./HardwareSetup.css";
-import { useNavigate } from "react-router-dom";
+import {
+  IHardwareSetupProps,
+  TIBoardHardwareSetupDataType,
+  IPosition,
+  IFocusSteps,
+  IArrowImage,
+  IDescription,
+} from "./IHardwareSetup";
+import { useNavigate } from "react-router";
 
-const HardwareSetup = ({ boardType }: any) => {
-  const [focusStep, setFocusStep] = useState(0);
-  const [prevStep, setPrevStep] = useState(0);
+const HardwareSetup: FC<IHardwareSetupProps> = ({ boardType }) => {
+  const [currentStep, setCurrentStep] = useState<number>(0);
+  const [previousStep, setPreviousStep] = useState<number>(0);
 
   const filterbyBoardType = TIBoardHardwareSetupData.filter(
-    (e: any) => e.boardType === boardType
+    (data: TIBoardHardwareSetupDataType) => data.boardType === boardType
   );
 
-  const BackBtnHandler = () => {
-    setFocusStep(focusStep - 1);
-    setPrevStep(focusStep - 1);
+  const backBtnHandler = () => {
+    setCurrentStep(currentStep - 1);
+    setPreviousStep(currentStep - 1);
   };
   const nextBtnHandler = () => {
-    setFocusStep(focusStep + 1);
-    setPrevStep(focusStep + 1);
+    setCurrentStep(currentStep + 1);
+    setPreviousStep(currentStep + 1);
   };
   const skipBtnHandler = () => {
-    setFocusStep(filterbyBoardType[0].steps.length - 1);
+    setCurrentStep(filterbyBoardType[0].focusSteps.length - 1);
   };
-  const focusHandler = (f: any) => {
-    setFocusStep(f.id);
-    setPrevStep(f.id);
+  const focusHandler = (position: IPosition) => {
+    setCurrentStep(position.id);
+    setPreviousStep(position.id);
   };
   const finalBackBtnHandler = () => {
-    setFocusStep(prevStep);
+    setCurrentStep(previousStep);
   };
   const navigate=useNavigate();
 const finishHandler=()=>{
@@ -37,14 +45,14 @@ const finishHandler=()=>{
   return (
     <Box
       className={
-        filterbyBoardType[0].steps.length - 1 === focusStep
+        filterbyBoardType[0].focusSteps.length - 1 === currentStep
           ? "main_wrapper_container"
           : "main_wrapper_container_dark"
       }
     >
       <Box
         className={
-          filterbyBoardType[0].steps.length - 1 === focusStep
+          filterbyBoardType[0].focusSteps.length - 1 === currentStep
             ? "wrapper_container"
             : "wrapper_container_dark"
         }
@@ -53,102 +61,141 @@ const finishHandler=()=>{
           <img
             alt="board_image"
             className="board_image"
-            src={filterbyBoardType[0].image}
+            src={filterbyBoardType[0].boardImage}
           />
           <Box
             className={
-              filterbyBoardType[0].steps.length - 1 === focusStep
+              filterbyBoardType[0].focusSteps.length - 1 === currentStep
                 ? "image_overlay"
                 : "image_overlay_dark"
             }
           >
-            {filterbyBoardType[0]?.steps
-              .filter((e: any) => e.id === focusStep)
-              .map((a: any) => {
-                return a.position.map((f: any, index: number) => {
-                  return (
-                    <Box
-                      key={index}
-                      className={
-                        filterbyBoardType[0].steps.length - 1 === focusStep
-                          ? "image_focus_dark"
-                          : "image_focus"
-                      }
-                      onClick={() => focusHandler(f)}
-                      style={{
-                        height: f.height,
-                        width: f.width,
-                        top: f.top,
-                        left: f.left,
-                      }}
-                    >
-                      {f.arrow?.map((element: any, index: number) => {
-                        return (
-                          <>
-                            <img
-                              className="arrow_image"
-                              alt="arrow"
-                              key={index}
-                              src={element.image}
-                              style={{
-                                width: element.width,
-                                top: element.top,
-                                left: element.left,
-                              }}
-                            />
-                          </>
-                        );
-                      })}
-                    </Box>
-                  );
-                });
+            {filterbyBoardType[0]?.focusSteps
+              .filter(
+                (focusSteps: IFocusSteps) => focusSteps.id === currentStep
+              )
+              .map((focusSteps: IFocusSteps) => {
+                return focusSteps.position?.map(
+                  (position: IPosition, index: number) => {
+                    return (
+                      <Box
+                        key={index}
+                        className={
+                          filterbyBoardType[0].focusSteps.length - 1 ===
+                          currentStep
+                            ? "image_focus_dark"
+                            : "image_focus"
+                        }
+                        onClick={() => focusHandler(position)}
+                        style={{
+                          height: position.height,
+                          width: position.width,
+                          top: position.top,
+                          left: position.left,
+                        }}
+                      >
+                        {position.arrow?.map(
+                          (arrow: IArrowImage, index: number) => {
+                            return (
+                              <>
+                                <img
+                                  className="arrow_image"
+                                  alt="arrow"
+                                  key={index}
+                                  src={arrow.arrowImage}
+                                  style={{
+                                    width: arrow.width,
+                                    top: arrow.top,
+                                    left: arrow.left,
+                                  }}
+                                />
+                              </>
+                            );
+                          }
+                        )}
+                      </Box>
+                    );
+                  }
+                );
               })}
           </Box>
-          {focusStep === filterbyBoardType[0].steps.length - 1 ? null : (
+          {currentStep === filterbyBoardType[0].focusSteps.length - 1 ? null : (
             <Box
               className="message_popup_container"
               sx={{
-                top: `${
-                  parseInt(
-                    filterbyBoardType[0]?.steps[focusStep]?.position[0]?.top
-                  ) +
-                  parseInt(
-                    filterbyBoardType[0]?.steps[focusStep]?.position[0]?.height
-                  ) +
-                  3
-                }%`,
-                left: `${
-                  parseInt(
-                    filterbyBoardType[0]?.steps[focusStep]?.position[0]?.left
-                  ) +
-                  parseInt(
-                    filterbyBoardType[0]?.steps[focusStep]?.position[0]?.width
-                  ) +
-                  -5
-                }%`,
+                top: filterbyBoardType[0]?.focusSteps[currentStep]
+                  ?.descriptionPosition
+                  ? filterbyBoardType[0]?.focusSteps[currentStep]
+                      ?.descriptionPosition.top
+                  : `${
+                      parseInt(
+                        filterbyBoardType[0]?.focusSteps[currentStep]
+                          ?.position[0]?.top
+                      ) +
+                      parseInt(
+                        filterbyBoardType[0]?.focusSteps[currentStep]
+                          ?.position[0]?.height
+                      ) +
+                      2
+                    }%`,
+                left: filterbyBoardType[0]?.focusSteps[currentStep]
+                  ?.descriptionPosition
+                  ? filterbyBoardType[0]?.focusSteps[currentStep]
+                      ?.descriptionPosition.left
+                  : `${
+                      parseInt(
+                        filterbyBoardType[0]?.focusSteps[currentStep]
+                          ?.position[0]?.left
+                      ) +
+                      parseInt(
+                        filterbyBoardType[0]?.focusSteps[currentStep]
+                          ?.position[0]?.width
+                      ) +
+                      -4
+                    }%`,
               }}
             >
-              <Box className="message_title_container">
+              <Box
+                className={
+                  filterbyBoardType[0]?.focusSteps[currentStep]
+                    ?.descriptionPosition
+                    ? "message_title_container_leftside"
+                    : "message_title_container"
+                }
+              >
                 <Box className="message_title">
-                  {filterbyBoardType[0].steps[focusStep]?.title}
+                  {filterbyBoardType[0].focusSteps[currentStep]?.title}
                 </Box>
 
                 <Box className="message_description_container">
-                  {filterbyBoardType[0]?.steps[focusStep]?.description.map(
-                    (e: string, index: number) => {
-                      return <Box key={index}>{e}</Box>;
+                  {filterbyBoardType[0]?.focusSteps[
+                    currentStep
+                  ]?.description?.map(
+                    (description: IDescription, index: number) => {
+                      return (
+                        <Box
+                          key={index}
+                          sx={{
+                            color: description.color
+                              ? description.color
+                              : "#667085",
+                          }}
+                        >
+                          {description.text}
+                        </Box>
+                      );
                     }
                   )}
                 </Box>
               </Box>
 
               <Box className="message_popup_btn_container">
-                {focusStep !== 0 ? (
+                {currentStep !== 0 ? (
                   <Button
                     className="back_button"
                     variant="outlined"
                     color="error"
-                    onClick={() => BackBtnHandler()}
+                    onClick={() => backBtnHandler()}
                   >
                     Back
                   </Button>
@@ -157,7 +204,9 @@ const finishHandler=()=>{
                   className="next_button"
                   variant="contained"
                   onClick={() => nextBtnHandler()}
-                  disabled={filterbyBoardType[0].steps.length - 1 === focusStep}
+                  disabled={
+                    filterbyBoardType[0].focusSteps.length - 1 === currentStep
+                  }
                 >
                   Next
                 </Button>
@@ -172,7 +221,7 @@ const finishHandler=()=>{
             </Box>
           )}
           <Box className="finish_button_container">
-            {filterbyBoardType[0].steps.length - 1 === focusStep ? (
+            {filterbyBoardType[0].focusSteps.length - 1 === currentStep ? (
               <>
                 <Button
                   className="finish_back_button"

@@ -1,0 +1,6126 @@
+{
+  "device_name": "MCF8316C",
+  "register_type": "EEPROM",
+  "register": [
+    {
+      "register_address": "0x00000080",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "ISD_CONFIG",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30",
+          "name": "ISD_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "ISD Enable ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable "
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "29",
+          "name": "BRAKE_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Brake enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "28",
+          "name": "HIZ_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Hi-Z enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable "
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "27",
+          "name": "RVS_DR_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Reverse Drive Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable "
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "26",
+          "name": "RESYNC_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Resynchronization Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable "
+            }
+          ]
+        },
+        {
+          "position": "25:22",
+          "name": "FW_DRV_RESYN_THR",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Minimum Speed threshold to resynchronize to close loop (% of MAX_SPEED)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 5% "
+            },
+            {
+              "value": "0001b",
+              "description": " 10% "
+            },
+            {
+              "value": "0010b",
+              "description": " 15% "
+            },
+            {
+              "value": "0011b",
+              "description": " 20% "
+            },
+            {
+              "value": "0100b",
+              "description": " 25% "
+            },
+            {
+              "value": "0101b",
+              "description": " 30% "
+            },
+            {
+              "value": "0110b",
+              "description": " 35% "
+            },
+            {
+              "value": "0111b",
+              "description": " 40% "
+            },
+            {
+              "value": "1000b",
+              "description": " 45% "
+            },
+            {
+              "value": "1001b",
+              "description": " 50% "
+            },
+            {
+              "value": "1010b",
+              "description": " 55% "
+            },
+            {
+              "value": "1011b",
+              "description": " 60% "
+            },
+            {
+              "value": "1100b",
+              "description": " 70%"
+            },
+            {
+              "value": "1101b",
+              "description": " 80%"
+            },
+            {
+              "value": "1110b",
+              "description": " 90%"
+            },
+            {
+              "value": "1111b",
+              "description": " 100%"
+            }
+          ]
+        },
+        {
+          "position": "21",
+          "name": "BRK_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Brake mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " All three high side FETs turned ON  "
+            },
+            {
+              "value": "1b",
+              "description": "All three low side FETs turned ON"
+            }
+          ]
+        },
+        {
+          "position": "20",
+          "name": "BRK_CONFIG",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Brake configuration",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Brake time is used to come out of Brake state "
+            },
+            {
+              "value": "1b",
+              "description": " Brake current threshold and Brake time is used to come out of Brake state"
+            }
+          ]
+        },
+        {
+          "position": "19:17",
+          "name": "BRK_CURR_THR",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Brake current threshold (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 0.1 A"
+            },
+            {
+              "value": "001b",
+              "description": " 0.2 A"
+            },
+            {
+              "value": "010b",
+              "description": " 0.3 A"
+            },
+            {
+              "value": "011b",
+              "description": " 0.5 A"
+            },
+            {
+              "value": "100b",
+              "description": " 1.0 A"
+            },
+            {
+              "value": "101b",
+              "description": " 2.0 A"
+            },
+            {
+              "value": "110b",
+              "description": " 4.0 A"
+            },
+            {
+              "value": "111b",
+              "description": " 8.0 A"
+            }
+          ]
+        },
+        {
+          "position": "16:13",
+          "name": "BRK_TIME",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Brake time",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 10 mS"
+            },
+            {
+              "value": "0001b",
+              "description": " 50 mS"
+            },
+            {
+              "value": "0010b",
+              "description": " 100 mS"
+            },
+            {
+              "value": "0011b",
+              "description": " 200 mS"
+            },
+            {
+              "value": "0100b",
+              "description": " 300 mS"
+            },
+            {
+              "value": "0101b",
+              "description": " 400 mS"
+            },
+            {
+              "value": "0110b",
+              "description": " 500 mS"
+            },
+            {
+              "value": "0111b",
+              "description": " 750 mS"
+            },
+            {
+              "value": "1000b",
+              "description": " 1 S"
+            },
+            {
+              "value": "1001b",
+              "description": " 2 S"
+            },
+            {
+              "value": "1010b",
+              "description": " 3 S"
+            },
+            {
+              "value": "1011b",
+              "description": " 4 S"
+            },
+            {
+              "value": "1100b",
+              "description": " 5 S"
+            },
+            {
+              "value": "1101b",
+              "description": " 7.5 S"
+            },
+            {
+              "value": "1110b",
+              "description": " 10 S"
+            },
+            {
+              "value": "1111b",
+              "description": " 15 S"
+            }
+          ]
+        },
+        {
+          "position": "12:9",
+          "name": "HIZ_TIME",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Hi-Z time",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 10 mS"
+            },
+            {
+              "value": "0001b",
+              "description": " 50 mS"
+            },
+            {
+              "value": "0010b",
+              "description": " 100 mS"
+            },
+            {
+              "value": "0011b",
+              "description": " 200 mS"
+            },
+            {
+              "value": "0100b",
+              "description": " 300 mS"
+            },
+            {
+              "value": "0101b",
+              "description": " 400 mS"
+            },
+            {
+              "value": "0110b",
+              "description": " 500 mS"
+            },
+            {
+              "value": "0111b",
+              "description": " 750 mS"
+            },
+            {
+              "value": "1000b",
+              "description": " 1 S"
+            },
+            {
+              "value": "1001b",
+              "description": " 2 S"
+            },
+            {
+              "value": "1010b",
+              "description": " 3 S"
+            },
+            {
+              "value": "1011b",
+              "description": " 4 S"
+            },
+            {
+              "value": "1100b",
+              "description": " 5 S"
+            },
+            {
+              "value": "1101b",
+              "description": " 7.5 S"
+            },
+            {
+              "value": "1110b",
+              "description": " 10 S"
+            },
+            {
+              "value": "1111b",
+              "description": " 15 S"
+            }
+          ]
+        },
+        {
+          "position": "8:6",
+          "name": "STAT_DETECT_THR",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "BEMF threshold to detect if motor is stationary",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 50 mV "
+            },
+            {
+              "value": "001b",
+              "description": " 75 mV"
+            },
+            {
+              "value": "010b",
+              "description": " 100 mV"
+            },
+            {
+              "value": "011b",
+              "description": " 250 mV"
+            },
+            {
+              "value": "100b",
+              "description": " 500 mV"
+            },
+            {
+              "value": "101b",
+              "description": " 750 mV "
+            },
+            {
+              "value": "110b",
+              "description": " 1000 mV "
+            },
+            {
+              "value": "111b",
+              "description": " 1500 mV"
+            }
+          ]
+        },
+        {
+          "position": "5:2",
+          "name": "REV_DRV_HANDOFF_THR",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Speed threshold used to transition to open loop during reverse decleration (% of MAX_SPEED)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 2.5%"
+            },
+            {
+              "value": "0001b",
+              "description": " 5%"
+            },
+            {
+              "value": "0010b",
+              "description": " 7.5%"
+            },
+            {
+              "value": "0011b",
+              "description": " 10%"
+            },
+            {
+              "value": "0100b",
+              "description": " 12.5%"
+            },
+            {
+              "value": "0101b",
+              "description": " 15%"
+            },
+            {
+              "value": "0110b",
+              "description": " 20%"
+            },
+            {
+              "value": "0111b",
+              "description": " 25%"
+            },
+            {
+              "value": "1000b",
+              "description": " 30%"
+            },
+            {
+              "value": "1001b",
+              "description": " 40%"
+            },
+            {
+              "value": "1010b",
+              "description": " 50%"
+            },
+            {
+              "value": "1011b",
+              "description": " 60%"
+            },
+            {
+              "value": "1100b",
+              "description": " 70%"
+            },
+            {
+              "value": "1101b",
+              "description": " 80%"
+            },
+            {
+              "value": "1110b",
+              "description": " 90%"
+            },
+            {
+              "value": "1111b",
+              "description": " 100%"
+            }
+          ]
+        },
+        {
+          "position": "1:0",
+          "name": "REV_DRV_OPEN_LOOP_CURRENT",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Open loop curren limit during speed reversal (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 1.5 A"
+            },
+            {
+              "value": "01b",
+              "description": " 2.5 A"
+            },
+            {
+              "value": "10b",
+              "description": " 3.5 A"
+            },
+            {
+              "value": "11b",
+              "description": " 5.0 A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000082",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "REV_DRIVE_CONFIG",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:27",
+          "name": "REV_DRV_OPEN_LOOP_ACCEL_A1",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Open loop acceleration coefficient A1 during reverse drive ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.01 Hz/s"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.05 Hz/s"
+            },
+            {
+              "value": "0010b",
+              "description": " 1 Hz/s"
+            },
+            {
+              "value": "0011b",
+              "description": " 2.5 Hz/s"
+            },
+            {
+              "value": "0100b",
+              "description": " 5 Hz/s"
+            },
+            {
+              "value": "0101b",
+              "description": " 10 Hz/s"
+            },
+            {
+              "value": "0110b",
+              "description": " 25 Hz/s"
+            },
+            {
+              "value": "0111b",
+              "description": " 50 Hz/s"
+            },
+            {
+              "value": "1000b",
+              "description": " 75 Hz/s"
+            },
+            {
+              "value": "1001b",
+              "description": " 100 Hz/s"
+            },
+            {
+              "value": "1010b",
+              "description": " 250 Hz/s"
+            },
+            {
+              "value": "1011b",
+              "description": " 500 Hz/s"
+            },
+            {
+              "value": "1100b",
+              "description": " 750 Hz/s"
+            },
+            {
+              "value": "1101b",
+              "description": " 1000 Hz/s"
+            },
+            {
+              "value": "1110b",
+              "description": " 5000 Hz/s"
+            },
+            {
+              "value": "1111b",
+              "description": " 10000 Hz/s"
+            }
+          ]
+        },
+        {
+          "position": "26:23",
+          "name": "REV_DRV_OPEN_LOOP_ACCEL_A2",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Open loop acceleration coefficient A2 during reverse drive ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.0 Hz/s2"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.05 Hz/s2"
+            },
+            {
+              "value": "0010b",
+              "description": " 1 Hz/s2"
+            },
+            {
+              "value": "0011b",
+              "description": " 2.5 Hz/s2"
+            },
+            {
+              "value": "0100b",
+              "description": " 5 Hz/s2"
+            },
+            {
+              "value": "0101b",
+              "description": " 10 Hz/s2"
+            },
+            {
+              "value": "0110b",
+              "description": " 25 Hz/s2"
+            },
+            {
+              "value": "0111b",
+              "description": " 50 Hz/s2"
+            },
+            {
+              "value": "1000b",
+              "description": " 75 Hz/s2"
+            },
+            {
+              "value": "1001b",
+              "description": " 100 Hz/s2"
+            },
+            {
+              "value": "1010b",
+              "description": " 250 Hz/s2"
+            },
+            {
+              "value": "1011b",
+              "description": " 500 Hz/s2"
+            },
+            {
+              "value": "1100b",
+              "description": " 750 Hz/s2"
+            },
+            {
+              "value": "1101b",
+              "description": " 1000 Hz/s2"
+            },
+            {
+              "value": "1110b",
+              "description": " 5000 Hz/s2"
+            },
+            {
+              "value": "1111b",
+              "description": " 10000 Hz/s2"
+            }
+          ]
+        },
+        {
+          "position": "22:20",
+          "name": "ACTIVE_BRAKE_CURRENT_LIMIT",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Bus current limit during active braking (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 0.5 A "
+            },
+            {
+              "value": "001b",
+              "description": " 1 A  "
+            },
+            {
+              "value": "010b",
+              "description": " 2 A "
+            },
+            {
+              "value": "011b",
+              "description": " 3 A"
+            },
+            {
+              "value": "100b",
+              "description": " 4 A"
+            },
+            {
+              "value": "101b",
+              "description": " 5 A"
+            },
+            {
+              "value": "110b",
+              "description": "  6 A"
+            },
+            {
+              "value": "111b",
+              "description": " 7 A"
+            }
+          ]
+        },
+        {
+          "position": "19:10",
+          "name": "ACTIVE_BRAKE_KP",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "10-bit value for active braking loop Kp. Kp = ACTIVE_BRAKE_KP / 2^7",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "9:0",
+          "name": "ACTIVE_BRAKE_KI",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "10-bit value for active braking loop Ki. Ki = ACTIVE_BRAKE_KI / 2^9",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000084",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "MOTOR_STARTUP1",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:29",
+          "name": "MTR_STARTUP",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Motor startup options",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Align"
+            },
+            {
+              "value": "01b",
+              "description": " Double Align"
+            },
+            {
+              "value": "10b",
+              "description": " IPD"
+            },
+            {
+              "value": "11b",
+              "description": " Slow first cycle"
+            }
+          ]
+        },
+        {
+          "position": "28:25",
+          "name": "ALIGN_SLOW_RAMP_RATE",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Align, slow first cycle and open loop current ramp rate",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.1 A/s"
+            },
+            {
+              "value": "0001b",
+              "description": " 1 A/s"
+            },
+            {
+              "value": "0010b",
+              "description": " 5 A/s"
+            },
+            {
+              "value": "0011b",
+              "description": " 10 A/s"
+            },
+            {
+              "value": "0100b",
+              "description": " 15 A/s"
+            },
+            {
+              "value": "0101b",
+              "description": " 25 A/s"
+            },
+            {
+              "value": "0110b",
+              "description": " 50 A/s"
+            },
+            {
+              "value": "0111b",
+              "description": " 100 A/s"
+            },
+            {
+              "value": "1000b",
+              "description": " 150 A/s"
+            },
+            {
+              "value": "1001b",
+              "description": " 200 A/s"
+            },
+            {
+              "value": "1010b",
+              "description": " 250 A/s"
+            },
+            {
+              "value": "1011b",
+              "description": " 500 A/s"
+            },
+            {
+              "value": "1100b",
+              "description": " 1000 A/s"
+            },
+            {
+              "value": "1101b",
+              "description": " 2000 A/s"
+            },
+            {
+              "value": "1110b",
+              "description": " 5000 A/s"
+            },
+            {
+              "value": "1111b",
+              "description": " No Limit A/s"
+            }
+          ]
+        },
+        {
+          "position": "24:21",
+          "name": "ALIGN_TIME",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Align time",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 10 mS"
+            },
+            {
+              "value": "0001b",
+              "description": " 50 mS"
+            },
+            {
+              "value": "0010b",
+              "description": " 100 mS"
+            },
+            {
+              "value": "0011b",
+              "description": " 200 mS"
+            },
+            {
+              "value": "0100b",
+              "description": " 300 mS"
+            },
+            {
+              "value": "0101b",
+              "description": " 400 mS"
+            },
+            {
+              "value": "0110b",
+              "description": " 500 mS"
+            },
+            {
+              "value": "0111b",
+              "description": " 750 mS"
+            },
+            {
+              "value": "1000b",
+              "description": " 1 S"
+            },
+            {
+              "value": "1001b",
+              "description": " 1.5 S"
+            },
+            {
+              "value": "1010b",
+              "description": " 2 S"
+            },
+            {
+              "value": "1011b",
+              "description": " 3 S"
+            },
+            {
+              "value": "1100b",
+              "description": " 4 S"
+            },
+            {
+              "value": "1101b",
+              "description": " 5 S"
+            },
+            {
+              "value": "1110b",
+              "description": " 7.5 S"
+            },
+            {
+              "value": "1111b",
+              "description": " 10 S"
+            }
+          ]
+        },
+        {
+          "position": "20:17",
+          "name": "ALIGN_OR_SLOW_CURRENT_ILIMIT",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": " Align or slow first cycle current limit (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.125 A"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.25 A "
+            },
+            {
+              "value": "0010b",
+              "description": " 0.5 A "
+            },
+            {
+              "value": "0011b",
+              "description": " 1.0 A "
+            },
+            {
+              "value": "0100b",
+              "description": " 1.5 A"
+            },
+            {
+              "value": "0101b",
+              "description": " 2.0 A"
+            },
+            {
+              "value": "0110b",
+              "description": " 2.5 A"
+            },
+            {
+              "value": "0111b",
+              "description": " 3.0 A"
+            },
+            {
+              "value": "1000b",
+              "description": " 3.5 A"
+            },
+            {
+              "value": "1001b",
+              "description": " 4.0 A"
+            },
+            {
+              "value": "1010b",
+              "description": " 4.5 A"
+            },
+            {
+              "value": "1011b",
+              "description": " 5.0 A"
+            },
+            {
+              "value": "1100b",
+              "description": " 5.5 A"
+            },
+            {
+              "value": "1101b",
+              "description": " 6.0 A"
+            },
+            {
+              "value": "1110b",
+              "description": " 7.0 A"
+            },
+            {
+              "value": "1111b",
+              "description": " 8.0 A "
+            }
+          ]
+        },
+        {
+          "position": "16:14",
+          "name": "IPD_CLK_FREQ",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "IPD Clock Frequency ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 50 Hz"
+            },
+            {
+              "value": "001b",
+              "description": " 100 Hz"
+            },
+            {
+              "value": "010b",
+              "description": " 250 Hz"
+            },
+            {
+              "value": "011b",
+              "description": " 500 Hz"
+            },
+            {
+              "value": "100b",
+              "description": " 1000 Hz"
+            },
+            {
+              "value": "101b",
+              "description": " 2000 Hz"
+            },
+            {
+              "value": "110b",
+              "description": " 5000 Hz"
+            },
+            {
+              "value": "111b",
+              "description": " 10000 Hz"
+            }
+          ]
+        },
+        {
+          "position": "13:9",
+          "name": "IPD_CURR_THR",
+          "access_type": "R/W",
+          "reset": "00000b",
+          "description": "IPD Current Threshold (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00000b",
+              "description": " 0.25 A"
+            },
+            {
+              "value": "00001b",
+              "description": " 0.5 A"
+            },
+            {
+              "value": "00010b",
+              "description": " 0.75 A"
+            },
+            {
+              "value": "00011b",
+              "description": "  1.0 A "
+            },
+            {
+              "value": "00100b",
+              "description": " 1.25 A"
+            },
+            {
+              "value": "00101b",
+              "description": " 1.5 A"
+            },
+            {
+              "value": "00110b",
+              "description": " 2.0 A"
+            },
+            {
+              "value": "00111b",
+              "description": " 2.5 A"
+            },
+            {
+              "value": "01000b",
+              "description": " 3.0 A"
+            },
+            {
+              "value": "01001b",
+              "description": " 3.667 A"
+            },
+            {
+              "value": "01010b",
+              "description": " 4.0 A"
+            },
+            {
+              "value": "01011b",
+              "description": " 4.667 A"
+            },
+            {
+              "value": "01100b",
+              "description": " 5.0 A"
+            },
+            {
+              "value": "01101b",
+              "description": " 5.333 A"
+            },
+            {
+              "value": "01110b",
+              "description": " 6.0 A"
+            },
+            {
+              "value": "01111b",
+              "description": " 6.667 A"
+            },
+            {
+              "value": "10000b",
+              "description": " 7.333 A"
+            },
+            {
+              "value": "10001b",
+              "description": " 8.0 A"
+            },
+            {
+              "value": "10010b",
+              "description": " NA"
+            },
+            {
+              "value": "10011b",
+              "description": " NA"
+            },
+            {
+              "value": "10100b",
+              "description": " NA"
+            },
+            {
+              "value": "10101b",
+              "description": " NA"
+            },
+            {
+              "value": "10110b",
+              "description": " NA"
+            },
+            {
+              "value": "10111b",
+              "description": " NA"
+            },
+            {
+              "value": "11000b",
+              "description": " NA"
+            },
+            {
+              "value": "11001b",
+              "description": " NA"
+            },
+            {
+              "value": "11010b",
+              "description": " NA"
+            },
+            {
+              "value": "11011b",
+              "description": " NA"
+            },
+            {
+              "value": "11100b",
+              "description": " NA"
+            },
+            {
+              "value": "11101b",
+              "description": " NA"
+            },
+            {
+              "value": "11110b",
+              "description": " NA"
+            },
+            {
+              "value": "11111b",
+              "description": " NA"
+            }
+          ]
+        },
+        {
+          "position": "8",
+          "name": "IPD_RLS_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "IPD release mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Brake"
+            },
+            {
+              "value": "1b",
+              "description": " Tristate"
+            }
+          ]
+        },
+        {
+          "position": "7:6",
+          "name": "IPD_ADV_ANGLE",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "IPD advance angle",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 0°"
+            },
+            {
+              "value": "01b",
+              "description": " 30°"
+            },
+            {
+              "value": "10b",
+              "description": " 60°"
+            },
+            {
+              "value": "11b",
+              "description": " 90°"
+            }
+          ]
+        },
+        {
+          "position": "5:4",
+          "name": "IPD_REPEAT",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Number of times IPD is executed",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 1 time "
+            },
+            {
+              "value": "01b",
+              "description": " average of 2 times"
+            },
+            {
+              "value": "10b",
+              "description": " average of 3 times "
+            },
+            {
+              "value": "11b",
+              "description": " average of 4 times"
+            }
+          ]
+        },
+        {
+          "position": "3",
+          "name": "OL_ILIMIT_CONFIG",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Open loop current limit configuration",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Open loop current limit defined by ILIMIT"
+            },
+            {
+              "value": "0b",
+              "description": "Open loop current limit defined by OL_ILIMIT"
+            }
+          ]
+        },
+        {
+          "position": "2",
+          "name": "IQ_RAMP_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Iq ramp down after transition to close loop enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable Iq ramp down"
+            },
+            {
+              "value": "0b",
+              "description": "Diable Iq ramp down"
+            }
+          ]
+        },
+        {
+          "position": "1",
+          "name": "ACTIVE_BRAKE_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Enables active braking during deceleration",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Enable Active Brake Reverse Drive"
+            },
+            {
+              "value": "0b",
+              "description": " Disable Active Brake Reverse Drive"
+            }
+          ]
+        },
+        {
+          "position": "0",
+          "name": "REV_DRV_CONFIG",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Chooses between forward and reverse drive setting for reverse drive",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Open loop current, A1, A2 based on reverse drive"
+            },
+            {
+              "value": "0b",
+              "description": " Open loop current, A1, A2 based on forward drive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000086",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "MOTOR_STARTUP2",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:27",
+          "name": "OL_ILIMIT",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": " Open Loop current limit (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": ""
+            },
+            {
+              "value": "0000b",
+              "description": " 0.125 A"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.25 A "
+            },
+            {
+              "value": "0010b",
+              "description": " 0.5 A "
+            },
+            {
+              "value": "0011b",
+              "description": " 1.0 A "
+            },
+            {
+              "value": "0100b",
+              "description": " 1.5 A"
+            },
+            {
+              "value": "0101b",
+              "description": " 2.0 A"
+            },
+            {
+              "value": "0110b",
+              "description": " 2.5 A"
+            },
+            {
+              "value": "0111b",
+              "description": " 3.0 A"
+            },
+            {
+              "value": "1000b",
+              "description": " 3.5 A"
+            },
+            {
+              "value": "1001b",
+              "description": " 4.0 A"
+            },
+            {
+              "value": "1010b",
+              "description": " 4.5 A"
+            },
+            {
+              "value": "1011b",
+              "description": " 5.0 A"
+            },
+            {
+              "value": "1100b",
+              "description": " 5.5 A"
+            },
+            {
+              "value": "1101b",
+              "description": " 6.0 A"
+            },
+            {
+              "value": "1110b",
+              "description": " 7.0 A"
+            },
+            {
+              "value": "1111b",
+              "description": " 8.0 A "
+            }
+          ]
+        },
+        {
+          "position": "26:23",
+          "name": "OL_ACC_A1",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Open loop acceleration coefficient A1 ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.01 Hz/s"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.05 Hz/s"
+            },
+            {
+              "value": "0010b",
+              "description": " 1 Hz/s"
+            },
+            {
+              "value": "0011b",
+              "description": " 2.5 Hz/s"
+            },
+            {
+              "value": "0100b",
+              "description": " 5 Hz/s"
+            },
+            {
+              "value": "0101b",
+              "description": " 10 Hz/s"
+            },
+            {
+              "value": "0110b",
+              "description": " 25 Hz/s"
+            },
+            {
+              "value": "0111b",
+              "description": " 50 Hz/s"
+            },
+            {
+              "value": "1000b",
+              "description": " 75 Hz/s"
+            },
+            {
+              "value": "1001b",
+              "description": " 100 Hz/s"
+            },
+            {
+              "value": "1010b",
+              "description": " 250 Hz/s"
+            },
+            {
+              "value": "1011b",
+              "description": " 500 Hz/s"
+            },
+            {
+              "value": "1100b",
+              "description": " 750 Hz/s"
+            },
+            {
+              "value": "1101b",
+              "description": " 1000 Hz/s"
+            },
+            {
+              "value": "1110b",
+              "description": " 5000 Hz/s"
+            },
+            {
+              "value": "1111b",
+              "description": " 10000 Hz/s"
+            }
+          ]
+        },
+        {
+          "position": "22:19",
+          "name": "OL_ACC_A2",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Open loop acceleration coefficient A2",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.0 Hz/s2"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.05 Hz/s2"
+            },
+            {
+              "value": "0010b",
+              "description": " 1 Hz/s2"
+            },
+            {
+              "value": "0011b",
+              "description": " 2.5 Hz/s2"
+            },
+            {
+              "value": "0100b",
+              "description": " 5 Hz/s2"
+            },
+            {
+              "value": "0101b",
+              "description": " 10 Hz/s2"
+            },
+            {
+              "value": "0110b",
+              "description": " 25 Hz/s2"
+            },
+            {
+              "value": "0111b",
+              "description": " 50 Hz/s2"
+            },
+            {
+              "value": "1000b",
+              "description": " 75 Hz/s2"
+            },
+            {
+              "value": "1001b",
+              "description": " 100 Hz/s2"
+            },
+            {
+              "value": "1010b",
+              "description": " 250 Hz/s2"
+            },
+            {
+              "value": "1011b",
+              "description": " 500 Hz/s2"
+            },
+            {
+              "value": "1100b",
+              "description": " 750 Hz/s2"
+            },
+            {
+              "value": "1101b",
+              "description": " 1000 Hz/s2"
+            },
+            {
+              "value": "1110b",
+              "description": " 5000 Hz/s2"
+            },
+            {
+              "value": "1111b",
+              "description": " 10000 Hz/s2"
+            }
+          ]
+        },
+        {
+          "position": "18",
+          "name": "AUTO_HANDOFF_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Auto Handoff Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Disable Auto Handoff (and use OPN_CL_HANDOFF_THR)"
+            },
+            {
+              "value": "1b",
+              "description": " Enable Auto Handoff"
+            }
+          ]
+        },
+        {
+          "position": "17:13",
+          "name": "OPN_CL_HANDOFF_THR",
+          "access_type": "R/W",
+          "reset": "00000b",
+          "description": "Open to Close loop Handoff Threshold (% of MAX_SPEED)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00000b",
+              "description": " 1%"
+            },
+            {
+              "value": "00001b",
+              "description": " 2%"
+            },
+            {
+              "value": "00010b",
+              "description": " 3%"
+            },
+            {
+              "value": "00011b",
+              "description": " 4%"
+            },
+            {
+              "value": "00100b",
+              "description": " 5%"
+            },
+            {
+              "value": "00101b",
+              "description": " 6%"
+            },
+            {
+              "value": "00110b",
+              "description": " 7%"
+            },
+            {
+              "value": "00111b",
+              "description": " 8%"
+            },
+            {
+              "value": "01000b",
+              "description": " 9%"
+            },
+            {
+              "value": "01001b",
+              "description": " 10%"
+            },
+            {
+              "value": "01010b",
+              "description": " 11%"
+            },
+            {
+              "value": "01011b",
+              "description": " 12%"
+            },
+            {
+              "value": "01100b",
+              "description": " 13%"
+            },
+            {
+              "value": "01101b",
+              "description": " 14%"
+            },
+            {
+              "value": "01110b",
+              "description": " 15%"
+            },
+            {
+              "value": "01111b",
+              "description": " 16%"
+            },
+            {
+              "value": "10000b",
+              "description": " 17%"
+            },
+            {
+              "value": "10001b",
+              "description": " 18%"
+            },
+            {
+              "value": "10010b",
+              "description": " 19%"
+            },
+            {
+              "value": "10011b",
+              "description": " 20%"
+            },
+            {
+              "value": "10100b",
+              "description": " 22.5%"
+            },
+            {
+              "value": "10101b",
+              "description": " 25%"
+            },
+            {
+              "value": "10110b",
+              "description": " 27.5%"
+            },
+            {
+              "value": "10111b",
+              "description": " 30%"
+            },
+            {
+              "value": "11000b",
+              "description": " 32.5%"
+            },
+            {
+              "value": "11001b",
+              "description": " 35%"
+            },
+            {
+              "value": "11010b",
+              "description": " 37.5%"
+            },
+            {
+              "value": "11011b",
+              "description": " 40%"
+            },
+            {
+              "value": "11100b",
+              "description": " 42.5%"
+            },
+            {
+              "value": "11101b",
+              "description": " 45%"
+            },
+            {
+              "value": "11110b",
+              "description": " 47.5%"
+            },
+            {
+              "value": "11111b",
+              "description": " 50%"
+            }
+          ]
+        },
+        {
+          "position": "12:8",
+          "name": "ALIGN_ANGLE",
+          "access_type": "R/W",
+          "reset": "00000b",
+          "description": "Align Angle",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00000b",
+              "description": " 0 deg"
+            },
+            {
+              "value": "00001b",
+              "description": " 10 deg "
+            },
+            {
+              "value": "00010b",
+              "description": " 20 deg"
+            },
+            {
+              "value": "00011b",
+              "description": " 30 deg"
+            },
+            {
+              "value": "00100b",
+              "description": " 45 deg"
+            },
+            {
+              "value": "00101b",
+              "description": " 60 deg"
+            },
+            {
+              "value": "00110b",
+              "description": " 70 deg"
+            },
+            {
+              "value": "00111b",
+              "description": " 80 deg"
+            },
+            {
+              "value": "01000b",
+              "description": " 90 deg"
+            },
+            {
+              "value": "01001b",
+              "description": " 110 deg"
+            },
+            {
+              "value": "01010b",
+              "description": " 120 deg"
+            },
+            {
+              "value": "01011b",
+              "description": " 135 deg"
+            },
+            {
+              "value": "01100b",
+              "description": " 150 deg"
+            },
+            {
+              "value": "01101b",
+              "description": " 160 deg"
+            },
+            {
+              "value": "01110b",
+              "description": " 170 deg"
+            },
+            {
+              "value": "01111b",
+              "description": " 180 deg"
+            },
+            {
+              "value": "10000b",
+              "description": " 190 deg"
+            },
+            {
+              "value": "10001b",
+              "description": " 210 deg "
+            },
+            {
+              "value": "10010b",
+              "description": " 225 deg"
+            },
+            {
+              "value": "10011b",
+              "description": " 240 deg"
+            },
+            {
+              "value": "10100b",
+              "description": " 250 deg"
+            },
+            {
+              "value": "10101b",
+              "description": " 260 deg"
+            },
+            {
+              "value": "10110b",
+              "description": " 270 deg"
+            },
+            {
+              "value": "10111b",
+              "description": " 280 deg"
+            },
+            {
+              "value": "11000b",
+              "description": " 290 deg"
+            },
+            {
+              "value": "11001b",
+              "description": " 315 deg"
+            },
+            {
+              "value": "11010b",
+              "description": " 330 deg"
+            },
+            {
+              "value": "11011b",
+              "description": " 340 deg"
+            },
+            {
+              "value": "11100b",
+              "description": " 350 deg"
+            },
+            {
+              "value": "11101b",
+              "description": " Reserved"
+            },
+            {
+              "value": "11110b",
+              "description": " Reserved"
+            },
+            {
+              "value": "11111b",
+              "description": " Reserved"
+            }
+          ]
+        },
+        {
+          "position": "7:4",
+          "name": "SLOW_FIRST_CYC_FREQ",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Frequency of first cycle in close loop startup (% of MAX_SPEED)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": "1%"
+            },
+            {
+              "value": "0001b",
+              "description": " 2%"
+            },
+            {
+              "value": "0010b",
+              "description": " 3%"
+            },
+            {
+              "value": "0011b",
+              "description": " 5%"
+            },
+            {
+              "value": "0100b",
+              "description": " 7.5%"
+            },
+            {
+              "value": "0101b",
+              "description": " 10%"
+            },
+            {
+              "value": "0110b",
+              "description": " 12.5%"
+            },
+            {
+              "value": "0111b",
+              "description": " 15%"
+            },
+            {
+              "value": "1000b",
+              "description": " 17.5%"
+            },
+            {
+              "value": "1001b",
+              "description": " 20%"
+            },
+            {
+              "value": "1010b",
+              "description": " 25%"
+            },
+            {
+              "value": "1011b",
+              "description": " 30%"
+            },
+            {
+              "value": "1100b",
+              "description": " 35%"
+            },
+            {
+              "value": "1101b",
+              "description": " 40%"
+            },
+            {
+              "value": "1110b",
+              "description": " 45%"
+            },
+            {
+              "value": "1111b",
+              "description": " 50%"
+            }
+          ]
+        },
+        {
+          "position": "3",
+          "name": "FIRST_CYCLE_FREQ_SEL",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "First cycle frequeny in open loop for align, double align and IPD startup options",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Defined by SLOW_FIRST_CYC_FREQ"
+            },
+            {
+              "value": "0b",
+              "description": "0 Hz"
+            }
+          ]
+        },
+        {
+          "position": "2:0",
+          "name": "THETA_ERROR_RAMP_RATE",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Ramp rate for reducing difference between estimated theta and open loop theta (deg / mSec)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 0.01 deg/mSec"
+            },
+            {
+              "value": "001b",
+              "description": " 0.05 deg/msec"
+            },
+            {
+              "value": "010b",
+              "description": " 0.1 deg/msec"
+            },
+            {
+              "value": "011b",
+              "description": " 0.15 deg/msec"
+            },
+            {
+              "value": "100b",
+              "description": " 0.2 deg / mSec"
+            },
+            {
+              "value": "101b",
+              "description": " 0.5 deg/msec"
+            },
+            {
+              "value": "110b",
+              "description": " 1 deg/msec"
+            },
+            {
+              "value": "111b",
+              "description": " 2 deg/mSec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000088",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "CLOSED_LOOP1",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30",
+          "name": "OVERMODULATION_ENABLE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Enables Over modulation",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Enable Over Modulation"
+            },
+            {
+              "value": "0b",
+              "description": " Disable Over Modulation"
+            }
+          ]
+        },
+        {
+          "position": "29:25",
+          "name": "CL_ACC",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Closed loop acceleration ( Hz / sec)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00000b",
+              "description": " 0.5 Hz/s"
+            },
+            {
+              "value": "00001b",
+              "description": " 1 Hz/s"
+            },
+            {
+              "value": "00010b",
+              "description": " 2.5 Hz/s"
+            },
+            {
+              "value": "00011b",
+              "description": " 5 Hz/s"
+            },
+            {
+              "value": "00100b",
+              "description": " 7.5 Hz/s"
+            },
+            {
+              "value": "00101b",
+              "description": " 10 Hz/s"
+            },
+            {
+              "value": "00110b",
+              "description": " 20 Hz/s"
+            },
+            {
+              "value": "00111b",
+              "description": " 40 Hz/s"
+            },
+            {
+              "value": "01000b",
+              "description": " 60 Hz/s"
+            },
+            {
+              "value": "01001b",
+              "description": " 80 Hz/s"
+            },
+            {
+              "value": "01010b",
+              "description": " 100 Hz/s"
+            },
+            {
+              "value": "01011b",
+              "description": " 200 Hz/s"
+            },
+            {
+              "value": "01100b",
+              "description": " 300 Hz/s"
+            },
+            {
+              "value": "01101b",
+              "description": " 400 Hz/s"
+            },
+            {
+              "value": "01110b",
+              "description": " 500 Hz/s "
+            },
+            {
+              "value": "01111b",
+              "description": " 600 Hz/s"
+            },
+            {
+              "value": "10000b",
+              "description": " 700 Hz/s"
+            },
+            {
+              "value": "10001b",
+              "description": " 800 Hz/s"
+            },
+            {
+              "value": "10010b",
+              "description": " 900 Hz/s"
+            },
+            {
+              "value": "10011b",
+              "description": " 1000 Hz/s"
+            },
+            {
+              "value": "10100b",
+              "description": " 2000 Hz/s"
+            },
+            {
+              "value": "10101b",
+              "description": " 4000 Hz/s"
+            },
+            {
+              "value": "10110b",
+              "description": " 6000 Hz/s"
+            },
+            {
+              "value": "10111b",
+              "description": " 8000 Hz/s"
+            },
+            {
+              "value": "11000b",
+              "description": " 10000 Hz/s"
+            },
+            {
+              "value": "11001b",
+              "description": " 20000 Hz/s"
+            },
+            {
+              "value": "11010b",
+              "description": " 30000 Hz/s"
+            },
+            {
+              "value": "11011b",
+              "description": " 40000 Hz/s"
+            },
+            {
+              "value": "11100b",
+              "description": " 50000  Hz/s"
+            },
+            {
+              "value": "11101b",
+              "description": " 60000 Hz/s"
+            },
+            {
+              "value": "11110b",
+              "description": " 70000 Hz/s "
+            },
+            {
+              "value": "11111b",
+              "description": " No limit"
+            }
+          ]
+        },
+        {
+          "position": "24",
+          "name": "CL_DEC_CONFIG",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Closed loop deceleration configuration",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Closed loop deceleration defined by CL_ACC"
+            },
+            {
+              "value": "0b",
+              "description": "Closed loop deceleration defined by CL_DEC"
+            }
+          ]
+        },
+        {
+          "position": "23:19",
+          "name": "CL_DEC",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Closed loop deceleration.  This register is used only if AVS is disabled and CL_DEC_CONFIG is set to '0'",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00000b",
+              "description": " 0.5 Hz/s"
+            },
+            {
+              "value": "00001b",
+              "description": " 1 Hz/s"
+            },
+            {
+              "value": "00010b",
+              "description": " 2.5 Hz/s"
+            },
+            {
+              "value": "00011b",
+              "description": " 5 Hz/s"
+            },
+            {
+              "value": "00100b",
+              "description": " 7.5 Hz/s"
+            },
+            {
+              "value": "00101b",
+              "description": " 10 Hz/s"
+            },
+            {
+              "value": "00110b",
+              "description": " 20 Hz/s"
+            },
+            {
+              "value": "00111b",
+              "description": " 40 Hz/s"
+            },
+            {
+              "value": "01000b",
+              "description": " 60 Hz/s"
+            },
+            {
+              "value": "01001b",
+              "description": " 80 Hz/s"
+            },
+            {
+              "value": "01010b",
+              "description": " 100 Hz/s"
+            },
+            {
+              "value": "01011b",
+              "description": " 200 Hz/s"
+            },
+            {
+              "value": "01100b",
+              "description": " 300 Hz/s"
+            },
+            {
+              "value": "01101b",
+              "description": " 400 Hz/s"
+            },
+            {
+              "value": "01110b",
+              "description": " 500 Hz/s "
+            },
+            {
+              "value": "01111b",
+              "description": " 600 Hz/s"
+            },
+            {
+              "value": "10000b",
+              "description": " 700 Hz/s"
+            },
+            {
+              "value": "10001b",
+              "description": " 800 Hz/s"
+            },
+            {
+              "value": "10010b",
+              "description": " 900 Hz/s"
+            },
+            {
+              "value": "10011b",
+              "description": " 1000 Hz/s"
+            },
+            {
+              "value": "10100b",
+              "description": " 2000 Hz/s"
+            },
+            {
+              "value": "10101b",
+              "description": " 4000 Hz/s"
+            },
+            {
+              "value": "10110b",
+              "description": " 6000 Hz/s"
+            },
+            {
+              "value": "10111b",
+              "description": " 8000 Hz/s"
+            },
+            {
+              "value": "11000b",
+              "description": " 10000 Hz/s"
+            },
+            {
+              "value": "11001b",
+              "description": " 20000 Hz/s"
+            },
+            {
+              "value": "11010b",
+              "description": " 30000 Hz/s"
+            },
+            {
+              "value": "11011b",
+              "description": " 40000 Hz/s"
+            },
+            {
+              "value": "11100b",
+              "description": " 50000  Hz/s"
+            },
+            {
+              "value": "11101b",
+              "description": " 60000 Hz/s"
+            },
+            {
+              "value": "11110b",
+              "description": " 70000 Hz/s "
+            },
+            {
+              "value": "11111b",
+              "description": " No limit"
+            }
+          ]
+        },
+        {
+          "position": "18:15",
+          "name": "PWM_FREQ_OUT",
+          "access_type": "R/W",
+          "reset": "00000b",
+          "description": "PWM output frequency",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 10 kHz"
+            },
+            {
+              "value": "0001b",
+              "description": " 15 kHz"
+            },
+            {
+              "value": "0010b",
+              "description": " 20 kHz"
+            },
+            {
+              "value": "0011b",
+              "description": " 25 kHz"
+            },
+            {
+              "value": "0100b",
+              "description": " 30 kHz"
+            },
+            {
+              "value": "0101b",
+              "description": " 35 kHz"
+            },
+            {
+              "value": "0110b",
+              "description": " 40 kHz"
+            },
+            {
+              "value": "0111b",
+              "description": " 45 kHz"
+            },
+            {
+              "value": "1000b",
+              "description": " 50 kHz"
+            },
+            {
+              "value": "1001b",
+              "description": " 55 kHz"
+            },
+            {
+              "value": "1010b",
+              "description": " 60 kHz"
+            },
+            {
+              "value": "1011b",
+              "description": " 65 kHz"
+            },
+            {
+              "value": "1100b",
+              "description": " 70 kHz"
+            },
+            {
+              "value": "1101b",
+              "description": " 75 kHz"
+            },
+            {
+              "value": "1110b",
+              "description": " Not Applicable"
+            },
+            {
+              "value": "1111b",
+              "description": " Not Applicable"
+            }
+          ]
+        },
+        {
+          "position": "14",
+          "name": "PWM_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "PWM modulation",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Continous Space Vector Modulation"
+            },
+            {
+              "value": "01b",
+              "description": "  Discontinous Space Vector Modulation"
+            }
+          ]
+        },
+        {
+          "position": "13:12",
+          "name": "FG_SEL",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "FG select",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Output FG in open loop and closed loop "
+            },
+            {
+              "value": "01b",
+              "description": " Output FG in only closed loop"
+            },
+            {
+              "value": "10b",
+              "description": "  Output FG in open loop for the first try."
+            },
+            {
+              "value": "11b",
+              "description": " Not Defined"
+            }
+          ]
+        },
+        {
+          "position": "11:8",
+          "name": "FG_DIV",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "FG Division factor   ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " Divide by 1 (2-pole motor mechanical speed)"
+            },
+            {
+              "value": "0001b",
+              "description": " Divide by 1 (2-pole motor mechanical speed)"
+            },
+            {
+              "value": "0010b",
+              "description": " Divide by 2 (4-pole motor mechanical speed)"
+            },
+            {
+              "value": "0011b",
+              "description": " Divide by 3 (6-pole motor mechanical speed)"
+            },
+            {
+              "value": "0100b",
+              "description": " Divide by 4 (8-pole motor mechanical speed) ..."
+            },
+            {
+              "value": "1111b",
+              "description": " Divide by 15 (30-pole motor mechanical speed)"
+            }
+          ]
+        },
+        {
+          "position": "7",
+          "name": "FG_CONFIG",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "FG output configuration ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": "FG active as long as motor is driven"
+            },
+            {
+              "value": "1b",
+              "description": "FG active till BEMF drops below BEMF threshold defined by FG_BEMF_THR"
+            }
+          ]
+        },
+        {
+          "position": "6:4",
+          "name": "FG_BEMF_THR",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "FG output BEMF threshold",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " +/- 1mV"
+            },
+            {
+              "value": "001b",
+              "description": " +/- 2mV "
+            },
+            {
+              "value": "010b",
+              "description": " +/- 5mV "
+            },
+            {
+              "value": "011b",
+              "description": " +/- 10mV"
+            },
+            {
+              "value": "100b",
+              "description": " +/- 20mV"
+            },
+            {
+              "value": "101b",
+              "description": " +/- 30mV "
+            },
+            {
+              "value": "110b",
+              "description": " Not Applicable "
+            },
+            {
+              "value": "111b",
+              "description": " Not Applicable "
+            }
+          ]
+        },
+        {
+          "position": "3",
+          "name": "AVS_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "AVS enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable "
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "2",
+          "name": "DEADTIME_COMP_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Deadtime compensation enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable "
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "1",
+          "name": "SPEED_LOOP_DIS",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Speed Loop Disable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Disable"
+            },
+            {
+              "value": "0b",
+              "description": "Enable"
+            }
+          ]
+        },
+        {
+          "position": "0",
+          "name": "LOW_SPEED_RECIRC_BRAKE_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Stop mode applied when stop mode is recirculation brake and motor running in align or open loop",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Low Side Brake"
+            },
+            {
+              "value": "0b",
+              "description": " Hi-z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x0000008A",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "CLOSED_LOOP2",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:28",
+          "name": "MTR_STOP",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Motor stop options",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " Hi-z  "
+            },
+            {
+              "value": "001b",
+              "description": " Recirculation Mode"
+            },
+            {
+              "value": "010b",
+              "description": " Low side braking"
+            },
+            {
+              "value": "011b",
+              "description": " High side braking"
+            },
+            {
+              "value": "100b",
+              "description": " Active spin down"
+            },
+            {
+              "value": "101b",
+              "description": " Align braking"
+            },
+            {
+              "value": "110b",
+              "description": " Not Defined "
+            },
+            {
+              "value": "111b",
+              "description": " Not Defined "
+            }
+          ]
+        },
+        {
+          "position": "27:24",
+          "name": "RECIR_BRK_TIME",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Brake time during motor stop",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 1 mS "
+            },
+            {
+              "value": "0001b",
+              "description": " 1 mS"
+            },
+            {
+              "value": "0010b",
+              "description": " 1 mS"
+            },
+            {
+              "value": "0011b",
+              "description": " 1 mS"
+            },
+            {
+              "value": "0100b",
+              "description": " 1 mS"
+            },
+            {
+              "value": "0101b",
+              "description": " 5 mS"
+            },
+            {
+              "value": "0110b",
+              "description": " 10 mS"
+            },
+            {
+              "value": "0111b",
+              "description": " 50 mS"
+            },
+            {
+              "value": "1000b",
+              "description": " 100 mS"
+            },
+            {
+              "value": "1001b",
+              "description": " 250 mS"
+            },
+            {
+              "value": "1010b",
+              "description": " 500 mS"
+            },
+            {
+              "value": "1011b",
+              "description": " 1000 mS"
+            },
+            {
+              "value": "1100b",
+              "description": " 2500 mS"
+            },
+            {
+              "value": "1101b",
+              "description": " 5000 mS"
+            },
+            {
+              "value": "1110b",
+              "description": " 10000 mS"
+            },
+            {
+              "value": "1111b",
+              "description": " 15000 mS"
+            }
+          ]
+        },
+        {
+          "position": "23:20",
+          "name": "ACT_SPIN_THR",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Speed threshold for active spin down (% of MAX_SPEED) ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 100 %"
+            },
+            {
+              "value": "0001b",
+              "description": " 90 %"
+            },
+            {
+              "value": "0010b",
+              "description": " 80 %"
+            },
+            {
+              "value": "0011b",
+              "description": " 70 %"
+            },
+            {
+              "value": "0100b",
+              "description": " 60%"
+            },
+            {
+              "value": "0101b",
+              "description": " 50 %"
+            },
+            {
+              "value": "0110b",
+              "description": " 45 %"
+            },
+            {
+              "value": "0111b",
+              "description": " 40 %"
+            },
+            {
+              "value": "1000b",
+              "description": " 35 %"
+            },
+            {
+              "value": "1001b",
+              "description": " 30 %"
+            },
+            {
+              "value": "1010b",
+              "description": " 25 %"
+            },
+            {
+              "value": "1011b",
+              "description": " 20 %"
+            },
+            {
+              "value": "1100b",
+              "description": " 15 %"
+            },
+            {
+              "value": "1101b",
+              "description": " 10 %"
+            },
+            {
+              "value": "1110b",
+              "description": " 5 %"
+            },
+            {
+              "value": "1111b",
+              "description": " 2.5 %"
+            }
+          ]
+        },
+        {
+          "position": "19:16",
+          "name": "BRAKE_SPEED_THRESHOLD",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Speed threshold for BRAKE pin and Motor stop options (Low side Braking or High Side Braking or Align Braking)  (% of MAX_SPEED) ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 100 %"
+            },
+            {
+              "value": "0001b",
+              "description": " 90 %"
+            },
+            {
+              "value": "0010b",
+              "description": " 80 %"
+            },
+            {
+              "value": "0011b",
+              "description": " 70 %"
+            },
+            {
+              "value": "0100b",
+              "description": " 60%"
+            },
+            {
+              "value": "0101b",
+              "description": " 50 %"
+            },
+            {
+              "value": "0110b",
+              "description": " 45 %"
+            },
+            {
+              "value": "0111b",
+              "description": " 40 %"
+            },
+            {
+              "value": "1000b",
+              "description": " 35 %"
+            },
+            {
+              "value": "1001b",
+              "description": " 30 %"
+            },
+            {
+              "value": "1010b",
+              "description": " 25 %"
+            },
+            {
+              "value": "1011b",
+              "description": " 20 %"
+            },
+            {
+              "value": "1100b",
+              "description": " 15 %"
+            },
+            {
+              "value": "1101b",
+              "description": " 10 %"
+            },
+            {
+              "value": "1110b",
+              "description": " 5 %"
+            },
+            {
+              "value": "1111b",
+              "description": " 2.5 %"
+            }
+          ]
+        },
+        {
+          "position": "15:8",
+          "name": "MOTOR_RES",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "8-bit values for motor phase resistance   See table x for values of phase resistance",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "7:0",
+          "name": "MOTOR_IND",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "8-bit values for motor phase inductane   See table x for values of phase inductance",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x0000008C",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "CLOSED_LOOP3",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:23",
+          "name": "MOTOR_BEMF_CONST",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "8-bit values for motor BEMF Constant   See table x for values of BEMF constant",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "22:13",
+          "name": "CURR_LOOP_KP",
+          "access_type": "R/W",
+          "reset": "000h",
+          "description": "10-bit value for current Iq and Id loop Kp. Kp = 8LSB of CURR_LOOP_KP / 10^2MSB of CURR_LOOP_KP. Please make 0 for auto calculation of current Kp and Ki",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "12:3",
+          "name": "CURR_LOOP_KI",
+          "access_type": "R/W",
+          "reset": "000h",
+          "description": "10-bit value for current Iq and Id loop Ki. Ki = 1000 * 8LSB of CURR_LOOP_KI / 10^2MSB of CURR_LOOP_KI. Please make 0 for auto calculation of current Kp and Ki",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "2:0",
+          "name": "SPD_LOOP_KP",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "3 MSB bits for speed loop Kp. Kp = 0.01 * 8LSB of SPD_LOOP_KP / 10^2MSB of SPD_LOOP_KP",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x0000008E",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "CLOSED_LOOP4",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:24",
+          "name": "SPD_LOOP_KP",
+          "access_type": "R/W",
+          "reset": "000h",
+          "description": "7 LSB bits for speed loop Kp. Kp = 0.01 * 8LSB of SPD_LOOP_KP / 10^2MSB of SPD_LOOP_KP",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "23:14",
+          "name": "SPD_LOOP_KI",
+          "access_type": "R/W",
+          "reset": "000h",
+          "description": "10 bit value for speed loop Ki. Ki = 0.1 * 8LSB of SPD_LOOP_KI / 10^2MSB of SPD_LOOP_KI",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "13:0",
+          "name": "MAX_SPEED",
+          "access_type": "R/W",
+          "reset": "0000H",
+          "description": "14-bit value for setting maximum value of Speed in electrical Hz   Maximum motor electrical speed (Hz): {MOTOR_SPEED/6}   For example: if MOTOR_SPEED is 0x2710, then maximum motor speed (Hz) = 10000(0x2710)/6 = 1666 Hz",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000090",
+      "ip_name": "Fault Configuration",
+      "register_acronym": "FAULT_CONFIG1",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:27",
+          "name": "ILIMIT",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Reference for Torque PI Loop (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.125 A"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.25 A "
+            },
+            {
+              "value": "0010b",
+              "description": " 0.5 A "
+            },
+            {
+              "value": "0011b",
+              "description": " 1.0 A "
+            },
+            {
+              "value": "0100b",
+              "description": " 1.5 A"
+            },
+            {
+              "value": "0101b",
+              "description": " 2.0 A"
+            },
+            {
+              "value": "0110b",
+              "description": " 2.5 A"
+            },
+            {
+              "value": "0111b",
+              "description": " 3.0 A"
+            },
+            {
+              "value": "1000b",
+              "description": " 3.5 A"
+            },
+            {
+              "value": "1001b",
+              "description": " 4.0 A"
+            },
+            {
+              "value": "1010b",
+              "description": " 4.5 A"
+            },
+            {
+              "value": "1011b",
+              "description": " 5.0 A"
+            },
+            {
+              "value": "1100b",
+              "description": " 5.5 A"
+            },
+            {
+              "value": "1101b",
+              "description": " 6.0 A"
+            },
+            {
+              "value": "1110b",
+              "description": " 7.0 A"
+            },
+            {
+              "value": "1111b",
+              "description": " 8.0 A "
+            }
+          ]
+        },
+        {
+          "position": "26:23",
+          "name": "HW_LOCK_ILIMIT",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Comparator based lock detection current limit (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.125 A"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.25 A "
+            },
+            {
+              "value": "0010b",
+              "description": " 0.5 A "
+            },
+            {
+              "value": "0011b",
+              "description": " 1.0 A "
+            },
+            {
+              "value": "0100b",
+              "description": " 1.5 A"
+            },
+            {
+              "value": "0101b",
+              "description": " 2.0 A"
+            },
+            {
+              "value": "0110b",
+              "description": " 2.5 A"
+            },
+            {
+              "value": "0111b",
+              "description": " 3.0 A"
+            },
+            {
+              "value": "1000b",
+              "description": " 3.5 A"
+            },
+            {
+              "value": "1001b",
+              "description": " 4.0 A"
+            },
+            {
+              "value": "1010b",
+              "description": " 4.5 A"
+            },
+            {
+              "value": "1011b",
+              "description": " 5.0 A"
+            },
+            {
+              "value": "1100b",
+              "description": " 5.5 A"
+            },
+            {
+              "value": "1101b",
+              "description": " 6.0 A"
+            },
+            {
+              "value": "1110b",
+              "description": " 7.0 A"
+            },
+            {
+              "value": "1111b",
+              "description": " 8.0 A "
+            }
+          ]
+        },
+        {
+          "position": "22:19",
+          "name": "LOCK_ILIMIT",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "ADC based lock detection current threshold (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.125 A"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.25 A "
+            },
+            {
+              "value": "0010b",
+              "description": " 0.5 A "
+            },
+            {
+              "value": "0011b",
+              "description": " 1.0 A "
+            },
+            {
+              "value": "0100b",
+              "description": " 1.5 A"
+            },
+            {
+              "value": "0101b",
+              "description": " 2.0 A"
+            },
+            {
+              "value": "0110b",
+              "description": " 2.5 A"
+            },
+            {
+              "value": "0111b",
+              "description": " 3.0 A"
+            },
+            {
+              "value": "1000b",
+              "description": " 3.5 A"
+            },
+            {
+              "value": "1001b",
+              "description": " 4.0 A"
+            },
+            {
+              "value": "1010b",
+              "description": " 4.5 A"
+            },
+            {
+              "value": "1011b",
+              "description": " 5.0 A"
+            },
+            {
+              "value": "1100b",
+              "description": " 5.5 A"
+            },
+            {
+              "value": "1101b",
+              "description": " 6.0 A"
+            },
+            {
+              "value": "1110b",
+              "description": " 7.0 A"
+            },
+            {
+              "value": "1111b",
+              "description": " 8.0 A "
+            }
+          ]
+        },
+        {
+          "position": "18:15",
+          "name": "LOCK_ILIMIT_MODE",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Lock current Limit Mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " Ilimit lock detection causes latched fault; nfault active; Gate driver is tristated"
+            },
+            {
+              "value": "0001b",
+              "description": " Ilimit lock detection causes latched fault; nfault active; Gate driver is in recirculation mode"
+            },
+            {
+              "value": "0010b",
+              "description": " Ilimit lock detection causes latched fault; nfault active; Gate driver is in high side brake mode (All high side FETs are turned ON)"
+            },
+            {
+              "value": "0011b",
+              "description": " Ilimit lock detection causes latched fault; nfault active; Gate driver is in low side brake mode (All low side FETs are turned ON)"
+            },
+            {
+              "value": "0100b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is tristated; nFault active"
+            },
+            {
+              "value": "0101b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is in recirculation mode; nFault active"
+            },
+            {
+              "value": "0110b",
+              "description": " Fault autmatically cleared for AUTO_RETRY_TIMES  after LCK_RETRY time; Gate driver is in high side brake mode (All high side FETs are turned ON); nFault active"
+            },
+            {
+              "value": "0111b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is in low side brake mode (All low side FETs are turned ON); nFault active"
+            },
+            {
+              "value": "1000b",
+              "description": " Ilimit lock detection current limit is in report only but no action is taken; nFault active"
+            },
+            {
+              "value": "1001b",
+              "description": " ILIMIT LOCK is disabled"
+            },
+            {
+              "value": "1010b",
+              "description": " ILIMIT LOCK is disabled"
+            },
+            {
+              "value": "1011b",
+              "description": " ILIMIT LOCK is disabled"
+            },
+            {
+              "value": "1100b",
+              "description": " ILIMIT LOCK is disabled"
+            },
+            {
+              "value": "1101b",
+              "description": " ILIMIT LOCK is disabled"
+            },
+            {
+              "value": "1110b",
+              "description": " ILIMIT LOCK is disabled"
+            },
+            {
+              "value": "1111b",
+              "description": " ILIMIT LOCK is disabled"
+            }
+          ]
+        },
+        {
+          "position": "14:11",
+          "name": "LOCK_ILIMIT_DEG",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Lock Detection current limit deglitch time",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.05 ms"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.1 ms"
+            },
+            {
+              "value": "0010b",
+              "description": " 0.2 ms"
+            },
+            {
+              "value": "0011b",
+              "description": " 0.5 ms"
+            },
+            {
+              "value": "0100b",
+              "description": " 1 ms"
+            },
+            {
+              "value": "0101b",
+              "description": " 2.5 ms"
+            },
+            {
+              "value": "0110b",
+              "description": " 5 ms"
+            },
+            {
+              "value": "0111b",
+              "description": " 7.5 ms"
+            },
+            {
+              "value": "1000b",
+              "description": " 10 ms"
+            },
+            {
+              "value": "1001b",
+              "description": " 25 ms"
+            },
+            {
+              "value": "1010b",
+              "description": " 50 ms"
+            },
+            {
+              "value": "1011b",
+              "description": " 75 ms"
+            },
+            {
+              "value": "1100b",
+              "description": " 100 ms"
+            },
+            {
+              "value": "1101b",
+              "description": " 200 ms"
+            },
+            {
+              "value": "1110b",
+              "description": " 500 ms"
+            },
+            {
+              "value": "1111b",
+              "description": " 1000 ms"
+            }
+          ]
+        },
+        {
+          "position": "10:7",
+          "name": "LCK_RETRY",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Lock detection retry time",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 300 ms"
+            },
+            {
+              "value": "0001b",
+              "description": " 500 ms"
+            },
+            {
+              "value": "0010b",
+              "description": " 1 s"
+            },
+            {
+              "value": "0011b",
+              "description": " 2 s"
+            },
+            {
+              "value": "0100b",
+              "description": " 3 s"
+            },
+            {
+              "value": "0101b",
+              "description": " 4 s"
+            },
+            {
+              "value": "0110b",
+              "description": " 5 s"
+            },
+            {
+              "value": "0111b",
+              "description": " 6 s"
+            },
+            {
+              "value": "1000b",
+              "description": " 7 s"
+            },
+            {
+              "value": "1001b",
+              "description": " 8 s"
+            },
+            {
+              "value": "1010b",
+              "description": " 9 s"
+            },
+            {
+              "value": "1011b",
+              "description": " 10 s"
+            },
+            {
+              "value": "1100b",
+              "description": " 11 s"
+            },
+            {
+              "value": "1101b",
+              "description": " 12 s"
+            },
+            {
+              "value": "1110b",
+              "description": " 13 s"
+            },
+            {
+              "value": "1111b",
+              "description": " 14 s"
+            }
+          ]
+        },
+        {
+          "position": "6:3",
+          "name": "MTR_LCK_MODE",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Motor Lock Mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " Motor lock detection causes latched fault; nfault active; Gate driver is tristated"
+            },
+            {
+              "value": "0001b",
+              "description": " Motor lock detection causes latched fault; nfault active; Gate driver is in recirculation mode"
+            },
+            {
+              "value": "0010b",
+              "description": " Motor lock detection causes latched fault; nfault active; Gate driver is in high side brake mode (All high side FETs are turned ON)"
+            },
+            {
+              "value": "0011b",
+              "description": " Motor lock detection causes latched fault; nfault active; Gate driver is in low side brake mode (All low side FETs are turned ON)"
+            },
+            {
+              "value": "0100b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is tristated; nFault active"
+            },
+            {
+              "value": "0101b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is in recirculation mode; nFault active"
+            },
+            {
+              "value": "0110b",
+              "description": " Fault autmatically cleared for AUTO_RETRY_TIMES  after LCK_RETRY time; Gate driver is in high side brake mode (All high side FETs are turned ON); nFault active"
+            },
+            {
+              "value": "0111b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is in low side brake mode (All low side FETs are turned ON); nFault active"
+            },
+            {
+              "value": "1000b",
+              "description": " Motor lock detection current limit is in report only but no action is taken; nFault active"
+            },
+            {
+              "value": "1001b",
+              "description": " Motor lock detection is disabled"
+            },
+            {
+              "value": "1010b",
+              "description": " Motor lock detection is disabled"
+            },
+            {
+              "value": "1011b",
+              "description": " Motor lock detection is disabled"
+            },
+            {
+              "value": "1100b",
+              "description": " Motor lock detection is disabled"
+            },
+            {
+              "value": "1101b",
+              "description": " Motor lock detection is disabled"
+            },
+            {
+              "value": "1110b",
+              "description": " Motor lock detection is disabled"
+            },
+            {
+              "value": "1111b",
+              "description": " Motor lock detection is disabled"
+            }
+          ]
+        },
+        {
+          "position": "2",
+          "name": "IPD_TIMEOUT_FAULT_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "IPD timeout fault Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "1",
+          "name": "IPD_FREQ_FAULT_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "IPD frequency fault Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "0",
+          "name": "SATURATION_FLAGS_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Enables indication of current loop and speed loop saturation",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000092",
+      "ip_name": "Fault Configuration",
+      "register_acronym": "FAULT_CONFIG2",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30",
+          "name": "LOCK1_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Lock 1 (Abnormal Speed) Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "29",
+          "name": "LOCK2_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Lock 2 (Abnormal BEMF) Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "28",
+          "name": "LOCK3_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Lock 3 (No Motor) Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "27:25",
+          "name": "LOCK_ABN_SPEED",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Abnornal speed lock threshold (% of MAX_SPEED) ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 130%"
+            },
+            {
+              "value": "001b",
+              "description": " 140%"
+            },
+            {
+              "value": "010b",
+              "description": " 150%"
+            },
+            {
+              "value": "011b",
+              "description": " 160%"
+            },
+            {
+              "value": "100b",
+              "description": " 170%"
+            },
+            {
+              "value": "101b",
+              "description": " 180%"
+            },
+            {
+              "value": "110b",
+              "description": " 190%"
+            },
+            {
+              "value": "111b",
+              "description": " 200%"
+            }
+          ]
+        },
+        {
+          "position": "24:22",
+          "name": "ABNORMAL_BEMF_THR",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Abnornal BEMF lock threshold (% of expected BEMF)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": "40%"
+            },
+            {
+              "value": "001b",
+              "description": " 45%"
+            },
+            {
+              "value": "010b",
+              "description": " 50%"
+            },
+            {
+              "value": "011b",
+              "description": " 55%"
+            },
+            {
+              "value": "100b",
+              "description": " 60%"
+            },
+            {
+              "value": "101b",
+              "description": " 65%"
+            },
+            {
+              "value": "110b",
+              "description": " 67.5%"
+            },
+            {
+              "value": "111b",
+              "description": " 70%"
+            }
+          ]
+        },
+        {
+          "position": "21:19",
+          "name": "NO_MTR_THR",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "No motor lock threshold (A) ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 0.05 A"
+            },
+            {
+              "value": "001b",
+              "description": " 0.075 A"
+            },
+            {
+              "value": "010b",
+              "description": " 0.1A"
+            },
+            {
+              "value": "011b",
+              "description": " 0.125 A"
+            },
+            {
+              "value": "100b",
+              "description": " 0.25 A"
+            },
+            {
+              "value": "101b",
+              "description": " 0.5 A"
+            },
+            {
+              "value": "110b",
+              "description": " 0.75 A"
+            },
+            {
+              "value": "111b",
+              "description": " 1.0 A"
+            }
+          ]
+        },
+        {
+          "position": "18:15",
+          "name": "HW_LOCK_ILIMIT_MODE",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Hardware Lock Detection current mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " Hardware Ilimit lock detection causes latched fault; nfault active; Gate driver is tristated"
+            },
+            {
+              "value": "0001b",
+              "description": " Hardware Ilimit lock detection causes latched fault; nfault active; Gate driver is in recirculation mode"
+            },
+            {
+              "value": "0010b",
+              "description": " Hardware Ilimit lock detection causes latched fault; nfault active; Gate driver is in high side brake mode (All high side FETs are turned ON)"
+            },
+            {
+              "value": "0011b",
+              "description": " Hardware Ilimit lock detection causes latched fault; nfault active; Gate driver is in low side brake mode (All low side FETs are turned ON)"
+            },
+            {
+              "value": "0100b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is tristated"
+            },
+            {
+              "value": "0101b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is in recirculation mode"
+            },
+            {
+              "value": "0110b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is in high side brake mode (All high side FETs are turned ON)"
+            },
+            {
+              "value": "0111b",
+              "description": " Fault autmatically cleared after LCK_RETRY time. Number of retries limited to AUTO_RETRY_TIMES. If number of retries exceed AUTO_RETRY_TIMES, fault is latched; Gate driver is in low side brake mode (All low side FETs are turned ON)"
+            },
+            {
+              "value": "1000b",
+              "description": " Hardware ILIMIT lock detection is in report only but no action is taken"
+            },
+            {
+              "value": "1001b",
+              "description": " Hardware ILIMIT lock detection is disabled"
+            },
+            {
+              "value": "1010b",
+              "description": " Hardware ILIMIT lock detection is disabled"
+            },
+            {
+              "value": "1011b",
+              "description": " Hardware ILIMIT lock detection is disabled"
+            },
+            {
+              "value": "1100b",
+              "description": " Hardware ILIMIT lock detection is disabled"
+            },
+            {
+              "value": "1101b",
+              "description": " Hardware ILIMIT lock detection is disabled"
+            },
+            {
+              "value": "1110b",
+              "description": " Hardware ILIMIT lock detection is disabled"
+            },
+            {
+              "value": "1111b",
+              "description": " Hardware ILIMIT lock detection is disabled"
+            }
+          ]
+        },
+        {
+          "position": "14:12",
+          "name": "HW_LOCK_ILIMIT_DEG",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Hardware Lock Detection current limit deglitch time (Bit Number 11 is reserved",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " No Deglitch"
+            },
+            {
+              "value": "001b",
+              "description": " 1 us"
+            },
+            {
+              "value": "010b",
+              "description": " 2 us"
+            },
+            {
+              "value": "011b",
+              "description": " 3 us"
+            },
+            {
+              "value": "100b",
+              "description": " 4 us"
+            },
+            {
+              "value": "101b",
+              "description": " 5 us"
+            },
+            {
+              "value": "110b",
+              "description": " 6 us"
+            },
+            {
+              "value": "111b",
+              "description": " 7 us"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "position": "11",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "10:8",
+          "name": "MIN_VM_MOTOR",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Minimum voltage for runing motor   (V)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " No Limit"
+            },
+            {
+              "value": "001b",
+              "description": " 4.5 V"
+            },
+            {
+              "value": "010b",
+              "description": " 5 V"
+            },
+            {
+              "value": "011b",
+              "description": " 5.5 V"
+            },
+            {
+              "value": "100b",
+              "description": " 6 V"
+            },
+            {
+              "value": "101b",
+              "description": "  7.5 V"
+            },
+            {
+              "value": "110b",
+              "description": " 10 V "
+            },
+            {
+              "value": "111b",
+              "description": " 12.5 V"
+            }
+          ]
+        },
+        {
+          "position": "7",
+          "name": "MIN_VM_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Undervoltage Fault Recovery Mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Latch on Undervoltage"
+            },
+            {
+              "value": "1b",
+              "description": " Automatic clear if voltage in bounds"
+            }
+          ]
+        },
+        {
+          "position": "6:4",
+          "name": "MAX_VM_MOTOR",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Maximum voltage for runing motor ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " No Limit"
+            },
+            {
+              "value": "001b",
+              "description": " 20 V"
+            },
+            {
+              "value": "010b",
+              "description": " 22.5 V "
+            },
+            {
+              "value": "011b",
+              "description": " 25 V"
+            },
+            {
+              "value": "100b",
+              "description": " 27.5 V "
+            },
+            {
+              "value": "101b",
+              "description": "  30 V"
+            },
+            {
+              "value": "110b",
+              "description": "  32.5 V"
+            },
+            {
+              "value": "111b",
+              "description": " 35 V"
+            }
+          ]
+        },
+        {
+          "position": "3",
+          "name": "MAX_VM_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Overvoltage Fault Recovery Mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Latch on Overvoltage"
+            },
+            {
+              "value": "1b",
+              "description": " Automatic clear if voltage in bounds"
+            }
+          ]
+        },
+        {
+          "position": "2:0",
+          "name": "AUTO_RETRY_TIMES",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Automatic retry attempts",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " No Limit"
+            },
+            {
+              "value": "001b",
+              "description": " 2"
+            },
+            {
+              "value": "010b",
+              "description": " 3 "
+            },
+            {
+              "value": "011b",
+              "description": " 5"
+            },
+            {
+              "value": "100b",
+              "description": " 7 "
+            },
+            {
+              "value": "101b",
+              "description": "  10"
+            },
+            {
+              "value": "110b",
+              "description": "  15"
+            },
+            {
+              "value": "111b",
+              "description": " 20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000094",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "SPEED_PROFILES1",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:29",
+          "name": "SPEED_PROFILE_CONFIG",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Configuration for speed profiles",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Speed Reference Mode"
+            },
+            {
+              "value": "01b",
+              "description": " Linear Mode"
+            },
+            {
+              "value": "10b",
+              "description": " Staircase Mode"
+            },
+            {
+              "value": "11b",
+              "description": " Forward Reverse Mode"
+            }
+          ]
+        },
+        {
+          "position": "28:21",
+          "name": "DUTY_ON1",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_ON1 Configuration   Turn On Duty Cycle (%) = {(DUTY_ON1/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "20:13",
+          "name": "DUTY_OFF1",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_OFF1 Configuration   Turn Off Duty Cycle (%) = {(DUTY_OFF1/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "12:5",
+          "name": "DUTY_CLAMP1",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_CLAMP1 Configuration   Duty Cycle for clamping speed (%) = {(DUTY_CLAMP1/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "4:0",
+          "name": "DUTY_A",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "5 MSB bits for Duty Cycle A",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000096",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "SPEED_PROFILES2",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:28",
+          "name": "DUTY_A",
+          "access_type": "R/W",
+          "reset": "0H",
+          "description": "3 LSB bits for Duty Cycle A Duty_A Configuration   Duty Cycle A (%) = {(DUTY_A/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "27:20",
+          "name": "DUTY_B",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_B Configuration   Duty Cycle B (%) = {(DUTY_B/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "19:12",
+          "name": "DUTY_C",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_C Configuration   Duty Cycle C (%) = {(DUTY_C/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "11:4",
+          "name": "DUTY_D",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_D Configuration   Duty Cycle D (%) = {(DUTY_D/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "3:0",
+          "name": "DUTY_E",
+          "access_type": "R/W",
+          "reset": "00000h",
+          "description": "4 MSB bits for Duty Cycle E",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x00000098",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "SPEED_PROFILES3",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:27",
+          "name": "DUTY_E",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "4 LSB bits for Duty Cycle E Duty_E Configuration   Duty Cycle E (%) = {(DUTY_E/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "26:19",
+          "name": "DUTY_ON2",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_ON2 Configuration   Turn On Duty Cycle (%) = {(DUTY_ON2/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "18:11",
+          "name": "DUTY_OFF2",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_OFF2 Configuration   Turn Off Duty Cycle (%) = {(DUTY_OFF2/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "10:3",
+          "name": "DUTY_CLAMP2",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Duty_CLAMP2 Configuration   Duty Cycle for clamping speed (%) = {(DUTY_CLAMP1/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "2:1",
+          "name": "Duty Hysterisis",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Duty hysterisis for speed reference mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 0%"
+            },
+            {
+              "value": "01b",
+              "description": " 0.5%"
+            },
+            {
+              "value": "10b",
+              "description": " 1%"
+            },
+            {
+              "value": "11b",
+              "description": " 2%"
+            }
+          ]
+        },
+        {
+          "position": "0",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x0000009A",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "SPEED_PROFILES4",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:23",
+          "name": "SPEED_OFF1",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Turn off speed Configuration   Turn off speed (% of MAX_SPEED) = {(SPEED_OFF1/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "22:15",
+          "name": "SPEED_CLAMP1",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Clamp Speed Configuration   Clamp Speed (% of MAX_SPEED) = {(SPEED_CLAMP1/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "14:7",
+          "name": "SPEED_A",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Speed A configuration   SPEED A (% of MAX_SPEED) = {(SPEED_A/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "6:0",
+          "name": "SPEED_B",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "7 MSB of SPEED_B configuration ",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x0000009C",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "SPEED_PROFILES5",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30",
+          "name": "SPEED_B",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "1 LSB of SPEED_B configuration Speed B Configuration   SPEED B(% of MAX_SPEED)  = {(SPEED_B/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "29:22",
+          "name": "SPEED_C",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Speed C configuration   SPEED C (% of MAX_SPEED) = {(SPEED_A/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "21:14",
+          "name": "SPEED_D",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Speed D configuration   SPEED D (% of MAX_SPEED) = {(SPEED_D/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "13:6",
+          "name": "SPEED_E",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Speed E Configuration   SPEED E(% of MAX_SPEED)  = {(SPEED_E/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "5:0",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "000000b",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x0000009E",
+      "ip_name": "Algorithm Configuration",
+      "register_acronym": "SPEED_PROFILES6",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:23",
+          "name": "SPEED_OFF2",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Turn off speed Configuration   Turn off speed (% of MAX_SPEED) = {(SPEED_OFF2/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "22:15",
+          "name": "SPEED_CLAMP2",
+          "access_type": "R/W",
+          "reset": "00H",
+          "description": "Clamp Speed Configuration   Clamp Speed (% of MAX_SPEED) = {(SPEED_CLAMP2/255)*100}",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "14:0",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "000H",
+          "description": "Reserved",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000A0",
+      "ip_name": "Internal Algorithm Configuration",
+      "register_acronym": "INT_ALGO_1",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:29",
+          "name": "ACTIVE_BRAKE_SPEED\n_DELTA_LIMIT_EXIT",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Difference between final speed and present speed below which active braking will be stopped",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 2.5%"
+            },
+            {
+              "value": "01b",
+              "description": " 5%"
+            },
+            {
+              "value": "10b",
+              "description": " 7.5%"
+            },
+            {
+              "value": "11b",
+              "description": " 10%"
+            }
+          ]
+        },
+        {
+          "position": "28:27",
+          "name": "SPEED_PIN_GLITCH_FILTER",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Glitch filter applied on speed pin input",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " No Glitch Filter"
+            },
+            {
+              "value": "01b",
+              "description": " 0.2 uSec"
+            },
+            {
+              "value": "10b",
+              "description": " 0.5 uSec"
+            },
+            {
+              "value": "11b",
+              "description": " 1.0 uSec"
+            }
+          ]
+        },
+        {
+          "position": "26",
+          "name": "FAST_ISD_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Enable fast speed detection",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Disable Fast ISD"
+            },
+            {
+              "value": "1b",
+              "description": " Enable Fast ISD"
+            }
+          ]
+        },
+        {
+          "position": "25:24",
+          "name": "ISD_STOP_TIME",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Persistence time for declaring motor has stopped",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 1 mSec"
+            },
+            {
+              "value": "01b",
+              "description": " 5 mSec"
+            },
+            {
+              "value": "10b",
+              "description": " 50 mSec"
+            },
+            {
+              "value": "11b",
+              "description": " 100 mSec"
+            }
+          ]
+        },
+        {
+          "position": "23:22",
+          "name": "ISD_RUN_TIME",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Persistence time for declaring motor is running",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 1 mSec"
+            },
+            {
+              "value": "01b",
+              "description": " 5 mSec"
+            },
+            {
+              "value": "10b",
+              "description": " 50 mSec"
+            },
+            {
+              "value": "11b",
+              "description": " 100 mSec"
+            }
+          ]
+        },
+        {
+          "position": "21:20",
+          "name": "ISD_TIMEOUT",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Timeout in case ISD is unable to reliably detect speed or direction",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 500mSec"
+            },
+            {
+              "value": "01b",
+              "description": " 750 mSec"
+            },
+            {
+              "value": "10b",
+              "description": " 1000 mSec"
+            },
+            {
+              "value": "11b",
+              "description": " 2000 mSec"
+            }
+          ]
+        },
+        {
+          "position": "19:17",
+          "name": "AUTO_HANDOFF_MIN_BEMF",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Minimum BEMF for handoff (V)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 0 mV "
+            },
+            {
+              "value": "001b",
+              "description": " 50 mV"
+            },
+            {
+              "value": "010b",
+              "description": " 100 mV"
+            },
+            {
+              "value": "011b",
+              "description": " 250 mV"
+            },
+            {
+              "value": "100b",
+              "description": " 500 mV"
+            },
+            {
+              "value": "101b",
+              "description": " 1000 mV "
+            },
+            {
+              "value": "110b",
+              "description": " 1250 mV "
+            },
+            {
+              "value": "111b",
+              "description": " 1500 mV"
+            }
+          ]
+        },
+        {
+          "position": "16:15",
+          "name": "BRAKE_CURRENT_PERSIST",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Persistence time for current below threshold during low side brake",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 50 mSec"
+            },
+            {
+              "value": "01b",
+              "description": " 100 mSec"
+            },
+            {
+              "value": "10b",
+              "description": " 250 mSec"
+            },
+            {
+              "value": "11b",
+              "description": " 500 mSec"
+            }
+          ]
+        },
+        {
+          "position": "14:13",
+          "name": "MPET_IPD_CURRENT_LIMIT ",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "IPD current limit for MPET (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 0.1 A"
+            },
+            {
+              "value": "01b",
+              "description": " 0.5 A"
+            },
+            {
+              "value": "10b",
+              "description": " 1.0 A"
+            },
+            {
+              "value": "11b",
+              "description": " 2.0 A"
+            }
+          ]
+        },
+        {
+          "position": "12:11",
+          "name": "MPET_IPD_FREQ ",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Number of times IPD is executed for MPET",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 1"
+            },
+            {
+              "value": "01b",
+              "description": " 2"
+            },
+            {
+              "value": "10b",
+              "description": " 4"
+            },
+            {
+              "value": "11b",
+              "description": " 8"
+            }
+          ]
+        },
+        {
+          "position": "10:8",
+          "name": "MPET_OPEN_LOOP_CURRENT_REF",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Open Loop Current Reference (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": "1 A"
+            },
+            {
+              "value": "001b",
+              "description": " 2 A"
+            },
+            {
+              "value": "010b",
+              "description": " 3 A"
+            },
+            {
+              "value": "011b",
+              "description": " 4 A"
+            },
+            {
+              "value": "100b",
+              "description": " 5 A"
+            },
+            {
+              "value": "101b",
+              "description": " 6 A"
+            },
+            {
+              "value": "110b",
+              "description": " 7 A"
+            },
+            {
+              "value": "111b",
+              "description": " 8 A"
+            }
+          ]
+        },
+        {
+          "position": "7:6",
+          "name": "MPET_OPEN_LOOP_SPEED_REF",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Open Loop Speed Reference for MPET (% of MAXIMUM_SPEED)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 15%"
+            },
+            {
+              "value": "01b",
+              "description": " 25%"
+            },
+            {
+              "value": "10b",
+              "description": " 35%"
+            },
+            {
+              "value": "11b",
+              "description": " 50%"
+            }
+          ]
+        },
+        {
+          "position": "5:3",
+          "name": "MPET_OPEN_LOOP_SLEW_RATE",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Open Loop Slew Rate for MPET (Hz/s)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 0.1 Hz/s"
+            },
+            {
+              "value": "001b",
+              "description": " 0.5 Hz/s"
+            },
+            {
+              "value": "010b",
+              "description": " 1 Hz/s"
+            },
+            {
+              "value": "011b",
+              "description": " 2 Hz/s"
+            },
+            {
+              "value": "100b",
+              "description": " 3 Hz/s"
+            },
+            {
+              "value": "101b",
+              "description": " 5 Hz/s"
+            },
+            {
+              "value": "110b",
+              "description": " 10 Hz/s"
+            },
+            {
+              "value": "111b",
+              "description": " 20 Hz/s"
+            }
+          ]
+        },
+        {
+          "position": "2:0",
+          "name": "REV_DRV_OPEN_LOOP_DEC",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "% of open loop acceleration to be applied during open loop deceleration in reverse drive",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": "50%"
+            },
+            {
+              "value": "001b",
+              "description": " 60%"
+            },
+            {
+              "value": "010b",
+              "description": " 70%"
+            },
+            {
+              "value": "011b",
+              "description": " 80%"
+            },
+            {
+              "value": "100b",
+              "description": " 90%"
+            },
+            {
+              "value": "101b",
+              "description": " 100%"
+            },
+            {
+              "value": "110b",
+              "description": " 125%"
+            },
+            {
+              "value": "111b",
+              "description": " 150%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000A2",
+      "ip_name": "Internal Algorithm Configuration",
+      "register_acronym": "INT_ALGO_2",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:10",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "9:6",
+          "name": "CL_SLOW_ACC",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Close loop acceleration when estimator is not yet fully aligned ( Hz / sec)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.1 Hz/s"
+            },
+            {
+              "value": "0001b",
+              "description": " 1 Hz/s"
+            },
+            {
+              "value": "0010b",
+              "description": " 2 Hz/s"
+            },
+            {
+              "value": "0011b",
+              "description": " 3 Hz/s"
+            },
+            {
+              "value": "0100b",
+              "description": " 5 Hz/s"
+            },
+            {
+              "value": "0101b",
+              "description": " 10 Hz/s"
+            },
+            {
+              "value": "0110b",
+              "description": " 20 Hz/s"
+            },
+            {
+              "value": "0111b",
+              "description": " 30 Hz/s"
+            },
+            {
+              "value": "1000b",
+              "description": " 40 Hz/s"
+            },
+            {
+              "value": "1001b",
+              "description": " 50 Hz/s"
+            },
+            {
+              "value": "1010b",
+              "description": " 100 Hz/s"
+            },
+            {
+              "value": "1011b",
+              "description": " 200 Hz/s"
+            },
+            {
+              "value": "1100b",
+              "description": " 500 Hz/s"
+            },
+            {
+              "value": "1101b",
+              "description": " 750 Hz/s"
+            },
+            {
+              "value": "1110b",
+              "description": " 1000 Hz/s"
+            },
+            {
+              "value": "1111b",
+              "description": "2000 Hz/s"
+            }
+          ]
+        },
+        {
+          "position": "5:3",
+          "name": "ACTIVE_BRAKE_BUS_CURRENT_SLEW_RATE",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Bus Current slew rate during active braking (A/s)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 10 A/s"
+            },
+            {
+              "value": "001b",
+              "description": " 50 A/s"
+            },
+            {
+              "value": "010b",
+              "description": " 100 A/s"
+            },
+            {
+              "value": "011b",
+              "description": " 250 A/s"
+            },
+            {
+              "value": "100b",
+              "description": " 500 A/s"
+            },
+            {
+              "value": "101b",
+              "description": " 1000 A/s"
+            },
+            {
+              "value": "110b",
+              "description": " 5000 A/s"
+            },
+            {
+              "value": "111b",
+              "description": " No Limit"
+            }
+          ]
+        },
+        {
+          "position": "2",
+          "name": "MPET_IPD_SELECT",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Selection between MPET_IPD_CURRENT_LIMIT for IPD current limit, MPET_IPD_FREQ for IPD Repeat OR IPD_CURR_THR for IPD current limit, IPD_REPEAT for IPD Repeat",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " MPET specific parameters"
+            },
+            {
+              "value": "0b",
+              "description": " Configured parameters for normal motor operation"
+            }
+          ]
+        },
+        {
+          "position": "1",
+          "name": "MPET_KE_MEAS_PARAMETER_SELECT",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Selection between MPET_OPEN_LOOP_SLEW_RATE for slew rate, MPET_OPEN_LOOP_CURR_REF for current reference, MPET_OPEN_LOOP_SPEED_REF for speed reference OR OL_ACC_A1, OL_ACC_A2 for slew rate, open loop current reference for current reference and open to closedloop speed threshhold for speed reference",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " MPET specific parameters"
+            },
+            {
+              "value": "0b",
+              "description": " Configured parameters for normal motor operation"
+            }
+          ]
+        },
+        {
+          "position": "0",
+          "name": "IPD_HIGH_RESOLUTION_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "IPD high resolution enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000A4",
+      "ip_name": "Hardware Configuration",
+      "register_acronym": "PIN_CONFIG",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:28",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "000h",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "27",
+          "name": "VdcFilterDisable",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Vdc filter disable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Disable"
+            },
+            {
+              "value": "0b",
+              "description": "Enable"
+            }
+          ]
+        },
+        {
+          "position": "26:13",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reserved": true,
+          "settings": [
+            {
+              "value": "RESERVED"
+            }
+          ]
+        },
+        {
+          "position": "12:11",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "00b",
+          "reserved": true,
+          "settings": [
+            {
+              "value": "RESERVED"
+            }
+          ]
+        },
+        {
+          "position": "10:9",
+          "name": "FG_IDLE_CONFIG",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "FG Configuration During Stop",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " FG continues and end state not defined, provided FG_CONFIG (defining FG during coasting)"
+            },
+            {
+              "value": "01b",
+              "description": " FG is pulled to High "
+            },
+            {
+              "value": "10b",
+              "description": "  FG is pulled to Low"
+            },
+            {
+              "value": "11b",
+              "description": " FG is pulled to High"
+            }
+          ]
+        },
+        {
+          "position": "8:7",
+          "name": "FG_FAULT_CONFIG",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "FG Configuration During Fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " use last FG Signal when motor is driving"
+            },
+            {
+              "value": "01b",
+              "description": " FG is pulled to High "
+            },
+            {
+              "value": "10b",
+              "description": "  FG is pulled to Low"
+            },
+            {
+              "value": "11b",
+              "description": " FG active till BEMF drops below BEMF threshold defined by FG_BEMF_THR if FG_CONFIG "
+            }
+          ]
+        },
+        {
+          "position": "6",
+          "name": "ALARM_PIN_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Alarm Pin Enable ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable "
+            }
+          ]
+        },
+        {
+          "position": "5",
+          "name": "BRAKE_PIN_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Brake Pin Mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Low side Brake"
+            },
+            {
+              "value": "1b",
+              "description": " Align Brake"
+            }
+          ]
+        },
+        {
+          "position": "4",
+          "name": "ALIGN_BRAKE_ANGLE_SEL",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Align Brake Angle Select",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Use last commutation angle before entering align braking"
+            },
+            {
+              "value": "1b",
+              "description": " Use ALIGN_ANGLE configuration for align braking"
+            }
+          ]
+        },
+        {
+          "position": "3:2",
+          "name": "BRAKE_INPUT",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Brake pin override",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Hardware Pin BRAKE"
+            },
+            {
+              "value": "01b",
+              "description": " Override pin and brake / align according to BRAKE_PIN_MODE"
+            },
+            {
+              "value": "10b",
+              "description": " Override pin and do not brake / align"
+            },
+            {
+              "value": "11b",
+              "description": " Hardware Pin BRAKE"
+            }
+          ]
+        },
+        {
+          "position": "1:0",
+          "name": "SPEED_MODE",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Configure Speed Ctrl mode from Speed pin",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Analog Mode"
+            },
+            {
+              "value": "01b",
+              "description": " Controlled by Duty Cycle of SPEED Input Pin"
+            },
+            {
+              "value": "10b",
+              "description": " Register Override mode"
+            },
+            {
+              "value": "11b",
+              "description": " Controlled by Frequency of SPEED Input Pin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000A6",
+      "ip_name": "Hardware Configuration",
+      "register_acronym": "DEVICE_CONFIG1",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "0b",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "29:28",
+          "name": "PIN_38_CONFIG",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Pin 38 configuration",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " DACOUT2"
+            },
+            {
+              "value": "01b",
+              "description": " SOA"
+            },
+            {
+              "value": "10b",
+              "description": " SOB"
+            },
+            {
+              "value": "11b",
+              "description": " SOC"
+            }
+          ]
+        },
+        {
+          "position": "27",
+          "name": "PIN_36_37_CONFIG",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Pin 36 and Pin 37 configuration",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Pin 36 as DACOUT1 and PIN37 as DACOUT2"
+            },
+            {
+              "value": "0b",
+              "description": "Pin 36 and Pin 37 are not defined as DAC pins"
+            }
+          ]
+        },
+        {
+          "position": "26:20",
+          "name": "I2C_SLAVE_ADDR",
+          "access_type": "R/W",
+          "reset": "000H",
+          "description": "I2C slave address",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "19:5",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "000H",
+          "reserved": true,
+          "settings": [
+            {
+              "value": "RESERVED"
+            }
+          ]
+        },
+        {
+          "position": "4:2",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "00000000h",
+          "reserved": true,
+          "settings": [
+            {
+              "value": "RESERVED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000A8",
+      "ip_name": "Hardware Configuration",
+      "register_acronym": "DEVICE_CONFIG1",
+      "bit_field": [
+        {
+          "position": "1:0",
+          "name": "BUS_VOLT",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Maximum Bus Voltage Configuration",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " 15 V"
+            },
+            {
+              "value": "01b",
+              "description": " 30 V"
+            },
+            {
+              "value": "10b",
+              "description": " 60 V"
+            },
+            {
+              "value": "11b",
+              "description": " Not defined"
+            }
+          ]
+        },
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:16",
+          "name": "INPUT_MAXIMUM_FREQ",
+          "access_type": "R/W",
+          "reset": "0000h",
+          "description": "Input frequency on speed pin for speed control mode as \"controlled by frequency speed pin input\" that corresponds to 100% duty cycle. Input duty cycle = Input frequency / INPUT_MAXIMUM_FREQ",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "15:14",
+          "name": "SLEEP_ENTRY_TIME",
+          "access_type": "R/W",
+          "reset": "000",
+          "description": "Device enters sleep mode when speed input is held continuously below the speed threshold for SEEP_ENTRY_TIME",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Sleep Entry when SPEED pin remains low for 50us"
+            },
+            {
+              "value": "01b",
+              "description": " Sleep Entry when SPEED pin remains low for 200us"
+            },
+            {
+              "value": "10b",
+              "description": " Sleep Entry when SPEED pin remains low for 20ms"
+            },
+            {
+              "value": "11b",
+              "description": " Sleep Entry when SPEED pin remains low for 200ms"
+            }
+          ]
+        },
+        {
+          "position": "13",
+          "name": "DYNAMIC_CSA_GAIN_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Adjust CSA gain at 1ms rate for optimal current resolution at all current levels",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable "
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "12",
+          "name": "DYNAMIC_VOLTAGE_GAIN_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Adjust voltage gain at 1ms rate for optimal voltage resolution at all voltage levels",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Dynamic Voltage Gain is Disabled"
+            },
+            {
+              "value": "1b",
+              "description": " Dynamic Voltage Gain is Enabled"
+            }
+          ]
+        },
+        {
+          "position": "11",
+          "name": "DEV_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Device mode select",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Standby Mode"
+            },
+            {
+              "value": "1b",
+              "description": " Sleep Mode"
+            }
+          ]
+        },
+        {
+          "position": "10:9",
+          "name": "CLK_SEL",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Clock Source ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Internal Oscillator"
+            },
+            {
+              "value": "01b",
+              "description": " Crude Oscillator -- WDT"
+            },
+            {
+              "value": "10b",
+              "description": " Reserved"
+            },
+            {
+              "value": "11b",
+              "description": " External Clock input"
+            }
+          ]
+        },
+        {
+          "position": "8",
+          "name": "EXT_CLK_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Enable External Clock mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "7:5",
+          "name": "EXT_CLK_CONFIG",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "External Clock Configuration",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 8KHz"
+            },
+            {
+              "value": "001b",
+              "description": "16KHz"
+            },
+            {
+              "value": "010b",
+              "description": " 32KHz"
+            },
+            {
+              "value": "011b",
+              "description": " 64KHz"
+            },
+            {
+              "value": "100b",
+              "description": " 128 KHz"
+            },
+            {
+              "value": "101b",
+              "description": " 256 KHz"
+            },
+            {
+              "value": "110b",
+              "description": " 512KHz"
+            },
+            {
+              "value": "111b",
+              "description": " 1024 KHz"
+            }
+          ]
+        },
+        {
+          "position": "4",
+          "name": "EXT_WDT_EN",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Enable external Watch Dog",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": "Enable"
+            },
+            {
+              "value": "0b",
+              "description": "Disable"
+            }
+          ]
+        },
+        {
+          "position": "3:2",
+          "name": "EXT_WDT_CONFIG",
+          "access_type": "R/W",
+          "reset": "00b",
+          "description": "Time between watchdog tickles",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "If EXT_WDT_INPUT_MODE",
+              "description": " GPIO:"
+            },
+            {
+              "value": "00b",
+              "description": " 100ms"
+            },
+            {
+              "value": "01b",
+              "description": " 200ms"
+            },
+            {
+              "value": "10b",
+              "description": " 500ms"
+            },
+            {
+              "value": "11b",
+              "description": " 1000ms"
+            },
+            {
+              "value": "If EXT_WDT_INPUT_MODE",
+              "description": " I2C"
+            },
+            {
+              "value": "00b",
+              "description": " 1s"
+            },
+            {
+              "value": "01b",
+              "description": " 2s"
+            },
+            {
+              "value": "10b",
+              "description": " 5s"
+            },
+            {
+              "value": "11b",
+              "description": " 10s"
+            }
+          ]
+        },
+        {
+          "position": "1",
+          "name": "EXT_WDT_INPUT_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "External Watchdog input mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Watchdog tickle over GPIO"
+            },
+            {
+              "value": "0b",
+              "description": " Watchdog tickle over I2C"
+            }
+          ]
+        },
+        {
+          "position": "0",
+          "name": "EXT_WDT_FAULT_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Extternal Watchdog fault mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Report Only"
+            },
+            {
+              "value": "1b",
+              "description": " Latch with Hi-z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000AA",
+      "ip_name": "Hardware Configuration",
+      "register_acronym": "PERI_CONFIG1",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "PARITY",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Parity bit",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30",
+          "name": "SPREAD_SPECTRUM_MODULATION_DIS",
+          "access_type": "R/W",
+          "reset": "1b",
+          "description": "Spread Spectrum Modulation Disable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " SSM is Enabled"
+            },
+            {
+              "value": "1b",
+              "description": " SSM is Disabled"
+            }
+          ]
+        },
+        {
+          "position": "29:26",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "00b",
+          "reserved": true,
+          "settings": [
+            {
+              "value": "RESERVED"
+            }
+          ]
+        },
+        {
+          "position": "25:22",
+          "name": "BUS_CURRENT_LIMIT",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Bus Current Limit (A)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " 0.125 A"
+            },
+            {
+              "value": "0001b",
+              "description": " 0.25 A "
+            },
+            {
+              "value": "0010b",
+              "description": " 0.5 A "
+            },
+            {
+              "value": "0011b",
+              "description": " 1.0 A "
+            },
+            {
+              "value": "0100b",
+              "description": " 1.5 A"
+            },
+            {
+              "value": "0101b",
+              "description": " 2.0 A"
+            },
+            {
+              "value": "0110b",
+              "description": " 2.5 A"
+            },
+            {
+              "value": "0111b",
+              "description": " 3.0 A"
+            },
+            {
+              "value": "1000b",
+              "description": " 3.5 A"
+            },
+            {
+              "value": "1001b",
+              "description": " 4.0 A"
+            },
+            {
+              "value": "1010b",
+              "description": " 4.5 A"
+            },
+            {
+              "value": "1011b",
+              "description": " 5.0 A"
+            },
+            {
+              "value": "1100b",
+              "description": " 5.5 A"
+            },
+            {
+              "value": "1101b",
+              "description": " 6.0 A"
+            },
+            {
+              "value": "1110b",
+              "description": " 7.0 A"
+            },
+            {
+              "value": "1111b",
+              "description": " 8.0 A "
+            }
+          ]
+        },
+        {
+          "position": "21",
+          "name": "BUS_CURRENT_LIMIT_ENABLE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Bus Current Limit Enable",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0",
+              "description": " Disable"
+            },
+            {
+              "value": "1",
+              "description": " Enable"
+            }
+          ]
+        },
+        {
+          "position": "20:19",
+          "name": "DIR_INPUT",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "DIR  pin override",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "00b",
+              "description": " Hardware Pin DIR"
+            },
+            {
+              "value": "01b",
+              "description": " Override DIR pin with clockwise rotation OUTA-OUTB-OUTC"
+            },
+            {
+              "value": "10b",
+              "description": " Override DIR pin with counter clockwise rotation OUTA-OUTC-OUTB"
+            },
+            {
+              "value": "11b",
+              "description": " Hardware Pin DIR"
+            }
+          ]
+        },
+        {
+          "position": "18",
+          "name": "DIR_CHANGE_MODE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Response to change of DIR pin status",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Follow motor stop options and ISD routine on detecting DIR change"
+            },
+            {
+              "value": "1b",
+              "description": " Change the direction through Reverse Drive while continuously driving the motor"
+            }
+          ]
+        },
+        {
+          "position": "17",
+          "name": "SELF_TEST_ENABLE",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Enables self test on power up",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " STL is disabled"
+            },
+            {
+              "value": "1b",
+              "description": " STL is enabled"
+            }
+          ]
+        },
+        {
+          "position": "16:13",
+          "name": "ACTIVE_BRAKE_SPEED_DELTA_LIMIT_ENTRY",
+          "access_type": "R/W",
+          "reset": "0000b",
+          "description": "Difference between final speed and present speed below which active braking will be applied",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " reserved"
+            },
+            {
+              "value": "0001b",
+              "description": " 5%"
+            },
+            {
+              "value": "0010b",
+              "description": " 10%"
+            },
+            {
+              "value": "0011b",
+              "description": " 15%"
+            },
+            {
+              "value": "0100b",
+              "description": " 20%"
+            },
+            {
+              "value": "0101b",
+              "description": " 25%"
+            },
+            {
+              "value": "0110b",
+              "description": " 30%"
+            },
+            {
+              "value": "0111b",
+              "description": " 35%"
+            },
+            {
+              "value": "1000b",
+              "description": " 40%"
+            },
+            {
+              "value": "1001b",
+              "description": " 45%"
+            },
+            {
+              "value": "1010b",
+              "description": " 50%"
+            },
+            {
+              "value": "1011b",
+              "description": " 60%"
+            },
+            {
+              "value": "1100b",
+              "description": " 70%"
+            },
+            {
+              "value": "1101b",
+              "description": " 80%"
+            },
+            {
+              "value": "1110b",
+              "description": " 90%"
+            },
+            {
+              "value": "1111b",
+              "description": " 100%"
+            }
+          ]
+        },
+        {
+          "position": "12:10",
+          "name": "ACTIVE_BRAKE_MOD_INDEX_LIMIT",
+          "access_type": "R/W",
+          "reset": "000b",
+          "description": "Modulation Index limit beyond which active braking will be applied",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "000b",
+              "description": " 0%"
+            },
+            {
+              "value": "001b",
+              "description": " 40%"
+            },
+            {
+              "value": "010b",
+              "description": " 50%"
+            },
+            {
+              "value": "011b",
+              "description": " 60%"
+            },
+            {
+              "value": "100b",
+              "description": " 70%"
+            },
+            {
+              "value": "101b",
+              "description": " 80%"
+            },
+            {
+              "value": "110b",
+              "description": " 90%"
+            },
+            {
+              "value": "111b",
+              "description": " 100%"
+            }
+          ]
+        },
+        {
+          "position": "9",
+          "name": "SPEED_RANGE_SEL",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Speed range selection for digital speed (PWM Duty or Frequeny to speed mode)",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " 325Hz to 100kHz"
+            },
+            {
+              "value": "1b",
+              "description": " 10Hz to 325Hz"
+            }
+          ]
+        },
+        {
+          "position": "8",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "0b",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": [
+            {
+              "value": "Reserved"
+            }
+          ]
+        },
+        {
+          "position": "7:0",
+          "name": "RESERVED",
+          "access_type": "R/W",
+          "reset": "00h",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        }
+      ]
+    }
+  ]
+}

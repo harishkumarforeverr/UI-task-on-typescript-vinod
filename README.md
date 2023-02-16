@@ -3,7 +3,7 @@ The BLDC tool/app provide a reactjs based frontend application on top of electro
 
 ## Available Scripts
 Install npm modules with :
-### `npm install --legacy-peer-deps`
+### `npm install `
 
 In the project directory, you can run:
 

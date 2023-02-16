@@ -1,0 +1,1042 @@
+{
+  "device_name": "MCT8317",
+  "register_type": "RAM",
+  "register": [
+    {
+      "register_address": "0x000000E0",
+      "ip_name": "Fault Status",
+      "register_acronym": "GATE_DRIVER_FAULT_STATUS",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "DRIVER_FAULT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Logic OR of driver fault registers",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No Gate Driver fault condition is detected"
+            },
+            {
+              "value": "1b",
+              "description": " Gate Driver fault condition is detected"
+            }
+          ]
+        },
+        {
+          "position": "30:15",
+          "name": "RESERVED",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "RESERVED",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "14",
+          "name": "OCP",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Over current protection",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No overcurrent condition is detected"
+            },
+            {
+              "value": "1b",
+              "description": " Overcurrent condition is detected"
+            }
+          ]
+        },
+        {
+          "position": "13",
+          "name": "RESET",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Power On Reset",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Powerup condition is detected"
+            },
+            {
+              "value": "1b",
+              "description": "  Powerup condition is cleared"
+            }
+          ]
+        },
+        {
+          "position": "12",
+          "name": "SYSFLT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "System Fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No system fault is detected"
+            },
+            {
+              "value": "1b",
+              "description": " system fault is detected"
+            }
+          ]
+        },
+        {
+          "position": "11",
+          "name": "OVP",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Over voltage protection",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No overvoltage condition is detected on VM"
+            },
+            {
+              "value": "1b",
+              "description": " Overvoltage condition is detected on VM"
+            }
+          ]
+        },
+        {
+          "position": "10",
+          "name": "CP_UV",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Charge pump undervoltage",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No undervoltage condition is detected on CP"
+            },
+            {
+              "value": "1b",
+              "description": " Undervoltage condition is detected on CP"
+            }
+          ]
+        },
+        {
+          "position": "9",
+          "name": "VM_UV",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "VM undervoltage",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No undervoltage condition is detected on VM"
+            },
+            {
+              "value": "1b",
+              "description": " Undervoltage condition is detected on VM"
+            }
+          ]
+        },
+        {
+          "position": "8",
+          "name": "RESERVED",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "RESERVED",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "7",
+          "name": "OTW",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Over temperature warning",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No overtemperature warning  is detected"
+            },
+            {
+              "value": "1b",
+              "description": " Overtemperature warning is detected"
+            }
+          ]
+        },
+        {
+          "position": "6",
+          "name": "OTSD",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Over temperature shutdown",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No overtemperature shutdown is detected"
+            },
+            {
+              "value": "1b",
+              "description": " Overtemperature shutdown is detected"
+            }
+          ]
+        },
+        {
+          "position": "5:4",
+          "name": "RESERVED",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "RESERVED",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "3",
+          "name": "SPI_FLT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "SPI faults",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No SPI fault is detected"
+            },
+            {
+              "value": "1b",
+              "description": " SPI fault is detected"
+            }
+          ]
+        },
+        {
+          "position": "2",
+          "name": "AVDD_UV",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "AVDD undervoltage",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No undervoltage condition is detected on AVDD"
+            },
+            {
+              "value": "1b",
+              "description": " Undervoltage condition is detected on AVDD"
+            }
+          ]
+        },
+        {
+          "position": "1",
+          "name": "VINAVDD_UV",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "VINAVDD undervoltage",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No undervoltage condition is detected on VIN_AVDD"
+            },
+            {
+              "value": "1b",
+              "description": " Undervoltage condition is detected on VIN_AVDD"
+            }
+          ]
+        },
+        {
+          "position": "0",
+          "name": "AVDD_OCP",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "AVDD OCP fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No overcurrent condition is detected on AVDD LDO"
+            },
+            {
+              "value": "1b",
+              "description": " Overcurrent condition is detected on AVDD LDO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000E2",
+      "ip_name": "Fault Status",
+      "register_acronym": "CONTROLLER_FAULT_STATUS",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "CONTROLLER_FAULT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Logic OR of controller fault registers",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No controller fault condition is detected"
+            },
+            {
+              "value": "1b",
+              "description": " Controller fault condition is detected"
+            }
+          ]
+        },
+        {
+          "position": "30",
+          "name": "OTW MCE",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates overtemperature MCE",
+          "reserved": true,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No OT MCE Fault detected"
+            },
+            {
+              "value": "1b",
+              "description": "  OT MCE Detected"
+            }
+          ]
+        },
+        {
+          "position": "29",
+          "name": "IPD_FREQ_FAULT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates IPD frequency fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No IPD frequency fault detected"
+            },
+            {
+              "value": "1b",
+              "description": "  IPD frequency fault detected"
+            }
+          ]
+        },
+        {
+          "position": "28",
+          "name": "IPD_T1_FAULT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates IPD T1 fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No IPD T1 fault detected"
+            },
+            {
+              "value": "1b",
+              "description": "  IPD T1 fault detected"
+            }
+          ]
+        },
+        {
+          "position": "27",
+          "name": "IPD_T2_FAULT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates IPD T2 fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No IPD T2 fault detected"
+            },
+            {
+              "value": "1b",
+              "description": "  IPD T2 fault detected"
+            }
+          ]
+        },
+        {
+          "position": "26:24",
+          "name": "RESERVED",
+          "access_type": "R",
+          "reset": "000b",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "23",
+          "name": "ABN_SPEED",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates abnormal speed motor lock condition",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No abnormal speed fault detected"
+            },
+            {
+              "value": "1b",
+              "description": " Abnormal Speed fault detected"
+            }
+          ]
+        },
+        {
+          "position": "22",
+          "name": "LOSS_OF_SYNC",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates sync lost motor lock condition",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No sync lost fault detected"
+            },
+            {
+              "value": "1b",
+              "description": " Sync lost fault detected"
+            }
+          ]
+        },
+        {
+          "position": "21",
+          "name": "NO_MTR",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates no motor fault  ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No motor fault not detected"
+            },
+            {
+              "value": "1b",
+              "description": " No motor fault detected"
+            }
+          ]
+        },
+        {
+          "position": "20",
+          "name": "MTR_LCK",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates when one of the motor lock is triggered ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Motor lock fault not detected"
+            },
+            {
+              "value": "1b",
+              "description": " Motor lock fault detected"
+            }
+          ]
+        },
+        {
+          "position": "19",
+          "name": "CBC_ILIMIT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates CBC current limit fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No CBC fault detected"
+            },
+            {
+              "value": "1b",
+              "description": " CBC fault detected"
+            }
+          ]
+        },
+        {
+          "position": "18",
+          "name": "LOCK_ILIMIT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates lock detection current limit fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No lock current limit fault detected"
+            },
+            {
+              "value": "1b",
+              "description": " Lock current limit fault detected"
+            }
+          ]
+        },
+        {
+          "position": "17",
+          "name": "MTR_UNDER_VOLTAGE",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates motor undervoltage fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No motor undervoltage detected"
+            },
+            {
+              "value": "1b",
+              "description": " Motor undervoltage detected"
+            }
+          ]
+        },
+        {
+          "position": "16",
+          "name": "MTR_OVER_VOLTAGE",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates motor overvoltage fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No motor overvoltage detected"
+            },
+            {
+              "value": "1b",
+              "description": " Motor overvoltage detected"
+            }
+          ]
+        },
+        {
+          "position": "15",
+          "name": "EXT_WD_TIMEOUT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates external watchdog timeout fault",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " No external watchdog timeout fault detected"
+            },
+            {
+              "value": "1b",
+              "description": " External watchdog timeout fault detected"
+            }
+          ]
+        },
+        {
+          "position": "14:3",
+          "name": "RESERVED",
+          "access_type": "R",
+          "reset": "000h",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "2",
+          "name": "STL_EN",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates STL is enabled in EEPROM",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " STL Disable"
+            },
+            {
+              "value": "1b",
+              "description": " STL Enable"
+            }
+          ]
+        },
+        {
+          "position": "1",
+          "name": "STL_STATUS",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates STL success criteria Pass = 1b; Fail = 0b ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " STL Fail"
+            },
+            {
+              "value": "1b",
+              "description": " STL Pass"
+            }
+          ]
+        },
+        {
+          "position": "0",
+          "name": "APP_RESET",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "App reset",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " App Reset Fail"
+            },
+            {
+              "value": "1b",
+              "description": " App Reset Successful"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000E4",
+      "ip_name": "System Status",
+      "register_acronym": "SYS_STATUS1",
+      "bit_field": [
+        {
+          "position": "31:16",
+          "name": "VOLT_MAG",
+          "access_type": "R",
+          "reset": "0000h",
+          "description": "Applied DC input voltage (/10 to get DC input voltage in V)",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "15:1",
+          "name": "SPEED_CMD",
+          "access_type": "R",
+          "reset": "000h",
+          "description": "Decoded speed command in PWM/Analog/Freq. mode (SPEED_CMD (%) = SPEED_CMD/32767 * 100%)",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "0",
+          "name": "I2C ENTRY STATUS",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Indicates if I2C entry has happened",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0",
+              "description": " I2C mode not entered through pin sequence"
+            },
+            {
+              "value": "1",
+              "description": " I2C mode entered through pin sequence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000E6",
+      "ip_name": "Algo Control",
+      "register_acronym": "ALGO_CTRL1",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "EEPROM_WRT",
+          "access_type": "W",
+          "reset": "0b",
+          "description": "Write the configuration to EEPROM",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Write to the EEPROM registers from shadow registers"
+            }
+          ]
+        },
+        {
+          "position": "30",
+          "name": "EEPROM_READ",
+          "access_type": "W",
+          "reset": "0b",
+          "description": "Read the default configuration from EEPROM",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Read the EEPROM registers to shadow registers"
+            }
+          ]
+        },
+        {
+          "position": "29",
+          "name": "CLR_FLT",
+          "access_type": "W",
+          "reset": "0b",
+          "description": "Clears all faults",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Clear all the driver and controller faults"
+            }
+          ]
+        },
+        {
+          "position": "28",
+          "name": "CLR_FLT_RETRY_COUNT",
+          "access_type": "W",
+          "reset": "0b",
+          "description": "Clears fault retry count",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " clear the lock fault retry counts"
+            }
+          ]
+        },
+        {
+          "position": "27:20",
+          "name": "EEPROM_WRITE_ACCESS_KEY",
+          "access_type": "W",
+          "reset": "00h",
+          "description": "EEPROM write access key; 8-bit key to unlock the EEPROM write command",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "19:1",
+          "name": "RESERVED",
+          "access_type": "W",
+          "reset": "000h",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "0",
+          "name": "EXT_WD_STATUS_SET",
+          "access_type": "W",
+          "reset": "0b",
+          "description": "Watchdog status to be set by external MCU in I2C watchdog mode",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Reset automatically"
+            },
+            {
+              "value": "1b",
+              "description": " To set the EXT_WD_STATUS_SET"
+            },
+            {
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000E8",
+      "ip_name": "Device Control",
+      "register_acronym": "DEVICE_CTRL",
+      "bit_field": [
+        {
+          "position": "31",
+          "name": "RESERVED",
+          "access_type": "W",
+          "reset": "0b",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "30:16",
+          "name": "SPEED_CTRL",
+          "access_type": "W",
+          "reset": "0000h",
+          "description": "Digital speed command (SPEED_CTRL (%) = SPEED_CTRL/32767 * 100%)",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "15",
+          "name": "OVERRIDE",
+          "access_type": "W",
+          "reset": "0b",
+          "description": "Speed input select for I2C vs speed pin ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " SPEED_CMD using Analog/Freq/PWM mode"
+            },
+            {
+              "value": "1b",
+              "description": " SPEED_CMD using SPD_CTRL[14:0]"
+            }
+          ]
+        },
+        {
+          "position": "14:0",
+          "name": "RESERVED",
+          "access_type": "R",
+          "reset": "00h",
+          "description": "RESERVED",
+          "reserved": true,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000EA",
+      "ip_name": "System Status",
+      "register_acronym": "SYS_STATUS2",
+      "bit_field": [
+        {
+          "position": "31:28",
+          "name": "STATE",
+          "access_type": "R",
+          "reset": "0h",
+          "description": "Current status of state machine; 4-bit value indicating status of state machine ",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0000b",
+              "description": " SYSTEM_IDLE"
+            },
+            {
+              "value": "0001b",
+              "description": " MOTOR_START"
+            },
+            {
+              "value": "0010b",
+              "description": " MOTOR_RUN"
+            },
+            {
+              "value": "0011b",
+              "description": " SYSTEM_INIT"
+            },
+            {
+              "value": "0100b",
+              "description": " MOTOR_IPD"
+            },
+            {
+              "value": "0101b",
+              "description": " MOTOR_ALIGN"
+            },
+            {
+              "value": "0110b",
+              "description": " MOTOR_IDLE"
+            },
+            {
+              "value": "0111b",
+              "description": " MOTOR_STOP"
+            },
+            {
+              "value": "1000b",
+              "description": " FAULT"
+            },
+            {
+              "value": "1001b",
+              "description": " MOTOR_DIRECTION"
+            },
+            {
+              "value": "1010b",
+              "description": " HALL_ALIGN"
+            },
+            {
+              "value": "1101b",
+              "description": " MOTOR_ISD"
+            },
+            {
+              "value": "1100b",
+              "description": " MOTOR_CALIBRATE"
+            },
+            {
+              "value": "1101b",
+              "description": " MOTOR_DESCEL"
+            },
+            {
+              "value": "1110b",
+              "description": " MOTOR_BRAKE"
+            },
+            {
+              "value": "1111b",
+              "description": " N/A"
+            }
+          ]
+        },
+        {
+          "position": "27:18",
+          "name": "RESERVED",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "Reserved",
+          "reserved": true,
+          "settings": []
+        },
+        {
+          "position": "17",
+          "name": "STL_FAULT",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "STL fault status",
+          "reserved": false,
+          "settings": [
+            {
+              "value": "0b",
+              "description": " Pass"
+            },
+            {
+              "value": "1b",
+              "description": " Fail"
+            }
+          ]
+        },
+        {
+          "position": "16",
+          "name": "APP_INDEX",
+          "access_type": "R",
+          "reset": "0b",
+          "description": "To check whether application ROM has been entered ",
+          "reserved": true,
+          "settings": [
+            {
+              "value": "1b",
+              "description": " Pass"
+            },
+            {
+              "value": "0b",
+              "description": " Fail"
+            }
+          ]
+        },
+        {
+          "position": "15:0",
+          "name": "MOTOR_SPEED",
+          "access_type": "R",
+          "reset": "0000h",
+          "description": "Speed output (/10 to get motor electrical speed in Hz) ",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "0x000000EC",
+      "ip_name": "System Status",
+      "register_acronym": "SYS_STATUS3",
+      "bit_field": [
+        {
+          "position": "31:16",
+          "name": "DC_BUS_CURR",
+          "access_type": "R",
+          "reset": "0000h",
+          "description": "DC bus current (/256 to get DC bus current in A)",
+          "reserved": false,
+          "settings": []
+        },
+        {
+          "position": "15:0",
+          "name": "DC_BATT_POW",
+          "access_type": "R",
+          "reset": "0000h",
+          "description": "Battery (input) power (/64 to get battery power in W)",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "40Ch",
+      "ip_name": "Algorithm Variables",
+      "register_acronym": "INPUT_DUTY",
+      "bit_field": [
+        {
+          "position": "31:0",
+          "name": "INPUT_DUTY",
+          "access_type": "R",
+          "reset": "00000000h",
+          "description": "32-bit value indicating the duty cycle that the user commands  Input duty cycle (in %) = (Input Duty Cycle / 2^30) * 100 ",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "522h",
+      "ip_name": "Algorithm Variables",
+      "register_acronym": "SET_DUTY",
+      "bit_field": [
+        {
+          "position": "31:0",
+          "name": "SET_DUTY",
+          "access_type": "R",
+          "reset": "00000000h",
+          "description": "32-bit value indicating the duty cycle that the FW wants.  Set duty cycle (in %) = (Set Duty Cycle / 2^30) * 100 ",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "512h",
+      "ip_name": "Algorithm Variables",
+      "register_acronym": "CURRENT_DUTY",
+      "bit_field": [
+        {
+          "position": "31:0",
+          "name": "CURRENT_DUTY",
+          "access_type": "R",
+          "reset": "00000000h",
+          "description": "32-bit value indicating the duty cycle that is currently being applied.  Current duty cycle (in %) = (Current Duty Cycle / 2^30) * 100 ",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "5CEh",
+      "ip_name": "Algorithm Variables",
+      "register_acronym": "MOTOR_SPEED_PU",
+      "bit_field": [
+        {
+          "position": "31:0",
+          "name": "MOTOR_SPEED_PU",
+          "access_type": "R",
+          "reset": "00000000h",
+          "description": "32-bit value indicating the speed of the motor.  Motor speed (in Hz) = (Motor Speed in PU / 2^30) * (MAX_SPEED / 16)",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    },
+    {
+      "register_address": "714h",
+      "ip_name": "Algorithm Variables",
+      "register_acronym": "DC_BUS_POWER_PU",
+      "bit_field": [
+        {
+          "position": "31:0",
+          "name": "DC_BUS_POWER_PU",
+          "access_type": "R",
+          "reset": "00000000h",
+          "description": "32-bit value indicating the power drawn by the motor.  DC Bus Power (in W) = (DC Bus Power in PU / 2^30) * (MAX_POWER / 4)",
+          "reserved": false,
+          "settings": []
+        }
+      ]
+    }
+  ]
+}

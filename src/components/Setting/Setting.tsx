@@ -7,24 +7,35 @@ import * as XLSX from 'xlsx';
 
 const Setting = () => {
 
-  const [excelData,setExcelData] =useState({})
+  const [excelData,setExcelData] =useState([])
+  const [fileName,setFileName] =useState('')
 
-  const handleset = (e: any) => {
-    console.log(e);
+  const handleset = (f: any) => {
+    setFileName(f.target?.files[0].name)
     let reader = new FileReader();
-    reader.readAsArrayBuffer(e.target?.files[0]);
+    reader.readAsArrayBuffer(f.target?.files[0]);
     reader.onload = async (e) => {
       const workbook = XLSX.read(e.target?.result, { type: "buffer" });
-      const worksheetName = workbook.SheetNames[1];
-      const worksheet = workbook.Sheets[worksheetName];
+      const worksheetName = workbook.SheetNames;
+      let sheetNo;
+      for(var i in worksheetName){
+        if(worksheetName[i].match("Bit_Description")){
+          sheetNo=parseInt(i);
+        }
+      }
+      const worksheet = workbook.Sheets[worksheetName[sheetNo]];
       const data = await XLSX.utils.sheet_to_json(worksheet);
       console.log(data);
-      setExcelData(data)
+      
+      // setExcelData(data)
+      ipcRenderer.send('upload_device_config',{config:data,fileName:f.target?.files[0].name})
     };
   };
 
   const onClick_upload= () => {
-    ipcRenderer.send('upload_device_config',excelData)
+    console.log("excelData",excelData);   
+    
+    setExcelData([])
   }
 
   return(
@@ -40,7 +51,7 @@ const Setting = () => {
         onChange={handleset}
     />
 </form>
-<button onClick={onClick_upload}>upload</button>
+<button onClick={onClick_upload} disabled={Object.keys(excelData).length === 0 ? true:false }>upload</button>
 </Box>
   </>)
   ;

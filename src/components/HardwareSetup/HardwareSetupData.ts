@@ -1,13 +1,14 @@
-import Board from "../../images/HardwareSetup/board.svg";
+import Board from "../../images/HardwareSetup/board.png";
 import RightArrow from "../../images/HardwareSetup/rightarrow.svg";
 import LeftArrow from "../../images/HardwareSetup/leftarrow.svg";
 import CurveArrow from "../../images/HardwareSetup/curvearrow.svg";
+import { TIBoardHardwareSetupDataType } from "./IHardwareSetup";
 
-const TIBoardHardwareSetupData: any = [
+export const TIBoardHardwareSetupData: TIBoardHardwareSetupDataType[] = [
   {
-    boardType: 1,
-    image: Board,
-    steps: [
+    boardType: "1",
+    boardImage: Board,
+    focusSteps: [
       {
         id: 0,
         position: [
@@ -17,9 +18,9 @@ const TIBoardHardwareSetupData: any = [
         ],
         title: "Configure jumpers",
         description: [
-          "J1 jumper to POT",
-          "J3 jumper to 5V_USB",
-          "J5 jumper to 3V3COM",
+          { text: "J1 jumper to POT" },
+          { text: "J3 jumper to 5V_USB" },
+          { text: "J5 jumper to 3V3COM" },
         ],
       },
       {
@@ -33,19 +34,19 @@ const TIBoardHardwareSetupData: any = [
             id: 1,
             arrow: [
               {
-                image: RightArrow,
+                arrowImage: RightArrow,
                 top: "25%",
                 left: "11%",
                 width: "15%",
               },
               {
-                image: RightArrow,
+                arrowImage: RightArrow,
                 top: "25%",
                 left: "43%",
                 width: "15%",
               },
               {
-                image: LeftArrow,
+                arrowImage: LeftArrow,
                 top: "25%",
                 left: "74%",
                 width: "15%",
@@ -53,11 +54,11 @@ const TIBoardHardwareSetupData: any = [
             ],
           },
         ],
-        title: "Configure toggle switch ",
+        title: "Configure toggle switches ",
         description: [
-          "S1 to right (RUN)",
-          "S2 to left (ABC)",
-          "S3 to left (ON)",
+          { text: "S1 to right (RUN)" },
+          { text: "S2 to left (ABC)" },
+          { text: "S3 to right (ON)" },
         ],
       },
       {
@@ -71,7 +72,7 @@ const TIBoardHardwareSetupData: any = [
             id: 2,
             arrow: [
               {
-                image: CurveArrow,
+                arrowImage: CurveArrow,
                 top: "11%",
                 left: "2%",
                 width: "35%",
@@ -80,7 +81,7 @@ const TIBoardHardwareSetupData: any = [
           },
         ],
         title: "Configure Potentiometer",
-        description: ["Rotate R4 potentioment fully clockwise."],
+        description: [{ text: "Rotate R4 potentiomet fully clockwise." }],
       },
       {
         id: 3,
@@ -88,7 +89,7 @@ const TIBoardHardwareSetupData: any = [
           { top: "24.5%", left: "83%", height: "25%", width: "16%", id: 3 },
         ],
         title: "Configure jumpers",
-        description: ["Connect motor phases A,B,C to the EVM on JP"],
+        description: [{ text: "Connect motor phases A,B,C to the EVM on J8" }],
       },
       {
         id: 4,
@@ -96,8 +97,14 @@ const TIBoardHardwareSetupData: any = [
           { top: "79%", left: "73.6%", height: "16%", width: "16%", id: 4 },
         ],
         title: "Configure jumpers",
+        descriptionPosition: {
+          top: "65%",
+          left: "91.0%",
+        },
         description: [
-          "Connect Voltage Supply (4.5V ~ 35V to: Positve to VBAT Negative to PGND",
+          { text: "Connect Voltage Supply (4.5V ~ 35V) to:", color: "black" },
+          { text: "Positive to VBAT" },
+          { text: "Negative to PGND" },
         ],
       },
       {
@@ -106,7 +113,9 @@ const TIBoardHardwareSetupData: any = [
           { top: "67%", left: "4%", height: "16%", width: "7%", id: 5 },
         ],
         title: "Connect USB",
-        description: ["Connect the EVM to the PC using a micro-USB cable"],
+        description: [
+          { text: "Connect the EVM to the PC using a micro-USB cable" },
+        ],
       },
       {
         id: 6,
@@ -122,19 +131,19 @@ const TIBoardHardwareSetupData: any = [
             id: 1,
             arrow: [
               {
-                image: RightArrow,
+                arrowImage: RightArrow,
                 top: "25%",
                 left: "11%",
                 width: "15%",
               },
               {
-                image: RightArrow,
+                arrowImage: RightArrow,
                 top: "25%",
                 left: "43%",
                 width: "15%",
               },
               {
-                image: LeftArrow,
+                arrowImage: LeftArrow,
                 top: "25%",
                 left: "74%",
                 width: "15%",
@@ -149,7 +158,7 @@ const TIBoardHardwareSetupData: any = [
             id: 2,
             arrow: [
               {
-                image: CurveArrow,
+                arrowImage: CurveArrow,
                 top: "11%",
                 left: "2%",
                 width: "35%",
@@ -160,32 +169,7 @@ const TIBoardHardwareSetupData: any = [
           { top: "79%", left: "73.6%", height: "16%", width: "16%", id: 4 },
           { top: "67%", left: "4%", height: "16%", width: "7%", id: 5 },
         ],
-        title: "Six Title",
-        description: ["Six description"],
-      },
-    ],
-  },
-  {
-    boardType: 2,
-    image: Board,
-    steps: [
-      {
-        id: 0,
-        position: [
-          { top: 0, left: 0, height: "50px", width: "20px" },
-          { top: 0, left: 0, height: "50px", width: "20px" },
-        ],
-        title: "1 Title",
-        description: ["Six description"],
-      },
-      {
-        id: 1,
-        position: [{ top: 0, left: 0, height: "50px", width: "20px" }],
-        title: "Six Title",
-        description: ["Six description"],
       },
     ],
   },
 ];
-
-export default TIBoardHardwareSetupData;

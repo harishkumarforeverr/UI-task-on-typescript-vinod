@@ -17,6 +17,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "noImplicitAny": false,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
@@ -24,9 +25,13 @@
       "node_modules/@types"
     ]
   },
+
   "include": [
     "src",
     "backend/**/*",
-    "public/app.js"
+    "public/app.js",
+    "public/data/schema.json",
+    "public/models",
+    "registermap"
   ]
 }

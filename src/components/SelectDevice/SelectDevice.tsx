@@ -1,32 +1,36 @@
 import React from "react";
-
+import "./SelectDevice";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
-import Select  from "@mui/material/Select";
-import selectDeviceImage from "../../images/Home/Buttons.svg"
- 
-import DeviceConstant from "../Home/constants/MCF8315_EEPROM.json"; 
+import Select from "@mui/material/Select";
+import selectDeviceImage from "../../images/Home/Buttons.svg";
+
+import DeviceConstant from "../Home/constants/device_config_list.json";
 interface propsType {
-  dotColor: any; 
+  DeviceConstant;
+  dotColor: any;
   devDesc?: string;
   devSubDesc?: string;
   BtnSelectDeviceOpacity: string;
   handleChange: (event: string) => any;
   handleTheMotor?: () => void;
-  className?:string;
-  selectedDevice  :string,
-  setselectedDevice : (event: string) => any;
+  className?: string;
+  selectedDevice: string;
+  setselectedDevice: (event: string) => any;
+  deviceList: any[];
 }
 export function SelectWrapper({
-  dotColor, 
+  dotColor,
   devDesc,
   BtnSelectDeviceOpacity,
   devSubDesc,
   handleChange,
   handleTheMotor,
-  selectedDevice  ,
-  setselectedDevice  , className
+  selectedDevice,
+  deviceList,
+  setselectedDevice,
+  className,
 }: propsType) {
   return (
     <div className="conatinerCard" style={{ width: 300 }}>
@@ -58,19 +62,20 @@ export function SelectWrapper({
               // value={age}
               className="select_wrapper"
               label="Select Device*"
-              onChange={(e:any)=>{
-                const {value}=e.target; 
-                setselectedDevice(value)
-                handleChange(value)
+              onChange={(e: any) => {
+                const { value } = e.target;
+                setselectedDevice(value);
+                handleChange(value);
               }}
               defaultValue="Select Your Device"
             >
               <MenuItem value={"Select Your Device"}>
                 Select Your Device
               </MenuItem>
-              <MenuItem value={DeviceConstant.device_name}>
-                {DeviceConstant.device_name}
-              </MenuItem>
+
+              {deviceList.map((device) => {
+                return <MenuItem value={device}>{device}</MenuItem>;
+              })}
             </Select>
           </FormControl>
         </>
@@ -89,39 +94,31 @@ export function SelectWrapper({
           </span>
           <span className="numberText">{selectedDevice}</span>
         </div>
-        <p className="GuiSupport">
-          {`${devDesc} ${selectedDevice}`}
-       </p>
-       {
-        devSubDesc && <p
-        className="GuiSupport"
+        <p className="GuiSupport">{`${devDesc} ${selectedDevice}`}</p>
+        {devSubDesc && (
+          <p
+            className="GuiSupport"
+            style={{
+              fontSize: "12px",
+              opacity: "0.8",
+            }}
+          >
+            {`${devSubDesc} ${selectedDevice}`}
+          </p>
+        )}
+      </div>
+      <div
+        className="lightRed btn redbgm"
         style={{
-          fontSize: "12px",
-          opacity: "0.8",
+          opacity: BtnSelectDeviceOpacity,
         }}
       >
-      {`${devSubDesc} ${selectedDevice}`}
-      
-      </p>
-       }
-       
-      </div>
-      <div 
-      
-      className="lightRed btn redbgm"
-      style={{
-          opacity: BtnSelectDeviceOpacity,
-        }}>
-        <img 
+        <img
           onClick={handleTheMotor}
-        src={selectDeviceImage}  alt="selectDeviceImage"/>
+          src={selectDeviceImage}
+          alt="selectDeviceImage"
+        />
       </div>
-      {/* <Button
-       
-      
-      >
-        Select Device
-      </Button> */}
     </div>
   );
 }

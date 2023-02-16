@@ -1,0 +1,43 @@
+conatinerCard .ColorContainer {
+    width: 18px;
+    height: 18px;
+    left: 151px;
+    top: 197px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .conatinerCard .numberText {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #231f20;
+  }
+  conatinerCard #selectlabelCommon {
+    color: black !important;
+  }
+  .conatinerCard #selectlabelCommon:hover {
+    color: black !important;
+  }
+  .conatinerCard .ant-card-body {
+    width: 380px;
+    height: 326px;
+  }
+  .conatinerCard .GuiSupport {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3d3d3d;
+    margin-left: 40px;
+  }
+  .conatinerCard .deatiles {
+    margin-top: 2.3rem;
+    display: flex;
+  }
+  
